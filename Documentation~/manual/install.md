@@ -1,10 +1,10 @@
-y# Installation
+# Installation
 
 This document will guide you through creating a new Unity-project and installing the framework.
 
-## Prerequisite
+## Prerequisites
 
-This package requires Unity version
+This package requires Unity version 2021.2.7f1 (newer version might potential work but can't be guaranteed).
 
 ## Create a new project
 
@@ -14,7 +14,7 @@ Open Unity Hub and click on `New Project`
 
 In this new screen you customize your new project:
 
-* Make sure that the Editor Version at the top of the screen is set to the correct version (see [Prerequisite](#prequisits) section)
+* Make sure that the Editor Version at the top of the screen is set to the correct version (see [Prerequisites](#prerequisites) section)
 * Select the core template named `2D`.
 * Name your project in the `Project Settings` section.
 * Change the `Location` to where you would like to save your project.
