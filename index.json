@@ -1,0 +1,362 @@
+{
+  "api/StoryFramework.Audio.AudioManager.html": {
+    "href": "api/StoryFramework.Audio.AudioManager.html",
+    "title": "Class AudioManager | MoxieJam story framework documentation",
+    "keywords": "Class AudioManager Handles playing of music and sound effects. Inheritance Object AudioManager Namespace : StoryFramework.Audio Assembly : cs.temp.dll.dll Syntax public class AudioManager : MonoBehaviour Methods PlayEffect(AudioClip, Single) Declaration public void PlayEffect(AudioClip audioClip, float volume = 1F) Parameters Type Name Description AudioClip audioClip Single volume PlayMusic(AudioClip, Single, Boolean) Declaration public void PlayMusic(AudioClip musicClip, float volume = 1F, bool loop = true) Parameters Type Name Description AudioClip musicClip Single volume Boolean loop PlayOneShoot(AudioClip, Single) Declaration public void PlayOneShoot(AudioClip audioClip, float volume) Parameters Type Name Description AudioClip audioClip Single volume StopMusic() Declaration public void StopMusic()"
+  },
+  "api/StoryFramework.Audio.html": {
+    "href": "api/StoryFramework.Audio.html",
+    "title": "Namespace StoryFramework.Audio | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Audio Classes AudioManager Handles playing of music and sound effects. PlayMusic Starts playing a music clip. PlaySound Starts playing a sound effect clip. StopMusic Stops playing the music."
+  },
+  "api/StoryFramework.Audio.PlayMusic.html": {
+    "href": "api/StoryFramework.Audio.PlayMusic.html",
+    "title": "Class PlayMusic | MoxieJam story framework documentation",
+    "keywords": "Class PlayMusic Starts playing a music clip. Inheritance Object PlayMusic Namespace : StoryFramework.Audio Assembly : cs.temp.dll.dll Syntax public class PlayMusic : MonoBehaviour Methods Play() Play the selected music. Declaration public void Play() Stop() Stop the music. Declaration public void Stop()"
+  },
+  "api/StoryFramework.Audio.PlaySound.html": {
+    "href": "api/StoryFramework.Audio.PlaySound.html",
+    "title": "Class PlaySound | MoxieJam story framework documentation",
+    "keywords": "Class PlaySound Starts playing a sound effect clip. Inheritance Object PlaySound Namespace : StoryFramework.Audio Assembly : cs.temp.dll.dll Syntax public class PlaySound : MonoBehaviour Methods Play() Play the selected audio clip. Declaration public void Play()"
+  },
+  "api/StoryFramework.Audio.StopMusic.html": {
+    "href": "api/StoryFramework.Audio.StopMusic.html",
+    "title": "Class StopMusic | MoxieJam story framework documentation",
+    "keywords": "Class StopMusic Stops playing the music. Inheritance Object StopMusic Namespace : StoryFramework.Audio Assembly : cs.temp.dll.dll Syntax public class StopMusic : MonoBehaviour Methods Stop() Stop the music. Declaration public void Stop()"
+  },
+  "api/StoryFramework.ClickItem.html": {
+    "href": "api/StoryFramework.ClickItem.html",
+    "title": "Class ClickItem | MoxieJam story framework documentation",
+    "keywords": "Class ClickItem Invoke a event with the specified item when mouse clicks a object. Inheritance Object ClickItem Implements IPointerClickHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class ClickItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerClick(PointerEventData) Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerClickHandler"
+  },
+  "api/StoryFramework.CursorHandler.html": {
+    "href": "api/StoryFramework.CursorHandler.html",
+    "title": "Class CursorHandler | MoxieJam story framework documentation",
+    "keywords": "Class CursorHandler Inheritance Object CursorHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class CursorHandler : MonoBehaviour Properties Current Declaration public Texture2D Current { get; } Property Value Type Description Texture2D ItemDragged Declaration public InventoryItem ItemDragged { get; } Property Value Type Description InventoryItem Methods ClearDropTarget(DropItemTarget) Clear the drop target if the specified target is the current target. Declaration public void ClearDropTarget(DropItemTarget dropItemTargetTarget) Parameters Type Name Description DropItemTarget dropItemTargetTarget The drop target to clear. DragItem(InventoryItem) Start dragging a item. Declaration public void DragItem(InventoryItem item) Parameters Type Name Description InventoryItem item SetCursor(Texture2D) Declaration public void SetCursor(Texture2D newCursor) Parameters Type Name Description Texture2D newCursor SetCursor(Texture2D, Vector2) Declaration public void SetCursor(Texture2D newCursor, Vector2 hotspot) Parameters Type Name Description Texture2D newCursor Vector2 hotspot SetDropTarget(DropItemTarget) Set active drop target. Declaration public void SetDropTarget(DropItemTarget dropItemTargetTarget) Parameters Type Name Description DropItemTarget dropItemTargetTarget Current target we can drop an item on. StopDraggingItem() Stop dragging current item. Declaration public void StopDraggingItem() Events OnItemDropped Declaration public event CursorHandler.ItemDroppedEvent OnItemDropped Event Type Type Description CursorHandler.ItemDroppedEvent"
+  },
+  "api/StoryFramework.CursorHandler.ItemDroppedEvent.html": {
+    "href": "api/StoryFramework.CursorHandler.ItemDroppedEvent.html",
+    "title": "Delegate CursorHandler.ItemDroppedEvent | MoxieJam story framework documentation",
+    "keywords": "Delegate CursorHandler.ItemDroppedEvent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void ItemDroppedEvent(InventoryItem item); Parameters Type Name Description InventoryItem item"
+  },
+  "api/StoryFramework.Dialogue.html": {
+    "href": "api/StoryFramework.Dialogue.html",
+    "title": "Class Dialogue | MoxieJam story framework documentation",
+    "keywords": "Class Dialogue Dialogue handler. Inheritance Object Dialogue Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class Dialogue : MonoBehaviour Fields ActiveDialouge Currently active dialogue. Declaration public static Dialogue ActiveDialouge Field Value Type Description Dialogue Properties Text Property for setting/getting current text on the dialogue. Declaration public string Text { get; set; } Property Value Type Description String Methods AppendText(String) Append text to the dialogue. Declaration public void AppendText(string text) Parameters Type Name Description String text Clear() Clear the dialogue. Declaration public void Clear() SetText(String) Sets the dialogue. Declaration public void SetText(string text) Parameters Type Name Description String text"
+  },
+  "api/StoryFramework.DropItemTarget.html": {
+    "href": "api/StoryFramework.DropItemTarget.html",
+    "title": "Class DropItemTarget | MoxieJam story framework documentation",
+    "keywords": "Class DropItemTarget Inheritance Object DropItemTarget Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class DropItemTarget : MonoBehaviour Methods TryDropItem(InventoryItem) Declaration public bool TryDropItem(InventoryItem item) Parameters Type Name Description InventoryItem item Returns Type Description Boolean"
+  },
+  "api/StoryFramework.Editor.CreateGameeObjectUtility.html": {
+    "href": "api/StoryFramework.Editor.CreateGameeObjectUtility.html",
+    "title": "Class CreateGameeObjectUtility | MoxieJam story framework documentation",
+    "keywords": "Class CreateGameeObjectUtility Inheritance Object CreateGameeObjectUtility Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class CreateGameeObjectUtility : UnityEditor.Editor Methods CreateDropItemTarget() Declaration public static void CreateDropItemTarget() CreateInteractableItem() Declaration public static void CreateInteractableItem() CreateObjectWithDescription() Declaration public static void CreateObjectWithDescription()"
+  },
+  "api/StoryFramework.Editor.GameEditor.html": {
+    "href": "api/StoryFramework.Editor.GameEditor.html",
+    "title": "Class GameEditor | MoxieJam story framework documentation",
+    "keywords": "Class GameEditor Inheritance Object GameEditor Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class GameEditor"
+  },
+  "api/StoryFramework.Editor.GameSceneTemplatePipeline.html": {
+    "href": "api/StoryFramework.Editor.GameSceneTemplatePipeline.html",
+    "title": "Class GameSceneTemplatePipeline | MoxieJam story framework documentation",
+    "keywords": "Class GameSceneTemplatePipeline Inheritance Object GameSceneTemplatePipeline Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class GameSceneTemplatePipeline : ISceneTemplatePipeline Methods AfterTemplateInstantiation(SceneTemplateAsset, Scene, Boolean, String) Declaration public virtual void AfterTemplateInstantiation(SceneTemplateAsset sceneTemplateAsset, Scene scene, bool isAdditive, string sceneName) Parameters Type Name Description SceneTemplateAsset sceneTemplateAsset Scene scene Boolean isAdditive String sceneName BeforeTemplateInstantiation(SceneTemplateAsset, Boolean, String) Declaration public virtual void BeforeTemplateInstantiation(SceneTemplateAsset sceneTemplateAsset, bool isAdditive, string sceneName) Parameters Type Name Description SceneTemplateAsset sceneTemplateAsset Boolean isAdditive String sceneName IsValidTemplateForInstantiation(SceneTemplateAsset) Declaration public virtual bool IsValidTemplateForInstantiation(SceneTemplateAsset sceneTemplateAsset) Parameters Type Name Description SceneTemplateAsset sceneTemplateAsset Returns Type Description Boolean"
+  },
+  "api/StoryFramework.Editor.html": {
+    "href": "api/StoryFramework.Editor.html",
+    "title": "Namespace StoryFramework.Editor | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Editor Root namespace for the Story Framework Editor functionality. Classes CreateGameeObjectUtility GameEditor GameSceneTemplatePipeline InteractableItemEditor InteractableItemSettings SceneRefAttributeDrawer SceneRefEditor"
+  },
+  "api/StoryFramework.Editor.InteractableItemEditor.html": {
+    "href": "api/StoryFramework.Editor.InteractableItemEditor.html",
+    "title": "Class InteractableItemEditor | MoxieJam story framework documentation",
+    "keywords": "Class InteractableItemEditor Inheritance Object InteractableItemEditor Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class InteractableItemEditor : UnityEditor.Editor Methods OnInspectorGUI() Declaration public override void OnInspectorGUI()"
+  },
+  "api/StoryFramework.Editor.InteractableItemSettings.html": {
+    "href": "api/StoryFramework.Editor.InteractableItemSettings.html",
+    "title": "Class InteractableItemSettings | MoxieJam story framework documentation",
+    "keywords": "Class InteractableItemSettings Inheritance Object InteractableItemSettings Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class InteractableItemSettings : UnityEditor.EditorWindow"
+  },
+  "api/StoryFramework.Editor.Inventory.html": {
+    "href": "api/StoryFramework.Editor.Inventory.html",
+    "title": "Namespace StoryFramework.Editor.Inventory | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Editor.Inventory Classes InventoryItemDrawer InventoryItemSlotEditor Custom editor for inventory item slot."
+  },
+  "api/StoryFramework.Editor.Inventory.InventoryItemDrawer.html": {
+    "href": "api/StoryFramework.Editor.Inventory.InventoryItemDrawer.html",
+    "title": "Class InventoryItemDrawer | MoxieJam story framework documentation",
+    "keywords": "Class InventoryItemDrawer Inheritance Object InventoryItemDrawer Namespace : StoryFramework.Editor.Inventory Assembly : cs.temp.dll.dll Syntax public class InventoryItemDrawer : PropertyDrawer Methods GetPropertyHeight(SerializedProperty, GUIContent) Declaration public override float GetPropertyHeight(SerializedProperty property, GUIContent label) Parameters Type Name Description SerializedProperty property GUIContent label Returns Type Description Single OnGUI(Rect, SerializedProperty, GUIContent) Declaration public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) Parameters Type Name Description Rect position SerializedProperty property GUIContent label"
+  },
+  "api/StoryFramework.Editor.Inventory.InventoryItemSlotEditor.html": {
+    "href": "api/StoryFramework.Editor.Inventory.InventoryItemSlotEditor.html",
+    "title": "Class InventoryItemSlotEditor | MoxieJam story framework documentation",
+    "keywords": "Class InventoryItemSlotEditor Custom editor for inventory item slot. Inheritance Object InventoryItemSlotEditor Namespace : StoryFramework.Editor.Inventory Assembly : cs.temp.dll.dll Syntax public class InventoryItemSlotEditor : SelectableEditor Methods OnEnable() Declaration protected override void OnEnable() OnInspectorGUI() Declaration public override void OnInspectorGUI()"
+  },
+  "api/StoryFramework.Editor.SceneRefAttributeDrawer.html": {
+    "href": "api/StoryFramework.Editor.SceneRefAttributeDrawer.html",
+    "title": "Class SceneRefAttributeDrawer | MoxieJam story framework documentation",
+    "keywords": "Class SceneRefAttributeDrawer Inheritance Object SceneRefAttributeDrawer Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class SceneRefAttributeDrawer : PropertyDrawer Methods OnGUI(Rect, SerializedProperty, GUIContent) Declaration public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) Parameters Type Name Description Rect position SerializedProperty property GUIContent label"
+  },
+  "api/StoryFramework.Editor.SceneRefEditor.html": {
+    "href": "api/StoryFramework.Editor.SceneRefEditor.html",
+    "title": "Class SceneRefEditor | MoxieJam story framework documentation",
+    "keywords": "Class SceneRefEditor Inheritance Object SceneRefEditor Namespace : StoryFramework.Editor Assembly : cs.temp.dll.dll Syntax public class SceneRefEditor : PropertyDrawer Methods OnGUI(Rect, SerializedProperty, GUIContent) Declaration public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) Parameters Type Name Description Rect position SerializedProperty property GUIContent label"
+  },
+  "api/StoryFramework.Editor.Utilities.GameStateSetterEditor.html": {
+    "href": "api/StoryFramework.Editor.Utilities.GameStateSetterEditor.html",
+    "title": "Class GameStateSetterEditor | MoxieJam story framework documentation",
+    "keywords": "Class GameStateSetterEditor Inheritance Object GameStateSetterEditor Namespace : StoryFramework.Editor.Utilities Assembly : cs.temp.dll.dll Syntax public class GameStateSetterEditor : UnityEditor.Editor Methods OnEnable() Declaration protected void OnEnable() OnInspectorGUI() Declaration public override void OnInspectorGUI()"
+  },
+  "api/StoryFramework.Editor.Utilities.html": {
+    "href": "api/StoryFramework.Editor.Utilities.html",
+    "title": "Namespace StoryFramework.Editor.Utilities | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Editor.Utilities Classes GameStateSetterEditor"
+  },
+  "api/StoryFramework.Events.html": {
+    "href": "api/StoryFramework.Events.html",
+    "title": "Namespace StoryFramework.Events | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Events Classes InventoryEvent Event listener for the inventory system. LockableEvent Event listener for a lockable object. SceneEvent Event listener for a lockable object."
+  },
+  "api/StoryFramework.Events.InventoryEvent.html": {
+    "href": "api/StoryFramework.Events.InventoryEvent.html",
+    "title": "Class InventoryEvent | MoxieJam story framework documentation",
+    "keywords": "Class InventoryEvent Event listener for the inventory system. Inheritance Object InventoryEvent Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class InventoryEvent : MonoBehaviour"
+  },
+  "api/StoryFramework.Events.LockableEvent.html": {
+    "href": "api/StoryFramework.Events.LockableEvent.html",
+    "title": "Class LockableEvent | MoxieJam story framework documentation",
+    "keywords": "Class LockableEvent Event listener for a lockable object. Inheritance Object LockableEvent Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class LockableEvent : MonoBehaviour"
+  },
+  "api/StoryFramework.Events.SceneEvent.html": {
+    "href": "api/StoryFramework.Events.SceneEvent.html",
+    "title": "Class SceneEvent | MoxieJam story framework documentation",
+    "keywords": "Class SceneEvent Event listener for a lockable object. Inheritance Object SceneEvent Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class SceneEvent : MonoBehaviour"
+  },
+  "api/StoryFramework.Game.BeginLoadSceneEvent.html": {
+    "href": "api/StoryFramework.Game.BeginLoadSceneEvent.html",
+    "title": "Delegate Game.BeginLoadSceneEvent | MoxieJam story framework documentation",
+    "keywords": "Delegate Game.BeginLoadSceneEvent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void BeginLoadSceneEvent(string sceneName); Parameters Type Name Description String sceneName"
+  },
+  "api/StoryFramework.Game.html": {
+    "href": "api/StoryFramework.Game.html",
+    "title": "Class Game | MoxieJam story framework documentation",
+    "keywords": "Class Game Inheritance Object Game Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class Game : MonoBehaviour Fields Instance Declaration public static Game Instance Field Value Type Description Game Properties AudioManager Declaration public AudioManager AudioManager { get; } Property Value Type Description AudioManager IngameUi Declaration public IngameUI IngameUi { get; set; } Property Value Type Description IngameUI SaveData Declaration public GameSaveData SaveData { get; } Property Value Type Description GameSaveData Settings Declaration public GameSettings Settings { get; } Property Value Type Description GameSettings Methods CreateSaveData() Declaration protected virtual GameSaveData CreateSaveData() Returns Type Description GameSaveData DestroySaveData(GameSaveData) Declaration protected virtual void DestroySaveData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData LoadScene(SceneRef, Boolean, Game.SceneLoadEvent) Declaration public static void LoadScene(SceneRef sceneRef, bool additive, Game.SceneLoadEvent onSceneLoaded = null) Parameters Type Name Description SceneRef sceneRef Boolean additive Game.SceneLoadEvent onSceneLoaded LoadScene(String, Boolean, Game.SceneLoadEvent) Declaration public static void LoadScene(string sceneName, bool additive, Game.SceneLoadEvent onSceneLoaded = null) Parameters Type Name Description String sceneName Boolean additive Game.SceneLoadEvent onSceneLoaded Quit() Quit the game. Declaration public static void Quit() QuitToMenu() Quit the game and return back to main menu. Declaration public static void QuitToMenu() SaveCurrentSaveData() Declaration protected virtual void SaveCurrentSaveData() StartNewGame(SceneRef) Starts a new game session by creating save data and loading the first in-game scene. Declaration public static void StartNewGame(SceneRef sceneRef) Parameters Type Name Description SceneRef sceneRef Scene to load. Events OnBeginLoadScene Declaration public static event Game.BeginLoadSceneEvent OnBeginLoadScene Event Type Type Description Game.BeginLoadSceneEvent"
+  },
+  "api/StoryFramework.Game.SceneLoadEvent.html": {
+    "href": "api/StoryFramework.Game.SceneLoadEvent.html",
+    "title": "Delegate Game.SceneLoadEvent | MoxieJam story framework documentation",
+    "keywords": "Delegate Game.SceneLoadEvent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void SceneLoadEvent(string sceneName); Parameters Type Name Description String sceneName"
+  },
+  "api/StoryFramework.GameSaveData.html": {
+    "href": "api/StoryFramework.GameSaveData.html",
+    "title": "Class GameSaveData | MoxieJam story framework documentation",
+    "keywords": "Class GameSaveData Holds the currently active games persistent state. Inheritance Object GameSaveData Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class GameSaveData : IDisposable Constructors GameSaveData() Constructs a new save data. Declaration public GameSaveData() Properties Inventory Inventory data. Declaration public Inventory Inventory { get; set; } Property Value Type Description Inventory Methods AddStateChangedListener(String, String, UnityAction<GameSaveData>) Declaration public void AddStateChangedListener(string id, string property, UnityAction<GameSaveData> onStateChanged) Parameters Type Name Description String id String property UnityAction < GameSaveData > onStateChanged AddStateChangedListener<T>(T, String, UnityAction<GameSaveData>) Declaration public void AddStateChangedListener<T>(T dataContainer, string property, UnityAction<GameSaveData> onStateChanged) where T : MonoBehaviour, IPersistentComponent Parameters Type Name Description T dataContainer String property UnityAction < GameSaveData > onStateChanged Type Parameters Name Description T ContainsState<TValue>(String) Declaration public bool ContainsState<TValue>(string id) where TValue : IEquatable<TValue> Parameters Type Name Description String id Returns Type Description Boolean Type Parameters Name Description TValue Dispose() Cleans up the save data resources. Declaration public void Dispose() Dispose(Boolean) Declaration protected virtual void Dispose(bool disposing) Parameters Type Name Description Boolean disposing GetGlobalState<TValue>(String, String, Boolean, TValue) Gets a global state. Useful for cross-scene states. Declaration public GameStateValue<TValue> GetGlobalState<TValue>(string id, string property, bool createIfNeeded = false, TValue defaultValue = null) where TValue : IEquatable<TValue> Parameters Type Name Description String id State identifier String property Property on object with id Boolean createIfNeeded Create the state if it doesn't exist. TValue defaultValue Default value if state is crated. Returns Type Description GameStateValue <TValue> Current state value Type Parameters Name Description TValue GetGlobalStateBool(String) Gets a global state. Useful for cross-scene states. Declaration public bool GetGlobalStateBool(string id) Parameters Type Name Description String id State identifier Returns Type Description Boolean Current state value GetGlobalStateBool(String, String) Gets a global state. Useful for cross-scene states. Declaration public bool GetGlobalStateBool(string id, string property) Parameters Type Name Description String id State identifier String property Property on object with id Returns Type Description Boolean Current state value GetGlobalStateFloat(String) Gets a global state. Useful for cross-scene states. Declaration public float GetGlobalStateFloat(string id) Parameters Type Name Description String id State identifier Returns Type Description Single Current state value GetGlobalStateFloat(String, String) Gets a global state. Useful for cross-scene states. Declaration public float GetGlobalStateFloat(string id, string property) Parameters Type Name Description String id State identifier String property Property on object with id Returns Type Description Single Current state value GetGlobalStateInt(String) Gets a global state. Useful for cross-scene states. Declaration public int GetGlobalStateInt(string id) Parameters Type Name Description String id State identifier Returns Type Description Int32 Current state value GetGlobalStateInt(String, String) Gets a global state. Useful for cross-scene states. Declaration public int GetGlobalStateInt(string id, string property) Parameters Type Name Description String id State identifier String property Property on object with id Returns Type Description Int32 Current state value GetGlobalStateString(String) Gets a global state. Useful for cross-scene states. Declaration public string GetGlobalStateString(string id) Parameters Type Name Description String id State identifier Returns Type Description String Current state value GetGlobalStateString(String, String) Gets a global state. Useful for cross-scene states. Declaration public string GetGlobalStateString(string id, string property) Parameters Type Name Description String id State identifier String property Property on object with id Returns Type Description String Current state value GetState<T, TValue>(T, String, TValue) Retrieves the value state of a data container. Declaration public GameStateValue<TValue> GetState<T, TValue>(T dataContainer, string property, TValue defaultValue) where T : MonoBehaviour, IPersistentComponent where TValue : IEquatable<TValue> Parameters Type Name Description T dataContainer Owner of the data String property Identifier for the value TValue defaultValue Default value if none exist yet. Returns Type Description GameStateValue <TValue> Current state Type Parameters Name Description T TValue InvokeStateUpdated<TValue>(String) Declaration public void InvokeStateUpdated<TValue>(string id) Parameters Type Name Description String id Type Parameters Name Description TValue RemoveStateChangedListener(String, String, UnityAction<GameSaveData>) Declaration public void RemoveStateChangedListener(string id, string property, UnityAction<GameSaveData> onStateChanged) Parameters Type Name Description String id String property UnityAction < GameSaveData > onStateChanged RemoveStateChangedListener<T>(T, String, UnityAction<GameSaveData>) Declaration public void RemoveStateChangedListener<T>(T dataContainer, string property, UnityAction<GameSaveData> onStateChanged) where T : MonoBehaviour, IPersistentComponent Parameters Type Name Description T dataContainer String property UnityAction < GameSaveData > onStateChanged Type Parameters Name Description T Save() Declaration public void Save() SetGlobalState(String, Boolean) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, bool value) Parameters Type Name Description String id State identifier Boolean value State value SetGlobalState(String, Int32) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, int value) Parameters Type Name Description String id State identifier Int32 value State value SetGlobalState(String, Single) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, float value) Parameters Type Name Description String id State identifier Single value State value SetGlobalState(String, String) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, string value) Parameters Type Name Description String id State identifier String value State value SetGlobalState(String, String, Boolean) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, string property, bool value) Parameters Type Name Description String id State identifier String property Property on object with id Boolean value State value SetGlobalState(String, String, Int32) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, string property, int value) Parameters Type Name Description String id State identifier String property Property on object with id Int32 value State value SetGlobalState(String, String, Single) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, string property, float value) Parameters Type Name Description String id State identifier String property Property on object with id Single value State value SetGlobalState(String, String, String) Sets a global state. Useful for cross-scene states. Declaration public void SetGlobalState(string id, string property, string value) Parameters Type Name Description String id State identifier String property Property on object with id String value State value SetState<T, TValue>(T, String, TValue) Stores the value state of a data container. Declaration public void SetState<T, TValue>(T dataContainer, string key, TValue value) where T : MonoBehaviour, IPersistentComponent where TValue : IEquatable<TValue> Parameters Type Name Description T dataContainer Owner of the data String key Identifier for the value TValue value Value to set Type Parameters Name Description T TValue Events OnStateBoolUpdated Declaration public event GameSaveData.StateBoolUpdatedDelegate OnStateBoolUpdated Event Type Type Description GameSaveData.StateBoolUpdatedDelegate OnStateFloatUpdated Declaration public event GameSaveData.StateFloatUpdatedDelegate OnStateFloatUpdated Event Type Type Description GameSaveData.StateFloatUpdatedDelegate OnStateIntUpdated Declaration public event GameSaveData.StateIntUpdatedDelegate OnStateIntUpdated Event Type Type Description GameSaveData.StateIntUpdatedDelegate OnStateStringUpdated Declaration public event GameSaveData.StateStringUpdatedDelegate OnStateStringUpdated Event Type Type Description GameSaveData.StateStringUpdatedDelegate"
+  },
+  "api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.html": {
+    "href": "api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.html",
+    "title": "Delegate GameSaveData.StateBoolUpdatedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate GameSaveData.StateBoolUpdatedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void StateBoolUpdatedDelegate(string id); Parameters Type Name Description String id"
+  },
+  "api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.html": {
+    "href": "api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.html",
+    "title": "Delegate GameSaveData.StateFloatUpdatedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate GameSaveData.StateFloatUpdatedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void StateFloatUpdatedDelegate(string id); Parameters Type Name Description String id"
+  },
+  "api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.html": {
+    "href": "api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.html",
+    "title": "Delegate GameSaveData.StateIntUpdatedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate GameSaveData.StateIntUpdatedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void StateIntUpdatedDelegate(string id); Parameters Type Name Description String id"
+  },
+  "api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.html": {
+    "href": "api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.html",
+    "title": "Delegate GameSaveData.StateStringUpdatedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate GameSaveData.StateStringUpdatedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void StateStringUpdatedDelegate(string id); Parameters Type Name Description String id"
+  },
+  "api/StoryFramework.GameSettings.html": {
+    "href": "api/StoryFramework.GameSettings.html",
+    "title": "Class GameSettings | MoxieJam story framework documentation",
+    "keywords": "Class GameSettings Inheritance Object GameSettings Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class GameSettings : ScriptableObject Fields StartScene Declaration public SceneRef StartScene Field Value Type Description SceneRef"
+  },
+  "api/StoryFramework.GameStateValue-1.html": {
+    "href": "api/StoryFramework.GameStateValue-1.html",
+    "title": "Class GameStateValue<TValue> | MoxieJam story framework documentation",
+    "keywords": "Class GameStateValue<TValue> Inheritance Object GameStateValue<TValue> Implements IGameStateValue Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class GameStateValue<TValue> : IGameStateValue where TValue : IEquatable<TValue> Type Parameters Name Description TValue Constructors GameStateValue() Declaration public GameStateValue() GameStateValue(String, TValue) Declaration public GameStateValue(string identifier, TValue defaultValue) Parameters Type Name Description String identifier TValue defaultValue Properties Identifier Declaration public string Identifier { get; } Property Value Type Description String Value Declaration public TValue Value { get; set; } Property Value Type Description TValue Events OnValueModified Declaration public event GameStateValueModifiedDelegate OnValueModified Event Type Type Description GameStateValueModifiedDelegate Operators Implicit(GameStateValue<TValue> to TValue) Declaration public static implicit operator TValue(GameStateValue<TValue> gameStateValue) Parameters Type Name Description GameStateValue <TValue> gameStateValue Returns Type Description TValue Implements IGameStateValue"
+  },
+  "api/StoryFramework.GameStateValueModifiedDelegate.html": {
+    "href": "api/StoryFramework.GameStateValueModifiedDelegate.html",
+    "title": "Delegate GameStateValueModifiedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate GameStateValueModifiedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void GameStateValueModifiedDelegate();"
+  },
+  "api/StoryFramework.html": {
+    "href": "api/StoryFramework.html",
+    "title": "Namespace StoryFramework | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework Root namespace for the Story Framework. Contains functionality for aiding in creation of point-and-click type of games. Classes ClickItem Invoke a event with the specified item when mouse clicks a object. CursorHandler Dialogue Dialogue handler. DropItemTarget Game GameSaveData Holds the currently active games persistent state. GameSettings GameStateValue<TValue> InGameScene IngameUI InteractableItem A composite component, adding multiple functionality for standard scenario. Handles basic interaction of clicking, hoovering, picking up and displaying description. Inventory Inventory.ItemRecord A record of a item in the inventory. Contains a reference to the item and meta data such as amount of the item in the inventory. InventoryItem A representation of an item in the game. InventoryItemSlot A graphical \"slot\" for a inventory item used by the inventory view to display the inventory items. InventoryView A UI element to help with rendering the inventory inside the UI. Uses InventoryItemSlot to render the items. InventoryViewFixedSize A version of inventory view with a fixed number of slots. LockableObject Adds functionality for locking/unlocking this object. A lockable object have a locked state and events for locking/unlocking and using. MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. PersistentObject Adds persistence to the object. The component will save the Active state of the game object and apply it on loading of the scene. SceneLoader A utility for loading a new scene. SceneRefAttribute ShowDescriptionOnClick Shows a descriptive text when mouse clicks the object. ShowDescriptionOnMouseOver Shows a descriptive text when mouse is over the object. Structs SceneRef Interfaces IGameStateValue IPersistentComponent Delegates CursorHandler.ItemDroppedEvent Game.BeginLoadSceneEvent Game.SceneLoadEvent GameSaveData.StateBoolUpdatedDelegate GameSaveData.StateFloatUpdatedDelegate GameSaveData.StateIntUpdatedDelegate GameSaveData.StateStringUpdatedDelegate GameStateValueModifiedDelegate Inventory.InventoryItemDelegate Inventory.InventoryUpdatedDelegate"
+  },
+  "api/StoryFramework.IGameStateValue.html": {
+    "href": "api/StoryFramework.IGameStateValue.html",
+    "title": "Interface IGameStateValue | MoxieJam story framework documentation",
+    "keywords": "Interface IGameStateValue Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public interface IGameStateValue Properties Identifier Declaration string Identifier { get; } Property Value Type Description String"
+  },
+  "api/StoryFramework.InGameScene.html": {
+    "href": "api/StoryFramework.InGameScene.html",
+    "title": "Class InGameScene | MoxieJam story framework documentation",
+    "keywords": "Class InGameScene Inheritance Object InGameScene Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InGameScene : MonoBehaviour"
+  },
+  "api/StoryFramework.IngameUI.html": {
+    "href": "api/StoryFramework.IngameUI.html",
+    "title": "Class IngameUI | MoxieJam story framework documentation",
+    "keywords": "Class IngameUI Inheritance Object IngameUI Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class IngameUI : MonoBehaviour Properties CursorHandler Declaration public CursorHandler CursorHandler { get; } Property Value Type Description CursorHandler"
+  },
+  "api/StoryFramework.InteractableItem.html": {
+    "href": "api/StoryFramework.InteractableItem.html",
+    "title": "Class InteractableItem | MoxieJam story framework documentation",
+    "keywords": "Class InteractableItem A composite component, adding multiple functionality for standard scenario. Handles basic interaction of clicking, hoovering, picking up and displaying description. Inheritance Object InteractableItem Implements IPersistentComponent IPointerEnterHandler IPointerExitHandler IPointerClickHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InteractableItem : MonoBehaviour, IPersistentComponent Fields PickedUpStateId Declaration public const string PickedUpStateId = \"InteractableItem_IsPickedUp\" Field Value Type Description String Methods EnableDescription(Boolean) Enables displaying of the items description. Declaration public void EnableDescription(bool enabled) Parameters Type Name Description Boolean enabled EnablePickUp(Boolean) Enables picking up the item. Declaration public void EnablePickUp(bool enabled) Parameters Type Name Description Boolean enabled LoadPersistentData(GameSaveData) Declaration public void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData OnPointerClick(PointerEventData) Handel pointer clicking. Depending o settings, it can show description, pick up an item or just call a StoryFramework.InteractableItem.onMouseClick . Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerEnter(PointerEventData) Handel hoover start. Depending o settings, it can show description or just call a StoryFramework.InteractableItem.onMouseEnter . Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Handel hoover exit. Depending o settings, it can clear description or just call a StoryFramework.InteractableItem.onMouseExit . Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData PickUp() Picks up the item (add it to the inventory). Will call StoryFramework.InteractableItem.onPickUp . Declaration public void PickUp() SavePersistentData(GameSaveData) Declaration public void SavePersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData ShowDescription() Display the description in the dialogue. Declaration public void ShowDescription() Implements IPersistentComponent IPointerEnterHandler IPointerExitHandler IPointerClickHandler"
+  },
+  "api/StoryFramework.Inventory.html": {
+    "href": "api/StoryFramework.Inventory.html",
+    "title": "Class Inventory | MoxieJam story framework documentation",
+    "keywords": "Class Inventory Inheritance Object Inventory Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax [Serializable] public class Inventory Properties Count Number of item records in inventory. Declaration public int Count { get; } Property Value Type Description Int32 Items Active items in the inventory. Declaration public IEnumerable<Inventory.ItemRecord> Items { get; } Property Value Type Description IEnumerable < Inventory.ItemRecord > Methods Add(InventoryItem) Add am item to the inventory, Declaration public void Add(InventoryItem item) Parameters Type Name Description InventoryItem item Item to add. Clear() Clears the inventory. Declaration public void Clear() Contains(InventoryItem) Test if the inventory contains the specified item. Declaration public bool Contains(InventoryItem item) Parameters Type Name Description InventoryItem item Returns Type Description Boolean Disable(InventoryItem) Declaration public void Disable(InventoryItem item) Parameters Type Name Description InventoryItem item Enable(InventoryItem) Declaration public void Enable(InventoryItem item) Parameters Type Name Description InventoryItem item Find(InventoryItem) Looks through the inventory for a item and returns the inventories record of the item (item and metadata such as amount in the inventory). Declaration public Inventory.ItemRecord Find(InventoryItem item) Parameters Type Name Description InventoryItem item Returns Type Description Inventory.ItemRecord Remove(InventoryItem, Int32) Removes an item from the inventory. Declaration public void Remove(InventoryItem item, int amount) Parameters Type Name Description InventoryItem item Item to remove. Int32 amount If we have more than one of the item, remove this amount of it. Events OnItemAdded Called when a item is added. Declaration public event Inventory.InventoryItemDelegate OnItemAdded Event Type Type Description Inventory.InventoryItemDelegate OnItemDisabled Called when a item is added. Declaration public event Inventory.InventoryItemDelegate OnItemDisabled Event Type Type Description Inventory.InventoryItemDelegate OnItemEnabled Called when a item is added. Declaration public event Inventory.InventoryItemDelegate OnItemEnabled Event Type Type Description Inventory.InventoryItemDelegate OnItemRemoved Called when a item is removed. Declaration public event Inventory.InventoryItemDelegate OnItemRemoved Event Type Type Description Inventory.InventoryItemDelegate OnUpdated Called when the inventory is updated (item added, removed, enabled, disabled, sorted). Declaration public event Inventory.InventoryUpdatedDelegate OnUpdated Event Type Type Description Inventory.InventoryUpdatedDelegate"
+  },
+  "api/StoryFramework.Inventory.InventoryItemDelegate.html": {
+    "href": "api/StoryFramework.Inventory.InventoryItemDelegate.html",
+    "title": "Delegate Inventory.InventoryItemDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate Inventory.InventoryItemDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void InventoryItemDelegate(InventoryItem item); Parameters Type Name Description InventoryItem item"
+  },
+  "api/StoryFramework.Inventory.InventoryUpdatedDelegate.html": {
+    "href": "api/StoryFramework.Inventory.InventoryUpdatedDelegate.html",
+    "title": "Delegate Inventory.InventoryUpdatedDelegate | MoxieJam story framework documentation",
+    "keywords": "Delegate Inventory.InventoryUpdatedDelegate Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public delegate void InventoryUpdatedDelegate();"
+  },
+  "api/StoryFramework.Inventory.ItemRecord.html": {
+    "href": "api/StoryFramework.Inventory.ItemRecord.html",
+    "title": "Class Inventory.ItemRecord | MoxieJam story framework documentation",
+    "keywords": "Class Inventory.ItemRecord A record of a item in the inventory. Contains a reference to the item and meta data such as amount of the item in the inventory. Inheritance Object Inventory.ItemRecord Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax [Serializable] public class ItemRecord Fields Amount Declaration public int Amount Field Value Type Description Int32 Enabled Declaration public bool Enabled Field Value Type Description Boolean Item Declaration public InventoryItem Item Field Value Type Description InventoryItem"
+  },
+  "api/StoryFramework.InventoryItem.html": {
+    "href": "api/StoryFramework.InventoryItem.html",
+    "title": "Class InventoryItem | MoxieJam story framework documentation",
+    "keywords": "Class InventoryItem A representation of an item in the game. Inheritance Object InventoryItem Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InventoryItem : ScriptableObject Fields Description This text is displayed in the dialogue text field. Declaration public string Description Field Value Type Description String Icon Image to display in the inventory view. Declaration public Sprite Icon Field Value Type Description Sprite Name The name of the item. Declaration public string Name Field Value Type Description String"
+  },
+  "api/StoryFramework.InventoryItemSlot.html": {
+    "href": "api/StoryFramework.InventoryItemSlot.html",
+    "title": "Class InventoryItemSlot | MoxieJam story framework documentation",
+    "keywords": "Class InventoryItemSlot A graphical \"slot\" for a inventory item used by the inventory view to display the inventory items. Inheritance Object InventoryItemSlot Implements IPointerClickHandler IBeginDragHandler IDragHandler IEndDragHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InventoryItemSlot : Selectable Methods Initialize(IngameUI, InventoryItem, Int32) Declaration public void Initialize(IngameUI ui, InventoryItem item, int itemAmount) Parameters Type Name Description IngameUI ui InventoryItem item Int32 itemAmount OnBeginDrag(PointerEventData) Declaration public void OnBeginDrag(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnDisable() Declaration protected override void OnDisable() OnDrag(PointerEventData) Declaration public void OnDrag(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnEnable() Declaration protected override void OnEnable() OnEndDrag(PointerEventData) Declaration public void OnEndDrag(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerClick(PointerEventData) Declaration public virtual void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerEnter(PointerEventData) Declaration public override void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public override void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerClickHandler IBeginDragHandler IDragHandler IEndDragHandler"
+  },
+  "api/StoryFramework.InventoryView.html": {
+    "href": "api/StoryFramework.InventoryView.html",
+    "title": "Class InventoryView | MoxieJam story framework documentation",
+    "keywords": "Class InventoryView A UI element to help with rendering the inventory inside the UI. Uses InventoryItemSlot to render the items. Inheritance Object InventoryView Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InventoryView : MonoBehaviour"
+  },
+  "api/StoryFramework.InventoryViewFixedSize.html": {
+    "href": "api/StoryFramework.InventoryViewFixedSize.html",
+    "title": "Class InventoryViewFixedSize | MoxieJam story framework documentation",
+    "keywords": "Class InventoryViewFixedSize A version of inventory view with a fixed number of slots. Inheritance Object InventoryViewFixedSize Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class InventoryViewFixedSize : MonoBehaviour Methods ShowNextItem() Show next item in inventory. Declaration public void ShowNextItem() ShowPreviousItem() Show previous item in inventory. Declaration public void ShowPreviousItem()"
+  },
+  "api/StoryFramework.IPersistentComponent.html": {
+    "href": "api/StoryFramework.IPersistentComponent.html",
+    "title": "Interface IPersistentComponent | MoxieJam story framework documentation",
+    "keywords": "Interface IPersistentComponent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public interface IPersistentComponent Methods LoadPersistentData(GameSaveData) Declaration void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData SavePersistentData(GameSaveData) Declaration void SavePersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData"
+  },
+  "api/StoryFramework.LockableObject.html": {
+    "href": "api/StoryFramework.LockableObject.html",
+    "title": "Class LockableObject | MoxieJam story framework documentation",
+    "keywords": "Class LockableObject Adds functionality for locking/unlocking this object. A lockable object have a locked state and events for locking/unlocking and using. Inheritance Object LockableObject Implements IPersistentComponent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class LockableObject : MonoBehaviour, IPersistentComponent Fields IsLocked Is object locked or not? Declaration [NonSerialized] public GameStateValue<bool> IsLocked Field Value Type Description GameStateValue < Boolean > LockedStateId Declaration public const string LockedStateId = \"LockableObject_IsLocked\" Field Value Type Description String Methods LoadPersistentData(GameSaveData) Declaration public void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData Lock() Sets the object as locked. Declaration public void Lock() SavePersistentData(GameSaveData) Declaration public void SavePersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData Start() Declaration public void Start() Unlock() Sets the object as unlocked. Declaration public void Unlock() Use() Try to use the locked object. Will call the StoryFramework.LockableObject.onUseLocked event if object is locked. Otherwise it will call the StoryFramework.LockableObject.onUseUnlocked event if object is unlocked. Declaration public void Use() Implements IPersistentComponent"
+  },
+  "api/StoryFramework.MouseOverItem.html": {
+    "href": "api/StoryFramework.MouseOverItem.html",
+    "title": "Class MouseOverItem | MoxieJam story framework documentation",
+    "keywords": "Class MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. Inheritance Object MouseOverItem Implements IPointerEnterHandler IPointerExitHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class MouseOverItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
+  },
+  "api/StoryFramework.PersistentObject.html": {
+    "href": "api/StoryFramework.PersistentObject.html",
+    "title": "Class PersistentObject | MoxieJam story framework documentation",
+    "keywords": "Class PersistentObject Adds persistence to the object. The component will save the Active state of the game object and apply it on loading of the scene. Inheritance Object PersistentObject Implements IPersistentComponent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class PersistentObject : GuidComponent, IPersistentComponent Fields IsActiveStateId Declaration public const string IsActiveStateId = \"PersistentObject_IsActive\" Field Value Type Description String Properties HasCustomIdentifier Declaration public bool HasCustomIdentifier { get; } Property Value Type Description Boolean Identifier Declaration public string Identifier { get; } Property Value Type Description String Methods LoadPersistentData(GameSaveData) Declaration public void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData OnDestroy() Declaration protected override void OnDestroy() SavePersistentData(GameSaveData) Declaration public void SavePersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData Implements IPersistentComponent"
+  },
+  "api/StoryFramework.SceneLoader.html": {
+    "href": "api/StoryFramework.SceneLoader.html",
+    "title": "Class SceneLoader | MoxieJam story framework documentation",
+    "keywords": "Class SceneLoader A utility for loading a new scene. Inheritance Object SceneLoader Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class SceneLoader : MonoBehaviour Methods LoadScene() Starts loading the scene. Declaration public void LoadScene() LoadScene(String) Starts loading a scene. Declaration public void LoadScene(string sceneName) Parameters Type Name Description String sceneName Name of the scene to load"
+  },
+  "api/StoryFramework.SceneRef.html": {
+    "href": "api/StoryFramework.SceneRef.html",
+    "title": "Struct SceneRef | MoxieJam story framework documentation",
+    "keywords": "Struct SceneRef Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax [Serializable] public struct SceneRef Fields sceneName Declaration public string sceneName Field Value Type Description String"
+  },
+  "api/StoryFramework.SceneRefAttribute.html": {
+    "href": "api/StoryFramework.SceneRefAttribute.html",
+    "title": "Class SceneRefAttribute | MoxieJam story framework documentation",
+    "keywords": "Class SceneRefAttribute Inheritance Object SceneRefAttribute Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class SceneRefAttribute : PropertyAttribute"
+  },
+  "api/StoryFramework.ShowDescriptionOnClick.html": {
+    "href": "api/StoryFramework.ShowDescriptionOnClick.html",
+    "title": "Class ShowDescriptionOnClick | MoxieJam story framework documentation",
+    "keywords": "Class ShowDescriptionOnClick Shows a descriptive text when mouse clicks the object. Inheritance Object ShowDescriptionOnClick Implements IPointerClickHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class ShowDescriptionOnClick : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerClick(PointerEventData) Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerClickHandler"
+  },
+  "api/StoryFramework.ShowDescriptionOnMouseOver.html": {
+    "href": "api/StoryFramework.ShowDescriptionOnMouseOver.html",
+    "title": "Class ShowDescriptionOnMouseOver | MoxieJam story framework documentation",
+    "keywords": "Class ShowDescriptionOnMouseOver Shows a descriptive text when mouse is over the object. Inheritance Object ShowDescriptionOnMouseOver Implements IPointerEnterHandler IPointerExitHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class ShowDescriptionOnMouseOver : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
+  },
+  "api/StoryFramework.Utilities.ActiveStateSetter.html": {
+    "href": "api/StoryFramework.Utilities.ActiveStateSetter.html",
+    "title": "Class ActiveStateSetter | MoxieJam story framework documentation",
+    "keywords": "Class ActiveStateSetter A utility for setting a active state on persistent objects. Inheritance Object ActiveStateSetter Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class ActiveStateSetter : MonoBehaviour Methods SetActive(Boolean) Sets the active state value. Declaration public void SetActive(bool value) Parameters Type Name Description Boolean value"
+  },
+  "api/StoryFramework.Utilities.DialogueUtility.html": {
+    "href": "api/StoryFramework.Utilities.DialogueUtility.html",
+    "title": "Class DialogueUtility | MoxieJam story framework documentation",
+    "keywords": "Class DialogueUtility Utility for modifying the dialogue. Inheritance Object DialogueUtility Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class DialogueUtility : MonoBehaviour Methods AddToDialogue(String) Appends text to the currently active dialogue. Declaration public void AddToDialogue(string text) Parameters Type Name Description String text ClearDialogue() Clears the currently active dialogue. Declaration public void ClearDialogue() SetActiveDialogue(Dialogue) Sets the specified dialogue as the currently active dialogue that handles text. Declaration public void SetActiveDialogue(Dialogue dialogue) Parameters Type Name Description Dialogue dialogue Dialogue to use. SetDialogue(String) Set the text of the currently active dialogue. Declaration public void SetDialogue(string text) Parameters Type Name Description String text"
+  },
+  "api/StoryFramework.Utilities.GameStateSetter.html": {
+    "href": "api/StoryFramework.Utilities.GameStateSetter.html",
+    "title": "Class GameStateSetter | MoxieJam story framework documentation",
+    "keywords": "Class GameStateSetter A utility for setting a global game state. Inheritance Object GameStateSetter Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class GameStateSetter : MonoBehaviour Methods SetState() Sets the save state value. Declaration public void SetState()"
+  },
+  "api/StoryFramework.Utilities.GameStateSetter.Types.html": {
+    "href": "api/StoryFramework.Utilities.GameStateSetter.Types.html",
+    "title": "Enum GameStateSetter.Types | MoxieJam story framework documentation",
+    "keywords": "Enum GameStateSetter.Types Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public enum Types Fields Name Description Bool Float Int String"
+  },
+  "api/StoryFramework.Utilities.GameUtility.html": {
+    "href": "api/StoryFramework.Utilities.GameUtility.html",
+    "title": "Class GameUtility | MoxieJam story framework documentation",
+    "keywords": "Class GameUtility A general utility for controlling the game. Inheritance Object GameUtility Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class GameUtility : MonoBehaviour Methods QuitGame() Quits the game. Declaration public void QuitGame() QuitToMenu() Quits the current gaming session and return to main menu. Declaration public void QuitToMenu()"
+  },
+  "api/StoryFramework.Utilities.html": {
+    "href": "api/StoryFramework.Utilities.html",
+    "title": "Namespace StoryFramework.Utilities | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Utilities Classes ActiveStateSetter A utility for setting a active state on persistent objects. DialogueUtility Utility for modifying the dialogue. GameStateSetter A utility for setting a global game state. GameUtility A general utility for controlling the game. LockableStateSetter A utility for setting a locks state. ScrollRectUtility SetDialogueText Utility for setting dialogue texts. Enums GameStateSetter.Types LockableStateSetter.LockStates"
+  },
+  "api/StoryFramework.Utilities.LockableStateSetter.html": {
+    "href": "api/StoryFramework.Utilities.LockableStateSetter.html",
+    "title": "Class LockableStateSetter | MoxieJam story framework documentation",
+    "keywords": "Class LockableStateSetter A utility for setting a locks state. Inheritance Object LockableStateSetter Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class LockableStateSetter : MonoBehaviour Methods Lock() Set the state to locked. Declaration public void Lock() SetState(LockableStateSetter.LockStates) Sets the save state value. Declaration public void SetState(LockableStateSetter.LockStates value) Parameters Type Name Description LockableStateSetter.LockStates value Unlock() Set the state to locked. Declaration public void Unlock()"
+  },
+  "api/StoryFramework.Utilities.LockableStateSetter.LockStates.html": {
+    "href": "api/StoryFramework.Utilities.LockableStateSetter.LockStates.html",
+    "title": "Enum LockableStateSetter.LockStates | MoxieJam story framework documentation",
+    "keywords": "Enum LockableStateSetter.LockStates Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax [Serializable] public enum LockStates Fields Name Description Locked Unlocked"
+  },
+  "api/StoryFramework.Utilities.ScrollRectUtility.html": {
+    "href": "api/StoryFramework.Utilities.ScrollRectUtility.html",
+    "title": "Class ScrollRectUtility | MoxieJam story framework documentation",
+    "keywords": "Class ScrollRectUtility Inheritance Object ScrollRectUtility Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class ScrollRectUtility : MonoBehaviour Methods ScrollDown() Declaration public void ScrollDown() ScrollLeft() Declaration public void ScrollLeft() ScrollRight() Declaration public void ScrollRight() ScrollUp() Declaration public void ScrollUp()"
+  },
+  "api/StoryFramework.Utilities.SetDialogueText.html": {
+    "href": "api/StoryFramework.Utilities.SetDialogueText.html",
+    "title": "Class SetDialogueText | MoxieJam story framework documentation",
+    "keywords": "Class SetDialogueText Utility for setting dialogue texts. Inheritance Object SetDialogueText Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class SetDialogueText : MonoBehaviour Methods SetText(String) Declaration public void SetText(string dialogueText) Parameters Type Name Description String dialogueText"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "MoxieJam Story Framework | MoxieJam story framework documentation",
+    "keywords": "MoxieJam Story Framework The MoxieJam story framework contains a collection of components and tools to aid in creation of story based point-and-click games for the MoxieJam game jam. Create a interactable item The easiest way to create a interactable item is to right click in the hierarchy window and in the menu select: MoxieJam->StoryFramework->Create Interactable Item A new window will now open with settings for the interactable item: Name of the game object What image to use Weather it's possible to pick up the item or not. A Inventory Item to associate with this object. This is the actual item that will be picked up in to the inventory. If you have not created the Inventory Item before hand, you can press Create Item to create one now. Once you are satisfied with your settings you click Create and it will be available in the scene. If you have changed your mind about creating the object just click cancel. You have now created a interactable item, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the intractable item you just created: Transform decided where to place the object in the scene. You can also use it to rotate or change the size of the object. Create a target to drop an item on"
+  },
+  "manual/README.html": {
+    "href": "manual/README.html",
+    "title": "README | MoxieJam story framework documentation",
+    "keywords": "README Readme"
+  }
+}
