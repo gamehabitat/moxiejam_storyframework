@@ -1,2 +1,4 @@
 - name: README.md
   href: README.md
+- name: install.md
+  href: install.md
