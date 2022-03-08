@@ -899,12 +899,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manual/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/install.html",
+          "hash": "6We9sh57O3424V/cWvd3l4LZRhs7XKl5N0WfGK/vAQU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "kXvghWo6golAjasleW6+UKwuG9NmOTl08T498Efukfg="
+          "hash": "fC7cltknNqIxKACyyBwDpbsj/8DIbdRL6T5Wo7zpfvE="
         }
       },
       "is_incremental": false,
@@ -955,6 +967,138 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/AddScenes.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/AddScenes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/BuildSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/BuildSettings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/ImportTMP.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/ImportTMP.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/NewProject.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/NewProject.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/NewProject2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/NewProject2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/SampleImported.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/SampleImported.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/ScenesAdded.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/ScenesAdded.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/Unity1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/Unity1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/UnityAddPackage1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/UnityAddPackage1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/UnityAddPackage2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/UnityAddPackage2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/UnityAddPackage3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/UnityAddPackage3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/UnityAddPackage4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/UnityAddPackage4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -981,7 +1125,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
