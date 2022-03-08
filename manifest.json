@@ -904,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/install.html",
-          "hash": "duRUwLvwmbPYrH9cM+tVxvdAX741fvqvhR2LIJjMLvU="
+          "hash": "MlWQrwmYlNhgOO1L1htBS0rxyEIpbx3YRBf5RZ8+xgA="
         }
       },
       "is_incremental": false,
@@ -994,6 +994,28 @@
       "output": {
         "resource": {
           "relative_path": "resources/images/install/ImportTMP.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/ImportTMP2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/ImportTMP2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/install/ImportTMP3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/install/ImportTMP3.png"
         }
       },
       "is_incremental": false,
