@@ -384,59 +384,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.html",
-          "hash": "/QVBhMG5IpYRREyRTcFLGC+SMnzUCumiYhQ6QA7WTSo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.html",
-          "hash": "gYHvg1A2D1jLQ7EqvjWyLKpZ2d9k0dBaSmNdOhRPNSU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.html",
-          "hash": "xGp6Q5SZ2tpPJAyJj0LRPxQKEerqkFQkEBWs10WC9V8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.html",
-          "hash": "KfS25RKT8EEuWQU6W++XSDPI/DwMDi0QYebOsp2c3Ug="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.GameSaveData.yml",
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.GameSaveData.html",
-          "hash": "EkyOvTndGPi4HDizX0UDwyeBBhXLfiaiZNWFj86dju0="
+          "hash": "VlIB19Htu36k6iWWGbfG406CTa0wIuNFMRCaGRPsHsQ="
         }
       },
       "is_incremental": false,
@@ -496,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.IPersistentComponent.html",
-          "hash": "fUs2dKaDJvY2cpn1A5WzxdpK/DDNTvCNMnH1GfLZK58="
+          "hash": "WAUX3pDzgB475JFb/7taCr+MmWmWhih5GPSsgzcybhQ="
         }
       },
       "is_incremental": false,
@@ -532,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.InteractableItem.html",
-          "hash": "CyrgbqqXMWnP6q6c2IWpp0QFfNuCElb9rx4Lp6DD6AI="
+          "hash": "8Fth9YQA6o8ihSJvQ/8fczj9Jz6jGA7byGh7yLn7OJo="
         }
       },
       "is_incremental": false,
@@ -640,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.LockableObject.html",
-          "hash": "1VjP5P2LOpAYfPO85Gh+0IX4KpqNPOmFQXz5L7zeWFI="
+          "hash": "Un6gHeQvdNU8RxuITuNqNLudONyBUXRpG/oU0gL91ik="
         }
       },
       "is_incremental": false,
@@ -664,7 +616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.PersistentObject.html",
-          "hash": "t/8nzPUfbddZLijetKV2ocKmnmMkT0eEyk8oPKoicAU="
+          "hash": "PL6tKevOM/v+242tNnT0GtGGfrO0yJ2Aij4Oef6uxnQ="
         }
       },
       "is_incremental": false,
@@ -856,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.html",
-          "hash": "osgTkSXBuDV0JZz3OSISNg7M3crDo33gDyRCKCHZB+s="
+          "hash": "Qv8rP8Ii3PakgGXPLlk8o5pUsPDaxDDbgFhX7f7XKfw="
         }
       },
       "is_incremental": false,
@@ -868,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gXY+/JynsOvUEO/4NbJ0Dj3v2pqWrY2qwM0ZHxhQzEU="
+          "hash": "rKR00JBELqY++lPLRykHaWk/VV2UZPXwn8P05w1UIHQ="
         }
       },
       "is_incremental": false,
@@ -1153,7 +1105,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 72,
+          "total_file_count": 68,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -856,31 +856,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.GameSaveData.GameSaveData
   nameWithType: GameSaveData.GameSaveData
-- uid: StoryFramework.GameSaveData.AddStateChangedListener(System.String,System.String,UnityAction{StoryFramework.GameSaveData})
-  name: AddStateChangedListener(String, String, UnityAction<GameSaveData>)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_AddStateChangedListener_System_String_System_String_UnityAction_StoryFramework_GameSaveData__
-  commentId: M:StoryFramework.GameSaveData.AddStateChangedListener(System.String,System.String,UnityAction{StoryFramework.GameSaveData})
-  name.vb: AddStateChangedListener(String, String, UnityAction(Of GameSaveData))
-  fullName: StoryFramework.GameSaveData.AddStateChangedListener(System.String, System.String, UnityAction<StoryFramework.GameSaveData>)
-  fullName.vb: StoryFramework.GameSaveData.AddStateChangedListener(System.String, System.String, UnityAction(Of StoryFramework.GameSaveData))
-  nameWithType: GameSaveData.AddStateChangedListener(String, String, UnityAction<GameSaveData>)
-  nameWithType.vb: GameSaveData.AddStateChangedListener(String, String, UnityAction(Of GameSaveData))
-- uid: StoryFramework.GameSaveData.AddStateChangedListener*
-  name: AddStateChangedListener
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_AddStateChangedListener_
-  commentId: Overload:StoryFramework.GameSaveData.AddStateChangedListener
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.AddStateChangedListener
-  nameWithType: GameSaveData.AddStateChangedListener
-- uid: StoryFramework.GameSaveData.AddStateChangedListener``1(``0,System.String,UnityAction{StoryFramework.GameSaveData})
-  name: AddStateChangedListener<T>(T, String, UnityAction<GameSaveData>)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_AddStateChangedListener__1___0_System_String_UnityAction_StoryFramework_GameSaveData__
-  commentId: M:StoryFramework.GameSaveData.AddStateChangedListener``1(``0,System.String,UnityAction{StoryFramework.GameSaveData})
-  name.vb: AddStateChangedListener(Of T)(T, String, UnityAction(Of GameSaveData))
-  fullName: StoryFramework.GameSaveData.AddStateChangedListener<T>(T, System.String, UnityAction<StoryFramework.GameSaveData>)
-  fullName.vb: StoryFramework.GameSaveData.AddStateChangedListener(Of T)(T, System.String, UnityAction(Of StoryFramework.GameSaveData))
-  nameWithType: GameSaveData.AddStateChangedListener<T>(T, String, UnityAction<GameSaveData>)
-  nameWithType.vb: GameSaveData.AddStateChangedListener(Of T)(T, String, UnityAction(Of GameSaveData))
 - uid: StoryFramework.GameSaveData.ContainsState*
   name: ContainsState
   href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_ContainsState_
@@ -932,82 +907,6 @@ references:
   fullName.vb: StoryFramework.GameSaveData.GetGlobalState(Of TValue)(System.String, System.String, System.Boolean, TValue)
   nameWithType: GameSaveData.GetGlobalState<TValue>(String, String, Boolean, TValue)
   nameWithType.vb: GameSaveData.GetGlobalState(Of TValue)(String, String, Boolean, TValue)
-- uid: StoryFramework.GameSaveData.GetGlobalStateBool(System.String)
-  name: GetGlobalStateBool(String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateBool_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateBool(System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateBool(System.String)
-  nameWithType: GameSaveData.GetGlobalStateBool(String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateBool(System.String,System.String)
-  name: GetGlobalStateBool(String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateBool_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateBool(System.String,System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateBool(System.String, System.String)
-  nameWithType: GameSaveData.GetGlobalStateBool(String, String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateBool*
-  name: GetGlobalStateBool
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateBool_
-  commentId: Overload:StoryFramework.GameSaveData.GetGlobalStateBool
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.GetGlobalStateBool
-  nameWithType: GameSaveData.GetGlobalStateBool
-- uid: StoryFramework.GameSaveData.GetGlobalStateFloat(System.String)
-  name: GetGlobalStateFloat(String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateFloat_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateFloat(System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateFloat(System.String)
-  nameWithType: GameSaveData.GetGlobalStateFloat(String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateFloat(System.String,System.String)
-  name: GetGlobalStateFloat(String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateFloat_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateFloat(System.String,System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateFloat(System.String, System.String)
-  nameWithType: GameSaveData.GetGlobalStateFloat(String, String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateFloat*
-  name: GetGlobalStateFloat
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateFloat_
-  commentId: Overload:StoryFramework.GameSaveData.GetGlobalStateFloat
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.GetGlobalStateFloat
-  nameWithType: GameSaveData.GetGlobalStateFloat
-- uid: StoryFramework.GameSaveData.GetGlobalStateInt(System.String)
-  name: GetGlobalStateInt(String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateInt_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateInt(System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateInt(System.String)
-  nameWithType: GameSaveData.GetGlobalStateInt(String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateInt(System.String,System.String)
-  name: GetGlobalStateInt(String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateInt_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateInt(System.String,System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateInt(System.String, System.String)
-  nameWithType: GameSaveData.GetGlobalStateInt(String, String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateInt*
-  name: GetGlobalStateInt
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateInt_
-  commentId: Overload:StoryFramework.GameSaveData.GetGlobalStateInt
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.GetGlobalStateInt
-  nameWithType: GameSaveData.GetGlobalStateInt
-- uid: StoryFramework.GameSaveData.GetGlobalStateString(System.String)
-  name: GetGlobalStateString(String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateString_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateString(System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateString(System.String)
-  nameWithType: GameSaveData.GetGlobalStateString(String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateString(System.String,System.String)
-  name: GetGlobalStateString(String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateString_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.GetGlobalStateString(System.String,System.String)
-  fullName: StoryFramework.GameSaveData.GetGlobalStateString(System.String, System.String)
-  nameWithType: GameSaveData.GetGlobalStateString(String, String)
-- uid: StoryFramework.GameSaveData.GetGlobalStateString*
-  name: GetGlobalStateString
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetGlobalStateString_
-  commentId: Overload:StoryFramework.GameSaveData.GetGlobalStateString
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.GetGlobalStateString
-  nameWithType: GameSaveData.GetGlobalStateString
 - uid: StoryFramework.GameSaveData.GetState*
   name: GetState
   href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_GetState_
@@ -1037,71 +936,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.GameSaveData.Inventory
   nameWithType: GameSaveData.Inventory
-- uid: StoryFramework.GameSaveData.InvokeStateUpdated*
-  name: InvokeStateUpdated
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_InvokeStateUpdated_
-  commentId: Overload:StoryFramework.GameSaveData.InvokeStateUpdated
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.InvokeStateUpdated
-  nameWithType: GameSaveData.InvokeStateUpdated
-- uid: StoryFramework.GameSaveData.InvokeStateUpdated``1(System.String)
-  name: InvokeStateUpdated<TValue>(String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_InvokeStateUpdated__1_System_String_
-  commentId: M:StoryFramework.GameSaveData.InvokeStateUpdated``1(System.String)
-  name.vb: InvokeStateUpdated(Of TValue)(String)
-  fullName: StoryFramework.GameSaveData.InvokeStateUpdated<TValue>(System.String)
-  fullName.vb: StoryFramework.GameSaveData.InvokeStateUpdated(Of TValue)(System.String)
-  nameWithType: GameSaveData.InvokeStateUpdated<TValue>(String)
-  nameWithType.vb: GameSaveData.InvokeStateUpdated(Of TValue)(String)
-- uid: StoryFramework.GameSaveData.OnStateBoolUpdated
-  name: OnStateBoolUpdated
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_OnStateBoolUpdated
-  commentId: E:StoryFramework.GameSaveData.OnStateBoolUpdated
-  fullName: StoryFramework.GameSaveData.OnStateBoolUpdated
-  nameWithType: GameSaveData.OnStateBoolUpdated
-- uid: StoryFramework.GameSaveData.OnStateFloatUpdated
-  name: OnStateFloatUpdated
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_OnStateFloatUpdated
-  commentId: E:StoryFramework.GameSaveData.OnStateFloatUpdated
-  fullName: StoryFramework.GameSaveData.OnStateFloatUpdated
-  nameWithType: GameSaveData.OnStateFloatUpdated
-- uid: StoryFramework.GameSaveData.OnStateIntUpdated
-  name: OnStateIntUpdated
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_OnStateIntUpdated
-  commentId: E:StoryFramework.GameSaveData.OnStateIntUpdated
-  fullName: StoryFramework.GameSaveData.OnStateIntUpdated
-  nameWithType: GameSaveData.OnStateIntUpdated
-- uid: StoryFramework.GameSaveData.OnStateStringUpdated
-  name: OnStateStringUpdated
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_OnStateStringUpdated
-  commentId: E:StoryFramework.GameSaveData.OnStateStringUpdated
-  fullName: StoryFramework.GameSaveData.OnStateStringUpdated
-  nameWithType: GameSaveData.OnStateStringUpdated
-- uid: StoryFramework.GameSaveData.RemoveStateChangedListener(System.String,System.String,UnityAction{StoryFramework.GameSaveData})
-  name: RemoveStateChangedListener(String, String, UnityAction<GameSaveData>)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_RemoveStateChangedListener_System_String_System_String_UnityAction_StoryFramework_GameSaveData__
-  commentId: M:StoryFramework.GameSaveData.RemoveStateChangedListener(System.String,System.String,UnityAction{StoryFramework.GameSaveData})
-  name.vb: RemoveStateChangedListener(String, String, UnityAction(Of GameSaveData))
-  fullName: StoryFramework.GameSaveData.RemoveStateChangedListener(System.String, System.String, UnityAction<StoryFramework.GameSaveData>)
-  fullName.vb: StoryFramework.GameSaveData.RemoveStateChangedListener(System.String, System.String, UnityAction(Of StoryFramework.GameSaveData))
-  nameWithType: GameSaveData.RemoveStateChangedListener(String, String, UnityAction<GameSaveData>)
-  nameWithType.vb: GameSaveData.RemoveStateChangedListener(String, String, UnityAction(Of GameSaveData))
-- uid: StoryFramework.GameSaveData.RemoveStateChangedListener*
-  name: RemoveStateChangedListener
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_RemoveStateChangedListener_
-  commentId: Overload:StoryFramework.GameSaveData.RemoveStateChangedListener
-  isSpec: "True"
-  fullName: StoryFramework.GameSaveData.RemoveStateChangedListener
-  nameWithType: GameSaveData.RemoveStateChangedListener
-- uid: StoryFramework.GameSaveData.RemoveStateChangedListener``1(``0,System.String,UnityAction{StoryFramework.GameSaveData})
-  name: RemoveStateChangedListener<T>(T, String, UnityAction<GameSaveData>)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_RemoveStateChangedListener__1___0_System_String_UnityAction_StoryFramework_GameSaveData__
-  commentId: M:StoryFramework.GameSaveData.RemoveStateChangedListener``1(``0,System.String,UnityAction{StoryFramework.GameSaveData})
-  name.vb: RemoveStateChangedListener(Of T)(T, String, UnityAction(Of GameSaveData))
-  fullName: StoryFramework.GameSaveData.RemoveStateChangedListener<T>(T, System.String, UnityAction<StoryFramework.GameSaveData>)
-  fullName.vb: StoryFramework.GameSaveData.RemoveStateChangedListener(Of T)(T, System.String, UnityAction(Of StoryFramework.GameSaveData))
-  nameWithType: GameSaveData.RemoveStateChangedListener<T>(T, String, UnityAction<GameSaveData>)
-  nameWithType.vb: GameSaveData.RemoveStateChangedListener(Of T)(T, String, UnityAction(Of GameSaveData))
 - uid: StoryFramework.GameSaveData.Save
   name: Save()
   href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_Save
@@ -1115,54 +949,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.GameSaveData.Save
   nameWithType: GameSaveData.Save
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.Boolean)
-  name: SetGlobalState(String, Boolean)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_Boolean_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.Boolean)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.Boolean)
-  nameWithType: GameSaveData.SetGlobalState(String, Boolean)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.Int32)
-  name: SetGlobalState(String, Int32)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_Int32_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.Int32)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.Int32)
-  nameWithType: GameSaveData.SetGlobalState(String, Int32)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.Single)
-  name: SetGlobalState(String, Single)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_Single_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.Single)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.Single)
-  nameWithType: GameSaveData.SetGlobalState(String, Single)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.String)
-  name: SetGlobalState(String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.String)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.String)
-  nameWithType: GameSaveData.SetGlobalState(String, String)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Boolean)
-  name: SetGlobalState(String, String, Boolean)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_String_System_Boolean_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Boolean)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.String, System.Boolean)
-  nameWithType: GameSaveData.SetGlobalState(String, String, Boolean)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Int32)
-  name: SetGlobalState(String, String, Int32)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_String_System_Int32_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Int32)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.String, System.Int32)
-  nameWithType: GameSaveData.SetGlobalState(String, String, Int32)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Single)
-  name: SetGlobalState(String, String, Single)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_String_System_Single_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.Single)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.String, System.Single)
-  nameWithType: GameSaveData.SetGlobalState(String, String, Single)
-- uid: StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.String)
-  name: SetGlobalState(String, String, String)
-  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_System_String_System_String_System_String_
-  commentId: M:StoryFramework.GameSaveData.SetGlobalState(System.String,System.String,System.String)
-  fullName: StoryFramework.GameSaveData.SetGlobalState(System.String, System.String, System.String)
-  nameWithType: GameSaveData.SetGlobalState(String, String, String)
 - uid: StoryFramework.GameSaveData.SetGlobalState*
   name: SetGlobalState
   href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState_
@@ -1170,6 +956,15 @@ references:
   isSpec: "True"
   fullName: StoryFramework.GameSaveData.SetGlobalState
   nameWithType: GameSaveData.SetGlobalState
+- uid: StoryFramework.GameSaveData.SetGlobalState``1(System.String,System.String,``0)
+  name: SetGlobalState<TValue>(String, String, TValue)
+  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetGlobalState__1_System_String_System_String___0_
+  commentId: M:StoryFramework.GameSaveData.SetGlobalState``1(System.String,System.String,``0)
+  name.vb: SetGlobalState(Of TValue)(String, String, TValue)
+  fullName: StoryFramework.GameSaveData.SetGlobalState<TValue>(System.String, System.String, TValue)
+  fullName.vb: StoryFramework.GameSaveData.SetGlobalState(Of TValue)(System.String, System.String, TValue)
+  nameWithType: GameSaveData.SetGlobalState<TValue>(String, String, TValue)
+  nameWithType.vb: GameSaveData.SetGlobalState(Of TValue)(String, String, TValue)
 - uid: StoryFramework.GameSaveData.SetState*
   name: SetState
   href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_SetState_
@@ -1186,30 +981,6 @@ references:
   fullName.vb: StoryFramework.GameSaveData.SetState(Of T, TValue)(T, System.String, TValue)
   nameWithType: GameSaveData.SetState<T, TValue>(T, String, TValue)
   nameWithType.vb: GameSaveData.SetState(Of T, TValue)(T, String, TValue)
-- uid: StoryFramework.GameSaveData.StateBoolUpdatedDelegate
-  name: GameSaveData.StateBoolUpdatedDelegate
-  href: api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.html
-  commentId: T:StoryFramework.GameSaveData.StateBoolUpdatedDelegate
-  fullName: StoryFramework.GameSaveData.StateBoolUpdatedDelegate
-  nameWithType: GameSaveData.StateBoolUpdatedDelegate
-- uid: StoryFramework.GameSaveData.StateFloatUpdatedDelegate
-  name: GameSaveData.StateFloatUpdatedDelegate
-  href: api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.html
-  commentId: T:StoryFramework.GameSaveData.StateFloatUpdatedDelegate
-  fullName: StoryFramework.GameSaveData.StateFloatUpdatedDelegate
-  nameWithType: GameSaveData.StateFloatUpdatedDelegate
-- uid: StoryFramework.GameSaveData.StateIntUpdatedDelegate
-  name: GameSaveData.StateIntUpdatedDelegate
-  href: api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.html
-  commentId: T:StoryFramework.GameSaveData.StateIntUpdatedDelegate
-  fullName: StoryFramework.GameSaveData.StateIntUpdatedDelegate
-  nameWithType: GameSaveData.StateIntUpdatedDelegate
-- uid: StoryFramework.GameSaveData.StateStringUpdatedDelegate
-  name: GameSaveData.StateStringUpdatedDelegate
-  href: api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.html
-  commentId: T:StoryFramework.GameSaveData.StateStringUpdatedDelegate
-  fullName: StoryFramework.GameSaveData.StateStringUpdatedDelegate
-  nameWithType: GameSaveData.StateStringUpdatedDelegate
 - uid: StoryFramework.GameSettings
   name: GameSettings
   href: api/StoryFramework.GameSettings.html
@@ -1470,19 +1241,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.InteractableItem.PickUp
   nameWithType: InteractableItem.PickUp
-- uid: StoryFramework.InteractableItem.SavePersistentData(StoryFramework.GameSaveData)
-  name: SavePersistentData(GameSaveData)
-  href: api/StoryFramework.InteractableItem.html#StoryFramework_InteractableItem_SavePersistentData_StoryFramework_GameSaveData_
-  commentId: M:StoryFramework.InteractableItem.SavePersistentData(StoryFramework.GameSaveData)
-  fullName: StoryFramework.InteractableItem.SavePersistentData(StoryFramework.GameSaveData)
-  nameWithType: InteractableItem.SavePersistentData(GameSaveData)
-- uid: StoryFramework.InteractableItem.SavePersistentData*
-  name: SavePersistentData
-  href: api/StoryFramework.InteractableItem.html#StoryFramework_InteractableItem_SavePersistentData_
-  commentId: Overload:StoryFramework.InteractableItem.SavePersistentData
-  isSpec: "True"
-  fullName: StoryFramework.InteractableItem.SavePersistentData
-  nameWithType: InteractableItem.SavePersistentData
 - uid: StoryFramework.InteractableItem.ShowDescription
   name: ShowDescription()
   href: api/StoryFramework.InteractableItem.html#StoryFramework_InteractableItem_ShowDescription
@@ -1889,19 +1647,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.IPersistentComponent.LoadPersistentData
   nameWithType: IPersistentComponent.LoadPersistentData
-- uid: StoryFramework.IPersistentComponent.SavePersistentData(StoryFramework.GameSaveData)
-  name: SavePersistentData(GameSaveData)
-  href: api/StoryFramework.IPersistentComponent.html#StoryFramework_IPersistentComponent_SavePersistentData_StoryFramework_GameSaveData_
-  commentId: M:StoryFramework.IPersistentComponent.SavePersistentData(StoryFramework.GameSaveData)
-  fullName: StoryFramework.IPersistentComponent.SavePersistentData(StoryFramework.GameSaveData)
-  nameWithType: IPersistentComponent.SavePersistentData(GameSaveData)
-- uid: StoryFramework.IPersistentComponent.SavePersistentData*
-  name: SavePersistentData
-  href: api/StoryFramework.IPersistentComponent.html#StoryFramework_IPersistentComponent_SavePersistentData_
-  commentId: Overload:StoryFramework.IPersistentComponent.SavePersistentData
-  isSpec: "True"
-  fullName: StoryFramework.IPersistentComponent.SavePersistentData
-  nameWithType: IPersistentComponent.SavePersistentData
 - uid: StoryFramework.LockableObject
   name: LockableObject
   href: api/StoryFramework.LockableObject.html
@@ -1946,19 +1691,6 @@ references:
   commentId: F:StoryFramework.LockableObject.LockedStateId
   fullName: StoryFramework.LockableObject.LockedStateId
   nameWithType: LockableObject.LockedStateId
-- uid: StoryFramework.LockableObject.SavePersistentData(StoryFramework.GameSaveData)
-  name: SavePersistentData(GameSaveData)
-  href: api/StoryFramework.LockableObject.html#StoryFramework_LockableObject_SavePersistentData_StoryFramework_GameSaveData_
-  commentId: M:StoryFramework.LockableObject.SavePersistentData(StoryFramework.GameSaveData)
-  fullName: StoryFramework.LockableObject.SavePersistentData(StoryFramework.GameSaveData)
-  nameWithType: LockableObject.SavePersistentData(GameSaveData)
-- uid: StoryFramework.LockableObject.SavePersistentData*
-  name: SavePersistentData
-  href: api/StoryFramework.LockableObject.html#StoryFramework_LockableObject_SavePersistentData_
-  commentId: Overload:StoryFramework.LockableObject.SavePersistentData
-  isSpec: "True"
-  fullName: StoryFramework.LockableObject.SavePersistentData
-  nameWithType: LockableObject.SavePersistentData
 - uid: StoryFramework.LockableObject.Start
   name: Start()
   href: api/StoryFramework.LockableObject.html#StoryFramework_LockableObject_Start
@@ -2094,19 +1826,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.PersistentObject.OnDestroy
   nameWithType: PersistentObject.OnDestroy
-- uid: StoryFramework.PersistentObject.SavePersistentData(StoryFramework.GameSaveData)
-  name: SavePersistentData(GameSaveData)
-  href: api/StoryFramework.PersistentObject.html#StoryFramework_PersistentObject_SavePersistentData_StoryFramework_GameSaveData_
-  commentId: M:StoryFramework.PersistentObject.SavePersistentData(StoryFramework.GameSaveData)
-  fullName: StoryFramework.PersistentObject.SavePersistentData(StoryFramework.GameSaveData)
-  nameWithType: PersistentObject.SavePersistentData(GameSaveData)
-- uid: StoryFramework.PersistentObject.SavePersistentData*
-  name: SavePersistentData
-  href: api/StoryFramework.PersistentObject.html#StoryFramework_PersistentObject_SavePersistentData_
-  commentId: Overload:StoryFramework.PersistentObject.SavePersistentData
-  isSpec: "True"
-  fullName: StoryFramework.PersistentObject.SavePersistentData
-  nameWithType: PersistentObject.SavePersistentData
 - uid: StoryFramework.SceneLoader
   name: SceneLoader
   href: api/StoryFramework.SceneLoader.html
