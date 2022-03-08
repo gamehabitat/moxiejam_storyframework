@@ -1,0 +1,77 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: choco install -y docfx
+      - name: Build
+        run: docfx Documentation~/docfx.json
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: _site
+          path: _site # Must equals the 'build.dest' value on your docfx.json
+  deploy-docs:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        # with:
+        #   submodules: true
+      # Download the generated documentation
+      - name: Download site artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: _site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _site
+
+  # Disable package release:
+  # It's too complicated to get this working in Unity for it to be worth it.
+  # We use tagged releases for now instead, and might move over to some other solution later.
+  #release:
+  #  #needs: deploy-docs
+  #  runs-on: ubuntu-latest
+  #  permissions:
+  #    contents: read
+  #    packages: write
+  #  steps:
+  #    - uses: actions/checkout@v2
+  #    - uses: actions/setup-node@v2
+  #      with:
+  #        node-version: '16.x'
+  #        registry-url: https://npm.pkg.github.com
+  #        scope: '@gamehabitat'
+  #      env:
+  #        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #    - run: npm publish -timeout=9999999
+  #      working-directory: .
+  #      env:
+  #        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Disable package release on verdacio:
+  #release-verdacio:
+  #  needs: deploy-docs
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@master
+  #    - uses: actions/setup-node@v2
+  #      with:
+  #        node-version: '12.x'
+  #        registry-url: ${{ secrets.NPM_REGISTRY }}
+  #    - run: npm publish
+  #      working-directory: .
+  #      env:
+  #        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

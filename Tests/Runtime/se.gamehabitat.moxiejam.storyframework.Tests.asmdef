@@ -1,0 +1,18 @@
+{
+    "name": "se.gamehabitat.moxiejam.storyframework.tests",
+    "rootNamespace": "StoryFramework.Tests",
+    "references": [
+        "GUID:acd678b9ed1654f4c8eb3d1058df78f3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Editor"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

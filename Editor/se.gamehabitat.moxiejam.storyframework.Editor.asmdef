@@ -1,0 +1,19 @@
+{
+    "name": "se.gamehabitat.moxiejam.storyframework.editor",
+    "rootNamespace": "StoryFramework.Editor",
+    "references": [
+        "GUID:acd678b9ed1654f4c8eb3d1058df78f3",
+        "GUID:26f7d8a5f87d62e46bde0c24d4c687e2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

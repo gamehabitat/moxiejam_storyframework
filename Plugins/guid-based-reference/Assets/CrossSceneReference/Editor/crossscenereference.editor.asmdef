@@ -1,0 +1,18 @@
+{
+    "name": "com.unity.crossscenereference.editor",
+    "rootNamespace": "CrossSceneReference.Editor",
+    "references": [
+        "GUID:26f7d8a5f87d62e46bde0c24d4c687e2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

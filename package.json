@@ -1,0 +1,41 @@
+{
+  "name": "se.gamehabitat.moxiejam.storyframework",
+  "version": "1.40.0",
+  "description": "Game Habitat's MoxieJam framework for story games.",
+  "displayName": "MoxieJam story framework",
+  "keywords": [
+    "moxiejam",
+    "story",
+    "adventure",
+    "gamehabitat"
+  ],
+  "author": {
+    "name": "Game Habitat / Pixilated Production",
+    "email": "",
+    "url": ""
+  },
+  "license": "",
+  "licensesUrl": "",
+  "unity": "2021.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gamehabitat/moxiejam_storyframework.git"
+  },
+  "changelogUrl": "",
+  "documentationUrl": "https://gamehabitat.github.io/moxiejam_storyframework/",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "samples": [
+    {
+      "displayName": "StoryFramework Assets",
+      "description": "Essential assets for the StoryFramework. Recommended to be installed.",
+      "path": "Samples~/StoryFrameworkAssets"
+    },
+    {
+      "displayName": "Sample Project",
+      "description": "A small game showcasing the framework.",
+      "path": "Samples~/SampleProject"
+    }
+  ]
+}
