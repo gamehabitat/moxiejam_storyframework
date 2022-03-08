@@ -35,7 +35,7 @@ In the `Window` menu in unity click on `Package Manager`.
 
 ![In the `Window` menu in unity click on `Package Manager`.](../resources/images/install/UnityAddPackage1.png)
 
-A new window with the `Package Manager` is now opened. Press the `+` menu in the top left corner and click on `Add package from git URL...`. 
+A new window with the `Package Manager` is now opened. Press the `+` menu in the top left corner and click on `Add package from git URL...`.
 
 ![Press the `+` menu in the top left corner and click on `Add package from git URL...`](../resources/images/install/UnityAddPackage2.png)
 
@@ -47,9 +47,23 @@ In this new window paste in the MoxieJam Story Frameworks URL:
 
 Unity's package manager will now start downloading and installing the package. Once it is completed you will see a green checkmark to the right of the version number of the package.
 
+### Install TextMeshpro resources
+
 Once the package is installed a window named `TMP Importer` might appear and ask you to `Import TMP Essentials` go ahead and do this as it will add some needed assets to make texts in the game work.
 
 ![Import TMP Essentials](../resources/images/install/ImportTMP.png)
+
+If this window did not open up, instead in the `Window` menu under the sub-menu `TextMeshPro` click on `Import TMP Essential Resources` to import them.
+
+![Click on menu Window/TextMeshPro/Import TMP Essentials](../resources/images/install/ImportTMP2.png)
+
+When you start importing a new window will open up. Click `Import` in the lower right corner of it to start importing.
+
+![Import TMP window](../resources/images/install/ImportTMP3.png)
+
+The TextMeshPro resources is now installed.
+
+### After installation
 
 When the package is installed you can optionally install the recommended [StoryFramework Assets](#install-recommended-framework-assets) and / or the [Sample Project](#install-the-sample-game).
 
@@ -62,9 +76,6 @@ The framework comes with some recommended assets to aid in creating your game. A
 To install this, inside the package manager window select the `MoxieJam story framework` package. On the right side of the window you can see a section called `Samples` click on the arrow next to it if this section isn't expanded yet. Click on `Import` next to `Sample Project` the sample will now be installed.
 
 If you can't find the package manager, please refer to [Installation section](#install-the-moxiejam-story-framework) on where to find it.
-
-![Unity window is open](../resources/images/install/UnityAddPackage4.png)
-
 
 ![Unity window is open](../resources/images/install/UnityAddPackage4.png)
 

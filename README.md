@@ -18,4 +18,4 @@ A manual and technical documentation is provided at https://gamehabitat.github.i
 
 ## External libraries
 
-Please see [Third Part Notices](Third%20Party%20Notices.md) for information on external libraries.
+Please see [Third Party Notices](Third%20Party%20Notices.md) for information on external libraries.
