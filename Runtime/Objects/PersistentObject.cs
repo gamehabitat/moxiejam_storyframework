@@ -12,7 +12,6 @@ namespace StoryFramework
     public interface IPersistentComponent
     {
         void LoadPersistentData(GameSaveData saveData);
-        void SavePersistentData(GameSaveData saveData);
     }
     
     /// <summary>
@@ -74,11 +73,6 @@ namespace StoryFramework
             gameObject.SetActive(IsActive);
             IsActive.OnValueModified += OnActiveStateChanged;
             Game.OnBeginLoadScene += OnBeginLoadScene;
-        }
-
-        public void SavePersistentData(GameSaveData saveData)
-        {
-            saveData.SetState(this, IsActiveStateId, gameObject.activeSelf);
         }
     }
 }

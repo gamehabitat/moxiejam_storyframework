@@ -32,7 +32,7 @@ namespace StoryFramework.Utilities
         {
             if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
             {
-                Game.Instance.SaveData.SetGlobalState(id, PersistentObject.IsActiveStateId, value);
+                Game.Instance.SaveData.SetGlobalState<bool>(id, PersistentObject.IsActiveStateId, value);
             }
         }
     }

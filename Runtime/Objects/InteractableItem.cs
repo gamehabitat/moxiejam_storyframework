@@ -155,10 +155,5 @@ namespace StoryFramework
                 gameObject.SetActive(false);
             }
         }
-
-        public void SavePersistentData(GameSaveData saveData)
-        {
-            //saveData.SetState(this, PickedUpStateId, isPickedUp);
-        }
     }
 }

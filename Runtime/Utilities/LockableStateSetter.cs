@@ -43,10 +43,10 @@ namespace StoryFramework.Utilities
                 switch (value)
                 {
                 case LockStates.Locked:
-                    Game.Instance.SaveData.SetGlobalState(id, LockableObject.LockedStateId, true);
+                    Game.Instance.SaveData.SetGlobalState<bool>(id, LockableObject.LockedStateId, true);
                     break;
                 case LockStates.Unlocked:
-                    Game.Instance.SaveData.SetGlobalState(id, LockableObject.LockedStateId, false);
+                    Game.Instance.SaveData.SetGlobalState<bool>(id, LockableObject.LockedStateId, false);
                     break;
                 }
             }

@@ -24,7 +24,10 @@ namespace StoryFramework.Utilities
         Types stateType;
 
         [SerializeField]
-        string id;
+        string identifier;
+
+        [SerializeField]
+        string property;
 
         [SerializeField]
         bool boolValue;
@@ -51,21 +54,21 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void SetState()
         {
-            if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
+            if ((!string.IsNullOrEmpty(identifier)) && Game.Instance && (Game.Instance.SaveData != null))
             {
                 switch (stateType)
                 {
                 case Types.Bool:
-                    Game.Instance.SaveData.SetGlobalState(id, boolValue);
+                    Game.Instance.SaveData.SetGlobalState<bool>(identifier, property, boolValue);
                     break;
                 case Types.Int:
-                    Game.Instance.SaveData.SetGlobalState(id, intValue);
+                    Game.Instance.SaveData.SetGlobalState<int>(identifier, property, intValue);
                     break;
                 case Types.Float:
-                    Game.Instance.SaveData.SetGlobalState(id, floatValue);
+                    Game.Instance.SaveData.SetGlobalState<float>(identifier, property, floatValue);
                     break;
                 case Types.String:
-                    Game.Instance.SaveData.SetGlobalState(id, stringValue);
+                    Game.Instance.SaveData.SetGlobalState<string>(identifier, property, stringValue);
                     break;
                 }
             }

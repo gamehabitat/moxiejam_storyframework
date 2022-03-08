@@ -117,10 +117,5 @@ namespace StoryFramework
         {
             IsLocked = saveData.GetState(this, LockedStateId, isLocked);
         }
-
-        public void SavePersistentData(GameSaveData saveData)
-        {
-            saveData.SetState(this, LockedStateId, isLocked);
-        }
     }
 }

@@ -10,7 +10,8 @@ namespace StoryFramework.Editor.Utilities
     {
         SerializedProperty setStateOnStartProp;
         SerializedProperty stateTypeProp;
-        SerializedProperty idProp;
+        SerializedProperty identifierProp;
+        SerializedProperty propertyProp;
         SerializedProperty boolValueProp;
         SerializedProperty intValueProp;
         SerializedProperty floatValueProp;
@@ -20,7 +21,8 @@ namespace StoryFramework.Editor.Utilities
         {
             setStateOnStartProp = serializedObject.FindProperty("setStateOnStart");
             stateTypeProp = serializedObject.FindProperty("stateType");
-            idProp = serializedObject.FindProperty("id");
+            identifierProp = serializedObject.FindProperty("identifier");
+            propertyProp = serializedObject.FindProperty("property");
             boolValueProp = serializedObject.FindProperty("boolValue");
             intValueProp = serializedObject.FindProperty("intValue");
             floatValueProp = serializedObject.FindProperty("floatValue");
@@ -31,8 +33,9 @@ namespace StoryFramework.Editor.Utilities
         {
             serializedObject.Update();
             EditorGUILayout.PropertyField(setStateOnStartProp);
+            EditorGUILayout.PropertyField(identifierProp);
+            EditorGUILayout.PropertyField(propertyProp);
             EditorGUILayout.PropertyField(stateTypeProp);
-            EditorGUILayout.PropertyField(idProp);
             switch ((GameStateSetter.Types)stateTypeProp.enumValueIndex)
             {
             case GameStateSetter.Types.Bool:
