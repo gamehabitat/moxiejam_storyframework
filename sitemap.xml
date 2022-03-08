@@ -2,439 +2,439 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Audio.AudioManager.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Audio.PlayMusic.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Audio.PlaySound.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Audio.StopMusic.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Audio.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.ClickItem.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.CursorHandler.ItemDroppedEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.CursorHandler.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Dialogue.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.DropItemTarget.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.CreateGameeObjectUtility.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.GameEditor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.GameSceneTemplatePipeline.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.InteractableItemEditor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.InteractableItemSettings.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.Inventory.InventoryItemDrawer.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.Inventory.InventoryItemSlotEditor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.Inventory.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.SceneRefAttributeDrawer.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.SceneRefEditor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.Utilities.GameStateSetterEditor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.Utilities.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Editor.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Events.InventoryEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Events.LockableEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Events.SceneEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Events.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Game.BeginLoadSceneEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Game.SceneLoadEvent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Game.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSaveData.StateBoolUpdatedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSaveData.StateFloatUpdatedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSaveData.StateIntUpdatedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSaveData.StateStringUpdatedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSaveData.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameSettings.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameStateValue-1.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.GameStateValueModifiedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.IGameStateValue.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InGameScene.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.IngameUI.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InteractableItem.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Inventory.InventoryItemDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Inventory.InventoryUpdatedDelegate.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Inventory.ItemRecord.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Inventory.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InventoryItem.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InventoryItemSlot.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InventoryView.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.InventoryViewFixedSize.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.IPersistentComponent.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.LockableObject.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.MouseOverItem.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.PersistentObject.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.SceneLoader.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.SceneRef.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.SceneRefAttribute.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.ShowDescriptionOnClick.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.ShowDescriptionOnMouseOver.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.ActiveStateSetter.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.DialogueUtility.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.GameStateSetter.Types.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.GameStateSetter.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.GameUtility.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.LockableStateSetter.LockStates.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.LockableStateSetter.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.ScrollRectUtility.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.SetDialogueText.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.Utilities.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/api/StoryFramework.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/index.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/manual/install.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gamehabitat.github.io/moxiejam_storyframework/manual/README.html</loc>
-    <lastmod>2022-03-08T01:04:07+00:00</lastmod>
+    <lastmod>2022-03-08T01:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
