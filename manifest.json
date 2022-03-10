@@ -900,30 +900,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/CreateDropItemTarget.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/CreateDropItemTarget.html",
-          "hash": "AV+TpiKaiGC9TClE5DAFjMHvRYCC1d4XlOQsP3GzF7E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/CreateInteractableItem.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/CreateInteractableItem.html",
-          "hash": "80A63FCLIb+4aoS2JZMFURjX8/nHjMh5EdrFkmxHr3Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/components/InteractableItem.md",
       "output": {
         ".html": {
@@ -959,12 +935,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/index.md",
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "v7F8sMuwHM0UIFML1X+z1XOrrXdcP9nPtAOvrYqZeBE="
+          "hash": "REYmxQi96XjqvaUsMYdictiZfrFqMSvfmiS4nn3LqkQ="
         }
       },
       "is_incremental": false,
@@ -983,12 +962,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "fvEZl870zO25yBtrwNauH809PQDrL2mi0zGxr9QZX0A="
+          "hash": "sqRDi1wW2Gl0pgJCLRDUJL9A/i34ptu/NXNjdj9Xgh0="
         }
       },
       "is_incremental": false,
@@ -1252,7 +1234,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

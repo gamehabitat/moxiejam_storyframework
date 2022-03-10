@@ -374,20 +374,10 @@
     "title": "Persistent Object | MoxieJam story framework documentation",
     "keywords": "Persistent Object The persistent object component is used for two things: It allow for a game object to have a unique identifier that is used to remember the state of a object when entering and exiting scenes. It remembers if a game object was active (enabled) or not when entering and exiting a scene. Settings Active On Start If this is enabled (default) the game object will be enabled (active) when entering the scene first time, otherwise it is hidden. Custom identifier A persistent object have a internal generated identifer private to it. If you rather want to specify your own, this can be done in this field. A custom identifier is useful if you want to be able to refrence this game objects state from antoher scene (e.g. activate/deactivate a game object from another scene)."
   },
-  "manual/CreateDropItemTarget.html": {
-    "href": "manual/CreateDropItemTarget.html",
-    "title": "Createa a Drop Item Target | MoxieJam story framework documentation",
-    "keywords": "Create a drop item target Create a target to drop an item on"
-  },
-  "manual/CreateInteractableItem.html": {
-    "href": "manual/CreateInteractableItem.html",
-    "title": "Create a Interactable Item | MoxieJam story framework documentation",
-    "keywords": "Create a interactable item The easiest way to create a interactable item is to right click in the hierarchy window and in the menu select: MoxieJam->StoryFramework->Create Interactable Item A new window will now open with settings for the interactable item: Name of the game object What image to use Weather it's possible to pick up the item or not. A Inventory Item to associate with this object. This is the actual item that will be picked up in to the inventory. If you have not created the Inventory Item before hand, you can press Create Item to create one now. Once you are satisfied with your settings you click Create and it will be available in the scene. If you have changed your mind about creating the object just click cancel. You have now created a interactable item, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the intractable item you just created: Transform decided where to place the object in the scene. You can also use it to rotate or change the size of the object. Box Collider 2D is used to decide the clickable/mouser-over area of the object. Sprite Renderer like the name implies is used to render (draw) the sprite. You can assign a Sprite (image) here and do things such as flip it, and change what layer and order it's being drawn. See Persistent Object . See Interactable Item The last component is the material used by the Sprite Renderer to draw the image."
-  },
   "manual/index.html": {
     "href": "manual/index.html",
     "title": "MoxieJam Story Framework Manual | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework Create a Interactable Item Createa a Drop Item Target Components"
+    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework <xref:create_interactable_item> <xref:create_drop_item_target> Components"
   },
   "manual/install.html": {
     "href": "manual/install.html",
