@@ -923,6 +923,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/components/index.md",
       "output": {
@@ -935,15 +938,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/index.md",
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "REYmxQi96XjqvaUsMYdictiZfrFqMSvfmiS4nn3LqkQ="
+          "hash": "MCQVfG/k+7Y7sKa6Txv7cO/ckzLqt20nj+IY927B4PE="
         }
       },
       "is_incremental": false,
@@ -962,15 +962,54 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "sqRDi1wW2Gl0pgJCLRDUJL9A/i34ptu/NXNjdj9Xgh0="
+          "hash": "MwOkkz2/AZjD03/fcWBAs76mquA5C35k1ZAxzNYMF38="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/CreateDropItemTarget.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/CreateDropItemTarget.html",
+          "hash": "KQmKcDpRw8RvDgzWo5PFe2dgxzXwTdtJa3TN6cIxhUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/CreateInteractableItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/CreateInteractableItem.html",
+          "hash": "Exta4xc71WKPRgQazXhCodKms9nx3dB9GnOPaReFcL0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/index.html",
+          "hash": "UsLTrEIfZa/yzRBtJ+JxdtOTOoI4wlVg2uXlio5GMdc="
         }
       },
       "is_incremental": false,
@@ -1234,7 +1273,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
