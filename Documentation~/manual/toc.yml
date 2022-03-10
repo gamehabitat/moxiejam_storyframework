@@ -2,10 +2,9 @@
   href: index.md
 - name: Install
   href: install.md
-- name: Create a Interactable Item
-  href: CreateInteractableItem.md
-- name: Create a Drop Item Target 
-  href: CreateDropItemTarget.md
+- name: Tutorials
+  href: tutorials/toc.yml
+  topicHref: tutorials/index.md
 - name: Components
   href: components/toc.yml
   topicHref: components/index.md
