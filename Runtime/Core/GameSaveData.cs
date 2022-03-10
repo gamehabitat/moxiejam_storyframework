@@ -11,10 +11,12 @@ namespace StoryFramework
         string Identifier { get; }
     }
 
+    [Serializable]
     public class GameStateValue<TValue> : IGameStateValue where TValue : IEquatable<TValue>
     {
         public string Identifier { get; private set; }
 
+        [SerializeField]
         TValue currentValue;
 
         public TValue Value
@@ -43,6 +45,15 @@ namespace StoryFramework
 
         public static implicit operator TValue(GameStateValue<TValue> gameStateValue) => gameStateValue.currentValue;
     }
+    
+    [Serializable]
+    public class GameStateValueBool : GameStateValue<bool> {}
+    [Serializable]
+    public class GameStateValueInt : GameStateValue<int> {}
+    [Serializable]
+    public class GameStateValueFloat : GameStateValue<float> {}
+    [Serializable]
+    public class GameStateValueString : GameStateValue<string> {}
 
     /// <summary>
     /// Holds the currently active games persistent state.

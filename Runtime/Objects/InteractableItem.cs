@@ -10,6 +10,7 @@ namespace StoryFramework
     /// Handles basic interaction of clicking, hoovering, picking up and displaying description.
     /// </summary>
     [AddComponentMenu("MoxieJam/StoryFramework/Interactable Item")]
+    [RequireComponent(typeof(PersistentObject))]
     public class InteractableItem : MonoBehaviour, IPersistentComponent, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         public const string PickedUpStateId = "InteractableItem_IsPickedUp";
