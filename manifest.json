@@ -892,7 +892,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "NWmDSo1PoK2zqKEGvvRm+cPudnOKD/qdGoXrzTkNfRE="
+          "hash": "Rjh94istQhymqmvP6uSzBF0ZuMU/mAntEl9w1VkY7Bw="
         }
       },
       "is_incremental": false,
@@ -900,11 +900,38 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/README.md",
+      "source_relative_path": "manual/DropItemTarget.md",
       "output": {
         ".html": {
-          "relative_path": "manual/README.html",
-          "hash": "cV1Ks8Okqvq8crNiNPyISqTT0z6bZaTrsi7FMs4mZ70="
+          "relative_path": "manual/DropItemTarget.html",
+          "hash": "xtaYv5Vj18lsNmwTpAXTuKCFVrU7c6k9ASuCTYKhPnw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manual/InteractableItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/InteractableItem.html",
+          "hash": "HITMnvQ8oUBZKh62JjUQd4ei+zVcLDYUctpV6TXdXho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html",
+          "hash": "NoCeupnHPmQFZX6vz7GUgVGnCHjnMmdiPECXRCg9Yrk="
         }
       },
       "is_incremental": false,
@@ -916,7 +943,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/install.html",
-          "hash": "MlWQrwmYlNhgOO1L1htBS0rxyEIpbx3YRBf5RZ8+xgA="
+          "hash": "rWdbnnWmtSYXE1KzZtde+dwtkiRzCtSl5W8KToy89vo="
         }
       },
       "is_incremental": false,
@@ -928,7 +955,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "fC7cltknNqIxKACyyBwDpbsj/8DIbdRL6T5Wo7zpfvE="
+          "hash": "wb5nLKciyvpahRlx26awSHW6NTCRf/HiV9F27xeTrp8="
         }
       },
       "is_incremental": false,
@@ -1138,7 +1165,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "/phTLJNJgfyukgCV39rxWIW8Gm7ciyxEflR04XFB1zM="
+          "hash": "ZSN5IsMA7wnJxNBq9ewhKq/IsiqWoa6945SFPj9UbdA="
         }
       },
       "is_incremental": false,
@@ -1159,7 +1186,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

@@ -1,7 +1,13 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: index.md
+- uid: install_framework
+  name: Install MoxieJam Story Framework
+  href: manual/install.html
+- uid: interactable_item
+  name: Drop Item Target
+  href: manual/DropItemTarget.html
+- uid: moxiejam_story_framework_index
   name: MoxieJam Story Framework
   href: index.html
 - uid: StoryFramework
