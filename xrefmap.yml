@@ -7,6 +7,9 @@ references:
 - uid: component_persistent_object
   name: Persistent Object
   href: manual/components/PersistentObject.html
+- uid: components
+  name: Components
+  href: manual/components/index.html
 - uid: create_drop_item_target
   name: Createa a Drop Item Target
   href: manual/CreateDropItemTarget.html
@@ -16,6 +19,9 @@ references:
 - uid: install_framework
   name: Install MoxieJam Story Framework
   href: manual/install.html
+- uid: manual
+  name: MoxieJam Story Framework Manual
+  href: manual/index.html
 - uid: moxiejam_story_framework_index
   name: MoxieJam Story Framework
   href: index.html

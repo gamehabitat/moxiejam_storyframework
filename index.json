@@ -361,8 +361,8 @@
   },
   "manual/components/index.html": {
     "href": "manual/components/index.html",
-    "title": "| MoxieJam story framework documentation",
-    "keywords": ""
+    "title": "Components | MoxieJam story framework documentation",
+    "keywords": "MoxieJam Story Framework Components An in-depth guide of some commonly used components: Persistent Object Interactable Item"
   },
   "manual/components/InteractableItem.html": {
     "href": "manual/components/InteractableItem.html",
@@ -386,8 +386,8 @@
   },
   "manual/index.html": {
     "href": "manual/index.html",
-    "title": "| MoxieJam story framework documentation",
-    "keywords": ""
+    "title": "MoxieJam Story Framework Manual | MoxieJam story framework documentation",
+    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework Create a Interactable Item Createa a Drop Item Target Components"
   },
   "manual/install.html": {
     "href": "manual/install.html",

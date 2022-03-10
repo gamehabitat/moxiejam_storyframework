@@ -928,7 +928,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/InteractableItem.html",
-          "hash": "1/UuSmB/lYdDm/iiyd/xWcUdQUScXXczhsA2nYlaj6U="
+          "hash": "MMcJQD4afavxio2Ne6YZrW2+TmMFLVPd7r3MsphPdzo="
         }
       },
       "is_incremental": false,
@@ -940,7 +940,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/PersistentObject.html",
-          "hash": "5ytQvbXSDTc7rmBrl9OoSfNE9D0ng4QRsp0JHLzi/Ew="
+          "hash": "Dk1saZIW6hjupMNMCdTMMuvsvtdnUbGtyryWEuhD0cM="
         }
       },
       "is_incremental": false,
@@ -952,19 +952,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/index.html",
-          "hash": "w+WQNYvr+lcywfGbT4+aQrUcb0Eq0f6G2cg0rkpPt6Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "manual/components/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "manual/components/toc.html",
-          "hash": "/y8io+6J4yuMF8XMoH8G2fL+yMC6rmBpJMQORd9kKog="
+          "hash": "koCf89yfR6A7AurTerbeCq9FD1fDUG+AnTFTNVQobKM="
         }
       },
       "is_incremental": false,
@@ -976,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "NoCeupnHPmQFZX6vz7GUgVGnCHjnMmdiPECXRCg9Yrk="
+          "hash": "v7F8sMuwHM0UIFML1X+z1XOrrXdcP9nPtAOvrYqZeBE="
         }
       },
       "is_incremental": false,
@@ -1000,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "DeXXok0WrmB9iAXXnkkA6LgP3iIT2a9ZFFm9qxBaKtU="
+          "hash": "fvEZl870zO25yBtrwNauH809PQDrL2mi0zGxr9QZX0A="
         }
       },
       "is_incremental": false,
