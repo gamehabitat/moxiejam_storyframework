@@ -367,7 +367,7 @@
   "manual/components/InteractableItem.html": {
     "href": "manual/components/InteractableItem.html",
     "title": "Interactable Item | MoxieJam story framework documentation",
-    "keywords": "Persistent Object The interactable item is a composite component gathering often-used functionality relating to items: It allow you to pick up an item Settings"
+    "keywords": "Interactable Item The interactable item is a composite component gathering often-used functionality relating to items: It allow you to pick up an item Settings"
   },
   "manual/components/PersistentObject.html": {
     "href": "manual/components/PersistentObject.html",

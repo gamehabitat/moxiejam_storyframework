@@ -904,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/InteractableItem.html",
-          "hash": "MMcJQD4afavxio2Ne6YZrW2+TmMFLVPd7r3MsphPdzo="
+          "hash": "3tgP9PIDTSbZS6YZeDRA+BWUzsoQ85lWdpjyaJKX144="
         }
       },
       "is_incremental": false,
@@ -974,30 +974,24 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/tutorials/CreateDropItemTarget.md",
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/CreateDropItemTarget.html",
-          "hash": "KQmKcDpRw8RvDgzWo5PFe2dgxzXwTdtJa3TN6cIxhUo="
+          "hash": "hDkIWI4sRD3Xwk17X96jRxyFq3EkFCGqhBV230kvktc="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/tutorials/CreateInteractableItem.md",
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/CreateInteractableItem.html",
-          "hash": "Exta4xc71WKPRgQazXhCodKms9nx3dB9GnOPaReFcL0="
+          "hash": "dzutEsORY/rRMpk8tEILS2RA4ueiahhl4+9LaLL+w/o="
         }
       },
       "is_incremental": false,
