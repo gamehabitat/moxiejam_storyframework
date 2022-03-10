@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,7 +18,7 @@ namespace StoryFramework.Utilities
         /// The event to do once.
         /// </summary>
         [SerializeField]
-        UnityEvent onStart;
+        UnityEvent eventToDo;
 
         /// <summary>
         /// Have the event executed once?
@@ -26,7 +27,28 @@ namespace StoryFramework.Utilities
 
         void Start()
         {
-            onStart.Invoke();
+            Do();
+        }
+
+        /// <summary>
+        /// Do the event.
+        /// </summary>
+        public void Do()
+        {
+            if (!haveDoneAction)
+            {
+                haveDoneAction.Value = true;
+                StartCoroutine(DoEvent());
+            }
+        }
+
+        /// <summary>
+        /// The actual code that will trigger the event.
+        /// </summary>
+        IEnumerator DoEvent()
+        {
+            yield return new WaitForEndOfFrame();
+            eventToDo.Invoke();
         }
 
         public void LoadPersistentData(GameSaveData saveData)

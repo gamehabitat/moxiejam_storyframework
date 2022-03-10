@@ -18,7 +18,7 @@ namespace StoryFramework.Utilities
         public void SetActiveDialogue(Dialogue dialogue)
         {
             Assert.IsNotNull(dialogue, "The specified dialogue is invalid. Please specify a valid dialogue.");
-            Dialogue.ActiveDialouge = dialogue;
+            Dialogue.ActiveDialogue = dialogue;
         }
 
         /// <summary>
@@ -26,8 +26,8 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void ClearDialogue()
         {
-            Assert.IsNotNull(Dialogue.ActiveDialouge, "Currently there's no active dialogue. Please assign a active dialogue.");
-            Dialogue.ActiveDialouge.Clear();
+            Assert.IsNotNull(Dialogue.ActiveDialogue, "Currently there's no active dialogue. Please assign a active dialogue.");
+            Dialogue.ActiveDialogue.Clear();
         }
 
         /// <summary>
@@ -35,8 +35,8 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void SetDialogue(string text)
         {
-            Assert.IsNotNull(Dialogue.ActiveDialouge, "Currently there's no active dialogue. Please assign a active dialogue.");
-            Dialogue.ActiveDialouge.SetText(text);
+            Assert.IsNotNull(Dialogue.ActiveDialogue, "Currently there's no active dialogue. Please assign a active dialogue.");
+            Dialogue.ActiveDialogue.SetText(text);
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void AddToDialogue(string text)
         {
-            Assert.IsNotNull(Dialogue.ActiveDialouge, "Currently there's no active dialogue. Please assign a active dialogue.");
-            Dialogue.ActiveDialouge.AppendText(text);
+            Assert.IsNotNull(Dialogue.ActiveDialogue, "Currently there's no active dialogue. Please assign a active dialogue.");
+            Dialogue.ActiveDialogue.AppendText(text);
         }
     }
 }

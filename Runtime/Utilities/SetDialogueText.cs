@@ -31,7 +31,7 @@ namespace StoryFramework.Utilities
 
         public void SetText(string dialogueText)
         {
-            Dialogue.ActiveDialouge.SetText(dialogueText);
+            Dialogue.ActiveDialogue.SetText(dialogueText);
         }
     }
 }

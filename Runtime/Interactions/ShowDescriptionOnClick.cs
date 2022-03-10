@@ -22,7 +22,7 @@ namespace StoryFramework
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            Dialogue.ActiveDialouge.SetText(description);
+            Dialogue.ActiveDialogue.SetText(description);
         }
     }
 }

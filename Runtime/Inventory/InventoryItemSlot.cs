@@ -50,7 +50,7 @@ namespace StoryFramework
 
         void SetDescription(string text)
         {
-            Dialogue.ActiveDialouge.SetText(text);
+            Dialogue.ActiveDialogue.SetText(text);
         }
 
         void ClearDescription()

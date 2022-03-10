@@ -17,9 +17,9 @@ namespace StoryFramework
 
         public CursorHandler CursorHandler => cursorHandler;
 
-        void Start()
+        void Awake()
         {
-            Dialogue.ActiveDialouge = dialogue;
+            Dialogue.ActiveDialogue = dialogue;
         }
         
     }

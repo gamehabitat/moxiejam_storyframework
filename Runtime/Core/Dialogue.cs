@@ -13,7 +13,7 @@ namespace StoryFramework
         /// <summary>
         /// Currently active dialogue.
         /// </summary>
-        public static Dialogue ActiveDialouge;
+        public static Dialogue ActiveDialogue;
 
         /// <summary>
         /// Graphical text target.
