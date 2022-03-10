@@ -2,7 +2,7 @@
   href: index.md
 - name: Install
   href: install.md
-- name: Interactable Item
-  href: InteractableItem.md
-- name: Drop Item Target 
-  href: DropItemTarget.md
+- name: Create a Interactable Item
+  href: CreateInteractableItem.md
+- name: Create a Drop Item Target 
+  href: CreateDropItemTarget.md
