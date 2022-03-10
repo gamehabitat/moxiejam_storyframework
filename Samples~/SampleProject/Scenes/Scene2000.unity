@@ -1153,6 +1153,9 @@ GameObject:
   - component: {fileID: 877509485}
   - component: {fileID: 877509484}
   - component: {fileID: 877509488}
+  - component: {fileID: 877509491}
+  - component: {fileID: 877509490}
+  - component: {fileID: 877509489}
   m_Layer: 0
   m_Name: SceneSettings
   m_TagString: Untagged
@@ -1203,6 +1206,62 @@ MonoBehaviour:
   setStateOnStart: 1
   id: lock2000
   setValue: 1
+--- !u!114 &877509489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbc61f0756f4d1faaa138df0a984fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setOnStart: 0
+  text: 
+--- !u!114 &877509490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39652742484b4fc59d0c50f8935d933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToDo:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 877509489}
+        m_TargetAssemblyTypeName: StoryFramework.Utilities.SetDialogueText, se.gamehabitat.moxiejam.storyframework
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "This room\u2026 It seems familiar somehow."
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &877509491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add2cccefc3c438da9e9b187e35dfd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedGuid: c707d0ec95af5b46b3e27e95a3de5667
+  activeOnStart: 1
+  customIdentifier: 
 --- !u!1 &953291770
 GameObject:
   m_ObjectHideFlags: 0

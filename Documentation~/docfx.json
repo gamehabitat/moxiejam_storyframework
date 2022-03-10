@@ -44,7 +44,11 @@
                   "components/toc.yml",
                   "components/**.md",
                   "components/**/toc.yml",
-                  "components/**/**.md"
+                  "components/**/**.md",
+                  "tutorials/toc.yml",
+                  "tutorials/**.md",
+                  "tutorials/**/toc.yml",
+                  "tutorials/**/**.md"
               ],
               "dest": "manual"
           }

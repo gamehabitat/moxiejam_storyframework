@@ -1395,6 +1395,175 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: It seems to be stuck!
+--- !u!1 &847660390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847660395}
+  - component: {fileID: 847660394}
+  - component: {fileID: 847660393}
+  - component: {fileID: 847660392}
+  - component: {fileID: 847660391}
+  m_Layer: 0
+  m_Name: UnlockedCloseup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847660391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847660390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b13b015e24d01977e4a9fa9dd5518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  customDescription: 
+  showDescriptionOnClick: 0
+  showDescriptionOnMouseOver: 0
+  pickUpOnClick: 0
+  onMouseEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onMouseExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onMouseClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 847660390}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &847660392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847660390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add2cccefc3c438da9e9b187e35dfd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedGuid: 2367ed5b8669e2498d7781d90144d3d0
+  activeOnStart: 0
+  customIdentifier: 
+--- !u!212 &847660393
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847660390}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 812909395
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1ec2a21c6493e46508d329d9d37c0aa6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.15, y: 2.88}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &847660394
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847660390}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.038323402, y: 0.012749195}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.15, y: 2.88}
+    newSize: {x: 4.15, y: 2.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.812319, y: 8.3744135}
+  m_EdgeRadius: 0
+--- !u!4 &847660395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847660390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877509483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,6 +1575,9 @@ GameObject:
   - component: {fileID: 877509485}
   - component: {fileID: 877509484}
   - component: {fileID: 877509486}
+  - component: {fileID: 877509489}
+  - component: {fileID: 877509488}
+  - component: {fileID: 877509487}
   m_Layer: 0
   m_Name: SceneSettings
   m_TagString: Untagged
@@ -1456,6 +1628,62 @@ MonoBehaviour:
   setStateOnStart: 1
   id: lock1950
   setValue: 1
+--- !u!114 &877509487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbc61f0756f4d1faaa138df0a984fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setOnStart: 0
+  text: 
+--- !u!114 &877509488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39652742484b4fc59d0c50f8935d933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToDo:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 877509487}
+        m_TargetAssemblyTypeName: StoryFramework.Utilities.SetDialogueText, se.gamehabitat.moxiejam.storyframework
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Another room\u2026 such pretty furniture! It's old-style."
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &877509489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877509483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add2cccefc3c438da9e9b187e35dfd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedGuid: 4dccc0f483e24044aff56545cd3a6fe7
+  activeOnStart: 1
+  customIdentifier: 
 --- !u!1 &953291770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,17 +2977,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1923766513}
-        m_TargetAssemblyTypeName: StoryFramework.SetDialogueText, se.gamehabitat.moxiejam.storyframework
-        m_MethodName: SetText
-        m_Mode: 5
+      - m_Target: {fileID: 847660390}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Something unlocked!
-          m_BoolArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   onItemRejected:
     m_PersistentCalls:
@@ -3637,6 +3865,10 @@ PrefabInstance:
     - target: {fileID: 1507640539939825598, guid: 4280276b8e99ee84c8fb71fe66eb7c84, type: 3}
       propertyPath: serializedGuid.Array.data[15]
       value: 177
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358790335767256827, guid: 4280276b8e99ee84c8fb71fe66eb7c84, type: 3}
+      propertyPath: isLocked
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2358790335767256827, guid: 4280276b8e99ee84c8fb71fe66eb7c84, type: 3}
       propertyPath: isLockedOnStart
