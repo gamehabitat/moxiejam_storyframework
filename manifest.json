@@ -412,7 +412,43 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.GameStateValue-1.html",
-          "hash": "vu9j5bJfdNlttu0ssoqde0jMYu/sY9wI19FQySVWYE0="
+          "hash": "FW17pmpU0T9jMI1tJHeJvLfxJyfx6vGLgaFCUtgpLMc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.GameStateValueBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.GameStateValueBool.html",
+          "hash": "DOBQtLReZv0mxlPqKBtwEsL8ejR4CBCZ+i7k0K4+mNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.GameStateValueFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.GameStateValueFloat.html",
+          "hash": "V1NJnzGXXdqKaX50n0BlFydF6UWKfJI9bqZBHqNJOYc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.GameStateValueInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.GameStateValueInt.html",
+          "hash": "FfK9n7hLmqvjDpxiC4iX9shThWxcQwD/8PA1noB/tuw="
         }
       },
       "is_incremental": false,
@@ -425,6 +461,18 @@
         ".html": {
           "relative_path": "api/StoryFramework.GameStateValueModifiedDelegate.html",
           "hash": "GnxyloTBHfIKQErfLGBICF+JFps/z2rGDk3umyRPj+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.GameStateValueString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.GameStateValueString.html",
+          "hash": "UbsePY/kIGhX5fpNTmpAAd6oHUqR2zaMnSFjYLaRJG8="
         }
       },
       "is_incremental": false,
@@ -708,6 +756,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Utilities.DoOnce.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Utilities.DoOnce.html",
+          "hash": "av8BpbmqIDWQRmK7uTrigNcniRiBT5XRRtRvVy0OQCs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.Utilities.GameStateSetter.Types.yml",
       "output": {
         ".html": {
@@ -796,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.Utilities.html",
-          "hash": "TWYruVYlfDStlc7qPg91gWhYQ7bqzl7IkhQAhp+S4+s="
+          "hash": "AvFkBV4poC50EP/0YeyoVsix1/seWBqCNhCAuw27JaY="
         }
       },
       "is_incremental": false,
@@ -808,7 +868,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.html",
-          "hash": "Qv8rP8Ii3PakgGXPLlk8o5pUsPDaxDDbgFhX7f7XKfw="
+          "hash": "7gHQ4KWZjgQrPdU1+c2n9a+0XYdhAAtgqC/rpaodUR0="
         }
       },
       "is_incremental": false,
@@ -820,7 +880,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rKR00JBELqY++lPLRykHaWk/VV2UZPXwn8P05w1UIHQ="
+          "hash": "gN1T0iGQl6UPrzUStNV8UCHzu0VjfVE/xepenF7EMrw="
         }
       },
       "is_incremental": false,
@@ -1105,7 +1165,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 68,
+          "total_file_count": 73,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -89,6 +89,10 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">GameStateValue&lt;TValue&gt;</span></div>
+      <div class="level2"><a class="xref" href="StoryFramework.GameStateValueBool.html">GameStateValueBool</a></div>
+      <div class="level2"><a class="xref" href="StoryFramework.GameStateValueFloat.html">GameStateValueFloat</a></div>
+      <div class="level2"><a class="xref" href="StoryFramework.GameStateValueInt.html">GameStateValueInt</a></div>
+      <div class="level2"><a class="xref" href="StoryFramework.GameStateValueString.html">GameStateValueString</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -98,7 +102,8 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="StoryFramework_GameStateValue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GameStateValue&lt;TValue&gt; : IGameStateValue where TValue : IEquatable&lt;TValue&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class GameStateValue&lt;TValue&gt; : IGameStateValue where TValue : IEquatable&lt;TValue&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

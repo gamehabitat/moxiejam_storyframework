@@ -1088,12 +1088,36 @@ references:
   fullName.vb: StoryFramework.GameStateValue(Of TValue).Value
   nameWithType: GameStateValue<TValue>.Value
   nameWithType.vb: GameStateValue(Of TValue).Value
+- uid: StoryFramework.GameStateValueBool
+  name: GameStateValueBool
+  href: api/StoryFramework.GameStateValueBool.html
+  commentId: T:StoryFramework.GameStateValueBool
+  fullName: StoryFramework.GameStateValueBool
+  nameWithType: GameStateValueBool
+- uid: StoryFramework.GameStateValueFloat
+  name: GameStateValueFloat
+  href: api/StoryFramework.GameStateValueFloat.html
+  commentId: T:StoryFramework.GameStateValueFloat
+  fullName: StoryFramework.GameStateValueFloat
+  nameWithType: GameStateValueFloat
+- uid: StoryFramework.GameStateValueInt
+  name: GameStateValueInt
+  href: api/StoryFramework.GameStateValueInt.html
+  commentId: T:StoryFramework.GameStateValueInt
+  fullName: StoryFramework.GameStateValueInt
+  nameWithType: GameStateValueInt
 - uid: StoryFramework.GameStateValueModifiedDelegate
   name: GameStateValueModifiedDelegate
   href: api/StoryFramework.GameStateValueModifiedDelegate.html
   commentId: T:StoryFramework.GameStateValueModifiedDelegate
   fullName: StoryFramework.GameStateValueModifiedDelegate
   nameWithType: GameStateValueModifiedDelegate
+- uid: StoryFramework.GameStateValueString
+  name: GameStateValueString
+  href: api/StoryFramework.GameStateValueString.html
+  commentId: T:StoryFramework.GameStateValueString
+  fullName: StoryFramework.GameStateValueString
+  nameWithType: GameStateValueString
 - uid: StoryFramework.IGameStateValue
   name: IGameStateValue
   href: api/StoryFramework.IGameStateValue.html
@@ -2003,6 +2027,31 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Utilities.DialogueUtility.SetDialogue
   nameWithType: DialogueUtility.SetDialogue
+- uid: StoryFramework.Utilities.DoOnce
+  name: DoOnce
+  href: api/StoryFramework.Utilities.DoOnce.html
+  commentId: T:StoryFramework.Utilities.DoOnce
+  fullName: StoryFramework.Utilities.DoOnce
+  nameWithType: DoOnce
+- uid: StoryFramework.Utilities.DoOnce.HaveDoneActionId
+  name: HaveDoneActionId
+  href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_HaveDoneActionId
+  commentId: F:StoryFramework.Utilities.DoOnce.HaveDoneActionId
+  fullName: StoryFramework.Utilities.DoOnce.HaveDoneActionId
+  nameWithType: DoOnce.HaveDoneActionId
+- uid: StoryFramework.Utilities.DoOnce.LoadPersistentData(StoryFramework.GameSaveData)
+  name: LoadPersistentData(GameSaveData)
+  href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_LoadPersistentData_StoryFramework_GameSaveData_
+  commentId: M:StoryFramework.Utilities.DoOnce.LoadPersistentData(StoryFramework.GameSaveData)
+  fullName: StoryFramework.Utilities.DoOnce.LoadPersistentData(StoryFramework.GameSaveData)
+  nameWithType: DoOnce.LoadPersistentData(GameSaveData)
+- uid: StoryFramework.Utilities.DoOnce.LoadPersistentData*
+  name: LoadPersistentData
+  href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_LoadPersistentData_
+  commentId: Overload:StoryFramework.Utilities.DoOnce.LoadPersistentData
+  isSpec: "True"
+  fullName: StoryFramework.Utilities.DoOnce.LoadPersistentData
+  nameWithType: DoOnce.LoadPersistentData
 - uid: StoryFramework.Utilities.GameStateSetter
   name: GameStateSetter
   href: api/StoryFramework.Utilities.GameStateSetter.html
