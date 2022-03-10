@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Create a Interactable Item | MoxieJam story framework documentation </title>
+    <title>Interactable Item | MoxieJam story framework documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Create a Interactable Item | MoxieJam story framework documentation ">
+    <meta name="title" content="Interactable Item | MoxieJam story framework documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,31 +76,15 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="create_interactable_item">
-<h1 id="create-a-interactable-item">Create a interactable item</h1>
+            <article class="content wrap" id="_content" data-uid="component_interactable_item">
+<h1 id="persistent-object">Persistent Object</h1>
 
-<p>The easiest way to create a interactable item is to right click in the hierarchy window and in the menu select:</p>
-<p><code>MoxieJam-&gt;StoryFramework-&gt;Create Interactable Item</code></p>
-<p><img src="../resources/images/CreateInteractableItem.png" alt="Right click in hierarchy and select MoxieJam/StoryFramework/Create Interactable Item"></p>
-<p>A new window will now open with settings for the interactable item:</p>
-<ol>
-<li>Name of the game object</li>
-<li>What image to use</li>
-<li>Weather it&#39;s possible to pick up the item or not.</li>
-<li>A <code>Inventory Item</code> to associate with this object. This is the actual item that will be picked up in to the inventory. If you have not created the <code>Inventory Item</code> before hand, you can press <code>Create Item</code> to create one now.</li>
-</ol>
-<p>Once you are satisfied with your settings you click <code>Create</code> and it will be available in the scene. If you have changed your mind about creating the object just click cancel.</p>
-<p><img src="../resources/images/CreateInteractableItem2.png" alt="Configure item in window"></p>
-<p>You have now created a interactable item, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the intractable item you just created:</p>
-<ol>
-<li><code>Transform</code> decided where to place the object in the scene. You can also use it to rotate or change the size of the object.</li>
-<li><code>Box Collider 2D</code> is used to decide the clickable/mouser-over area of the object.</li>
-<li><code>Sprite Renderer</code> like the name implies is used to render (draw) the sprite. You can assign a <code>Sprite</code> (image) here and do things such as flip it, and change what layer and order it&#39;s being drawn.</li>
-<li>See <a class="xref" href="components/PersistentObject.html">Persistent Object</a>.</li>
-<li>See <a class="xref" href="components/InteractableItem.html">Interactable Item</a></li>
-<li>The last component is the material used by the <code>Sprite Renderer</code> to draw the image.</li>
-</ol>
-<p><img src="../resources/images/InteractableItem.png" alt="A Interactable Item"></p>
+<p><img src="../../resources/images/components/InteractableItem.png" alt="Persistent Object component"></p>
+<p>The interactable item is a composite component gathering often-used functionality relating to items:</p>
+<ul>
+<li>It allow you to pick up an item</li>
+</ul>
+<h2 id="settings">Settings</h2>
 </article>
           </div>
           
@@ -109,7 +93,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/CreateInteractableItem.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/InteractableItem.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -136,8 +120,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

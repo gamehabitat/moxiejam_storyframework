@@ -1,6 +1,12 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: component_interactable_item
+  name: Interactable Item
+  href: manual/components/InteractableItem.html
+- uid: component_persistent_object
+  name: Persistent Object
+  href: manual/components/PersistentObject.html
 - uid: create_drop_item_target
   name: Createa a Drop Item Target
   href: manual/CreateDropItemTarget.html
@@ -293,12 +299,12 @@ references:
   commentId: T:StoryFramework.Dialogue
   fullName: StoryFramework.Dialogue
   nameWithType: Dialogue
-- uid: StoryFramework.Dialogue.ActiveDialouge
-  name: ActiveDialouge
-  href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_ActiveDialouge
-  commentId: F:StoryFramework.Dialogue.ActiveDialouge
-  fullName: StoryFramework.Dialogue.ActiveDialouge
-  nameWithType: Dialogue.ActiveDialouge
+- uid: StoryFramework.Dialogue.ActiveDialogue
+  name: ActiveDialogue
+  href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_ActiveDialogue
+  commentId: F:StoryFramework.Dialogue.ActiveDialogue
+  fullName: StoryFramework.Dialogue.ActiveDialogue
+  nameWithType: Dialogue.ActiveDialogue
 - uid: StoryFramework.Dialogue.AppendText(System.String)
   name: AppendText(String)
   href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_AppendText_System_String_
@@ -2042,6 +2048,19 @@ references:
   commentId: T:StoryFramework.Utilities.DoOnce
   fullName: StoryFramework.Utilities.DoOnce
   nameWithType: DoOnce
+- uid: StoryFramework.Utilities.DoOnce.Do
+  name: Do()
+  href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_Do
+  commentId: M:StoryFramework.Utilities.DoOnce.Do
+  fullName: StoryFramework.Utilities.DoOnce.Do()
+  nameWithType: DoOnce.Do()
+- uid: StoryFramework.Utilities.DoOnce.Do*
+  name: Do
+  href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_Do_
+  commentId: Overload:StoryFramework.Utilities.DoOnce.Do
+  isSpec: "True"
+  fullName: StoryFramework.Utilities.DoOnce.Do
+  nameWithType: DoOnce.Do
 - uid: StoryFramework.Utilities.DoOnce.HaveDoneActionId
   name: HaveDoneActionId
   href: api/StoryFramework.Utilities.DoOnce.html#StoryFramework_Utilities_DoOnce_HaveDoneActionId

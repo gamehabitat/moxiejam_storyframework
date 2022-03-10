@@ -124,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.Dialogue.html",
-          "hash": "moCroGj0Ot2Nt8q8CH/yII1Q1jZqFgkRz+TUMBV4B/U="
+          "hash": "L46//PyA/n1ULyALRil/GapK2IYS6LrwvKdj+EVYsi0="
         }
       },
       "is_incremental": false,
@@ -760,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.Utilities.DoOnce.html",
-          "hash": "av8BpbmqIDWQRmK7uTrigNcniRiBT5XRRtRvVy0OQCs="
+          "hash": "cVyv/kJ22D5/HgDrm4mQuzTwgnbmcwQjj/JorigS06M="
         }
       },
       "is_incremental": false,
@@ -911,15 +911,60 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/CreateInteractableItem.md",
       "output": {
         ".html": {
           "relative_path": "manual/CreateInteractableItem.html",
-          "hash": "33twLx1pJcyUxOZMK4C9K4vsMGcy9+WaRR6hUPMqm9M="
+          "hash": "80A63FCLIb+4aoS2JZMFURjX8/nHjMh5EdrFkmxHr3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/InteractableItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/InteractableItem.html",
+          "hash": "1/UuSmB/lYdDm/iiyd/xWcUdQUScXXczhsA2nYlaj6U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/PersistentObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/PersistentObject.html",
+          "hash": "5ytQvbXSDTc7rmBrl9OoSfNE9D0ng4QRsp0JHLzi/Ew="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/index.html",
+          "hash": "w+WQNYvr+lcywfGbT4+aQrUcb0Eq0f6G2cg0rkpPt6Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/components/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/toc.html",
+          "hash": "/y8io+6J4yuMF8XMoH8G2fL+yMC6rmBpJMQORd9kKog="
         }
       },
       "is_incremental": false,
@@ -955,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "BgY+5V53dQ285/Lbd3UyO7IdMsGdMfv4uI5KKpiet6U="
+          "hash": "DeXXok0WrmB9iAXXnkkA6LgP3iIT2a9ZFFm9qxBaKtU="
         }
       },
       "is_incremental": false,
@@ -1219,7 +1264,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 8,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
