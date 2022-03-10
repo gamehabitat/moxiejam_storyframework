@@ -4,7 +4,7 @@ title: Persistent Object
 ---
 # Persistent Object
 
-![Persistent Object component](../resources/images/components/PersistentObject.png)
+![Persistent Object component](../../resources/images/components/PersistentObject.png)
 
 The persistent object component is used for two things:
 

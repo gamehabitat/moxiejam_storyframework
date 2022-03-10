@@ -20,7 +20,7 @@ namespace StoryFramework.Editor
         {
             SerializedObject serializedObject;
 
-            var obj = new GameObject("LockedDropItemTarget");
+            var obj = new GameObject("DropItemTarget");
             var boxCollider2D = obj.AddComponent<BoxCollider2D>();
             boxCollider2D.isTrigger = true;
             var spriteRenderer = obj.AddComponent<SpriteRenderer>();

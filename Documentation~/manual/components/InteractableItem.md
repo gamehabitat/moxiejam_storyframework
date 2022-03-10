@@ -4,7 +4,7 @@ title: Interactable Item
 ---
 # Persistent Object
 
-![Persistent Object component](../resources/images/components/InteractableItem.png)
+![Persistent Object component](../../resources/images/components/InteractableItem.png)
 
 The interactable item is a composite component gathering often-used functionality relating to items:
 
