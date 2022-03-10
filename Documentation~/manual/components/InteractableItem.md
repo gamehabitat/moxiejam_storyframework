@@ -2,7 +2,7 @@
 uid: component_interactable_item
 title: Interactable Item
 ---
-# Persistent Object
+# Interactable Item
 
 ![Persistent Object component](../../resources/images/components/InteractableItem.png)
 

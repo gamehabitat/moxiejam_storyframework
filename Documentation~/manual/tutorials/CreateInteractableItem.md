@@ -8,7 +8,7 @@ The easiest way to create a interactable item is to right click in the hierarchy
 
 `MoxieJam->StoryFramework->Create Interactable Item`
 
-![Right click in hierarchy and select MoxieJam/StoryFramework/Create Interactable Item](../resources/images/CreateInteractableItem.png)
+![Right click in hierarchy and select MoxieJam/StoryFramework/Create Interactable Item](../../resources/images/CreateInteractableItem.png)
 
 A new window will now open with settings for the interactable item:
 
@@ -19,7 +19,7 @@ A new window will now open with settings for the interactable item:
 
 Once you are satisfied with your settings you click `Create` and it will be available in the scene. If you have changed your mind about creating the object just click cancel.
 
-![Configure item in window](../resources/images/CreateInteractableItem2.png)
+![Configure item in window](../../resources/images/CreateInteractableItem2.png)
 
 You have now created a interactable item, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the intractable item you just created:
 
@@ -30,4 +30,4 @@ You have now created a interactable item, congratulations! Select the newly crea
 5. See <xref:component_interactable_item>
 6. The last component is the material used by the `Sprite Renderer` to draw the image.
 
-![A Interactable Item](../resources/images/InteractableItem.png)
+![A Interactable Item](../../resources/images/InteractableItem.png)

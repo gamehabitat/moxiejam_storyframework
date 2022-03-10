@@ -6,6 +6,6 @@ title: Createa a Drop Item Target
 
 ## Create a target to drop an item on
 
-![Right click in hierarchy and select MoxieJam/StoryFramework/Create Drop Item target](../resources/images/CreateDropItemTarget.png)
+![Right click in hierarchy and select MoxieJam/StoryFramework/Create Drop Item target](../../resources/images/CreateDropItemTarget.png)
 
-![Configure item in window](../resources/images/DropItemTarget.png)
+![Configure item in window](../../resources/images/DropItemTarget.png)
