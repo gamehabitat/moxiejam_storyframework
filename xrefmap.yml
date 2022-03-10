@@ -1,12 +1,21 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: component_interactable_item
+  name: Interactable Item
+  href: manual/InteractableItem.html
+- uid: component_persistent_object
+  name: Persistent Object
+  href: manual/PersistentObject.html
+- uid: create_drop_item_target
+  name: Createa a Drop Item Target
+  href: manual/CreateDropItemTarget.html
+- uid: create_interactable_item
+  name: Create a Interactable Item
+  href: manual/CreateInteractableItem.html
 - uid: install_framework
   name: Install MoxieJam Story Framework
   href: manual/install.html
-- uid: interactable_item
-  name: Drop Item Target
-  href: manual/DropItemTarget.html
 - uid: moxiejam_story_framework_index
   name: MoxieJam Story Framework
   href: index.html
