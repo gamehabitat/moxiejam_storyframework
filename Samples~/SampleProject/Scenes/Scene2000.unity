@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eae42b9727d2da489508dc62efb7224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: A snow globe.. again!
+  description: It lit up!
 --- !u!114 &603045753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2774,7 +2774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eae42b9727d2da489508dc62efb7224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: A snow globe.. again!
+  description: The snow globe looks different.
 --- !u!114 &2130427961
 MonoBehaviour:
   m_ObjectHideFlags: 0
