@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: component_interactable_item
-  name: Interactable Item
-  href: manual/InteractableItem.html
-- uid: component_persistent_object
-  name: Persistent Object
-  href: manual/PersistentObject.html
 - uid: create_drop_item_target
   name: Createa a Drop Item Target
   href: manual/CreateDropItemTarget.html

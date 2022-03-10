@@ -911,36 +911,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/CreateInteractableItem.md",
       "output": {
         ".html": {
           "relative_path": "manual/CreateInteractableItem.html",
-          "hash": "7zlnO/gExyiW75+JmBoo5V6Vncm7SVkJvcBIGCfJCH4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/InteractableItem.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/InteractableItem.html",
-          "hash": "yoFdDp/l6zXj5y6TVZGS4VUVSdBYXfQG+4bP3Z59WHY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/PersistentObject.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/PersistentObject.html",
-          "hash": "sNe8QM4RhbkKUJ79Pn1hTXIMCqzX0efC301N2ApBcMk="
+          "hash": "33twLx1pJcyUxOZMK4C9K4vsMGcy9+WaRR6hUPMqm9M="
         }
       },
       "is_incremental": false,
@@ -976,7 +955,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "UKByDY1vHi6BlY8fHUaTapfxPfnkQZSjnoby8rjysUc="
+          "hash": "BgY+5V53dQ285/Lbd3UyO7IdMsGdMfv4uI5KKpiet6U="
         }
       },
       "is_incremental": false,
@@ -1240,7 +1219,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
