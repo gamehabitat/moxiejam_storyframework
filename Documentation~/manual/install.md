@@ -1,3 +1,7 @@
+---
+uid: install_framework
+title: Install MoxieJam Story Framework
+---
 # Installation
 
 This document will guide you through creating a new Unity-project and installing the framework.

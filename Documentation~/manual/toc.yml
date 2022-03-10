@@ -1,4 +1,8 @@
-- name: README.md
-  href: README.md
-- name: install.md
+- name: Index
+  href: index.md
+- name: Install
   href: install.md
+- name: Interactable Item
+  href: InteractableItem.md
+- name: Drop Item Target 
+  href: DropItemTarget.md
