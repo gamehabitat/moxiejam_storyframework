@@ -911,12 +911,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Rjh94istQhymqmvP6uSzBF0ZuMU/mAntEl9w1VkY7Bw="
+          "hash": "ND7tDNbAaPiiThGWY4v0PWwjdUquK2ztnc6wmI67z5M="
         }
       },
       "is_incremental": false,
@@ -952,7 +955,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/InventoryItem.html",
-          "hash": "iBE8JcMkKVY8EtOAxRe6k0vcuRb8n8rrZUJJ242wdjk="
+          "hash": "Rz9D0J+fLRqWxLYuhI8QZ0sRVmspEWKDX7KT5KOIG8A="
         }
       },
       "is_incremental": false,
@@ -1003,7 +1006,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "MCQVfG/k+7Y7sKa6Txv7cO/ckzLqt20nj+IY927B4PE="
+          "hash": "QrtCDpKtt+G6O3aVkIdvq0QkIrg8UimyTaolJqCwycY="
         }
       },
       "is_incremental": false,
@@ -1027,7 +1030,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "2JsDrOtsPFFBI1Jkq/9bAQbfQ3ht7z5E/nAo04V08+w="
+          "hash": "7ea1//Au2NNCoI+2h7AeHmlxwHXPHg9EugIu6LBVv7I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/AdvancedTopics.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/AdvancedTopics.html",
+          "hash": "HjsAko2xyeUM4WKHfX38S7p/552U4ZqHnCMzYRCJhfk="
         }
       },
       "is_incremental": false,
@@ -1039,7 +1054,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/CreateDropItemTarget.html",
-          "hash": "HTJ5oF8+63NdJem5kgrGX7Tj20zPI6E0fmEPkHmzji0="
+          "hash": "fGnCKdGIY71xkog7AFsKtv4qsgGs+A8z7sRRIqz1FcA="
         }
       },
       "is_incremental": false,
@@ -1075,7 +1090,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/index.html",
-          "hash": "8+f+PZvDIRgWDthmcMuKxdEXndRH2VLw1QcyMut52LQ="
+          "hash": "zP1PWczqdfc2DALDKehM3sxUE+3c4ToST+RXYHEZpUo="
         }
       },
       "is_incremental": false,
@@ -1153,6 +1168,28 @@
       "output": {
         "resource": {
           "relative_path": "resources/images/InteractableItem.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/CreateInventoryItem.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/CreateInventoryItem.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/CreateInventoryItem2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/CreateInventoryItem2.png"
         }
       },
       "is_incremental": false,
@@ -1368,6 +1405,28 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "resources/images/tutorials/CreateGameSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/tutorials/CreateGameSettings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/tutorials/GameComponent.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/tutorials/GameComponent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -1394,7 +1453,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 14,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

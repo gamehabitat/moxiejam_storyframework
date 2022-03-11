@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Inventory Item | MoxieJam story framework documentation </title>
+    <title>Advanced Topics | MoxieJam story framework documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Inventory Item | MoxieJam story framework documentation ">
+    <meta name="title" content="Advanced Topics | MoxieJam story framework documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,31 +76,64 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="component_inventory_item">
-<h1 id="inventory-item">Inventory Item</h1>
+            <article class="content wrap" id="_content" data-uid="tutorials_advanced_topics">
+<h1 id="advanced">Advanced</h1>
 
-<p><img src="../../resources/images/components/InventoryItem.png" alt="Inventory Item"></p>
-<p>A inventory item represent a object that can be placed in the inventory. You can assign one to a <code>Interactable Item</code> (see <a class="xref" href="InteractableItem.html">Interactable Item</a>) to allow it to be picked up in to the inventory. It is also used when dragging from the inventory and dropping on the <code>Drop Item Target</code> (see <a class="xref" href="DropItemTarget.html">Drop Item Target</a>).</p>
-<h2 id="creating">Creating</h2>
-<p>You can create a inventory item in two ways:</p>
-<ol>
-<li>On a component that uses items you can create one if none is selected yet.</li>
-</ol>
-<p><img src="../../resources/images/components/CreateInventoryItem2.png" alt="Create Inventory Item 1"></p>
-<p>The other option is to right click in a folder in your project and select <code>Create-&gt;MoxieJam-&gt;StoryFramework-&gt;Item</code></p>
-<p><img src="../../resources/images/components/CreateInventoryItem.png" alt="Create Inventory Item 2"></p>
-<h2 id="settings">Settings</h2>
-<h3 id="name">Name</h3>
-<p>A name for the item.</p>
-<h3 id="description">Description</h3>
-<p>A description of the item, used by the inventory to display information in the dialogue.</p>
-<h3 id="icon">Icon</h3>
-<p>A graphical representation of the item. Used by the inventory to display the item. Also used when dragging the item from the inventory.</p>
-<h2 id="related-components">Related components</h2>
+<h2 id="starting-from-scratch">Starting from scratch</h2>
+<p>The MoxieJam needs at least StartUp scene, A menu scene and a in-game scene.</p>
+<h3 id="start-up-scene">Start Up scene</h3>
+<p>The <code>Start Up</code> scene sets up the MoxieJam framework. A typical scene contains a single game object:</p>
+<p><img src="../../resources/images/tutorials/GameComponent.png" alt="Game component"></p>
 <ul>
-<li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
-<li><a class="xref" href="DropItemTarget.html">Drop Item Target</a></li>
+<li>The <code>Game</code> script will make it self available during the entire game session. It provides functionality for loading scenes and other general things.</li>
+<li>The <code>Audio Manager</code> handles playing of music and sound effects and will also be available while game is running.</li>
+<li>The last two <code>Audio Source</code> is used by the audio manager to play the music and sound effects.</li>
 </ul>
+<p>The game script requires a <code>Settings</code> file. To create it right click in a folder in the project and select <code>Create-&gt;MoxieJam-&gt;StoryFramework-&gt;GameSettings</code>.</p>
+<p><img src="../../resources/images/tutorials/CreateGameSettings.png" alt="Game settings"></p>
+<p>The game settings tells the game what next scene to load next after the initial setup.</p>
+<h3 id="menu-scene">Menu scene</h3>
+<p>The menu scene usually have at least two things:</p>
+<ol>
+<li>A way to start the game (load the in-game scene) with a new game state.</li>
+<li>Quit the game</li>
+</ol>
+<p>To do this you will need to create at least a simple menu script to handle these two scenarios.</p>
+<p>Here is a simple example when a setting for what scene to load when starting a new game.</p>
+<pre><code class="lang-c#">using UnityEngine;
+using StoryFramework;
+
+public class SimpleMenu : MonoBehaviour
+{
+    [SerializeField]
+    SceneRef firstInGameScene;
+
+    public void StartGame()
+    {
+        Game.StartNewGame(firstInGameScene);
+    }
+
+    public void QuitGame()
+    {
+        Game.Quit();
+    }
+}
+</code></pre><p><code>Game.StartNewGame()</code> will create a new empty game state and load the specified scene.</p>
+<h3 id="game-scene">Game scene</h3>
+<p>The game scene requires a <code>In Game Scene</code> script on a game object and a <code>Ingame UI</code> script. These two initialize the scene and the UI.</p>
+<p><code>In Game Scene</code> sets the active UI in this scene.</p>
+<p><code>Ingame UI</code> is used to set the active dialogue, cursor handler and inventory view.</p>
+<ul>
+<li><code>Cursor handler</code> handle the dragging and droppging logic of items.</li>
+<li><code>Inventory view</code> handles the graphical part of the inventory.</li>
+</ul>
+<h2 id="modifying-the-framework">Modifying the framework</h2>
+<p>If you feel something is missing you can:</p>
+<ol>
+<li>Fork the GitHub repository and install using your own github url.</li>
+<li>You can download the source from github and install it in your project locally (in package manager &quot;Add package from disk...&quot;). Note if you do this it might not be shared if you collaborate with others using source control (e.g. PlasticSCM).</li>
+</ol>
+<p><a href="https://github.com/gamehabitat/moxiejam_storyframework">Source code on GitHub</a></p>
 </article>
           </div>
           
@@ -109,7 +142,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/InventoryItem.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/tutorials/AdvancedTopics.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

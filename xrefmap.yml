@@ -20,7 +20,7 @@ references:
   name: Components
   href: manual/components/index.html
 - uid: create_drop_item_target
-  name: Createa a Drop Item Target
+  name: Create a Drop Item Target
   href: manual/tutorials/CreateDropItemTarget.html
 - uid: create_interactable_item
   name: Create a Interactable Item
@@ -2331,3 +2331,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Utilities.SetDialogueText.SetText
   nameWithType: SetDialogueText.SetText
+- uid: tutorials_advanced_topics
+  name: Advanced Topics
+  href: manual/tutorials/AdvancedTopics.html
