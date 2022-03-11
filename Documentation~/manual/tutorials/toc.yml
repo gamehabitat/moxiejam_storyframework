@@ -2,3 +2,5 @@
   href: CreateInteractableItem.md
 - name: Create a Drop Item Target
   href: CreateDropItemTarget.md
+- name: Create a object with description
+  href: CreateDropObjectWithDescription.md

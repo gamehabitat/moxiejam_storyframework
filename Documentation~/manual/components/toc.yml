@@ -1,4 +1,10 @@
 - name: Persistent Object
   href: PersistentObject.md
+- name: Inventory Item
+  href: InventoryItem.md
 - name: Interactable Item
   href: InteractableItem.md
+- name: Drop Item Target
+  href: DropItemTarget.md
+- name: Show Description On Mouse Over
+  href: ShowDescriptionOnMouseOver.md
