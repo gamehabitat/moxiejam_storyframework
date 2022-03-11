@@ -24,11 +24,6 @@
     "title": "Class StopMusic | MoxieJam story framework documentation",
     "keywords": "Class StopMusic Stops playing the music. Inheritance Object StopMusic Namespace : StoryFramework.Audio Assembly : cs.temp.dll.dll Syntax public class StopMusic : MonoBehaviour Methods Stop() Stop the music. Declaration public void Stop()"
   },
-  "api/StoryFramework.ClickItem.html": {
-    "href": "api/StoryFramework.ClickItem.html",
-    "title": "Class ClickItem | MoxieJam story framework documentation",
-    "keywords": "Class ClickItem Invoke a event with the specified item when mouse clicks a object. Inheritance Object ClickItem Implements IPointerClickHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class ClickItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerClick(PointerEventData) Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerClickHandler"
-  },
   "api/StoryFramework.CursorHandler.html": {
     "href": "api/StoryFramework.CursorHandler.html",
     "title": "Class CursorHandler | MoxieJam story framework documentation",
@@ -124,10 +119,15 @@
     "title": "Namespace StoryFramework.Editor.Utilities | MoxieJam story framework documentation",
     "keywords": "Namespace StoryFramework.Editor.Utilities Classes GameStateSetterEditor"
   },
+  "api/StoryFramework.Events.ClickItem.html": {
+    "href": "api/StoryFramework.Events.ClickItem.html",
+    "title": "Class ClickItem | MoxieJam story framework documentation",
+    "keywords": "Class ClickItem Invoke a event with the specified item when mouse clicks a object. Inheritance Object ClickItem Implements IPointerClickHandler Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class ClickItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerClick(PointerEventData) Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerClickHandler"
+  },
   "api/StoryFramework.Events.html": {
     "href": "api/StoryFramework.Events.html",
     "title": "Namespace StoryFramework.Events | MoxieJam story framework documentation",
-    "keywords": "Namespace StoryFramework.Events Classes InventoryEvent Event listener for the inventory system. LockableEvent Event listener for a lockable object. SceneEvent Event listener for a lockable object."
+    "keywords": "Namespace StoryFramework.Events Classes ClickItem Invoke a event with the specified item when mouse clicks a object. InventoryEvent Event listener for the inventory system. LockableEvent Event listener for a lockable object. MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. SceneEvent Event listener for a lockable object."
   },
   "api/StoryFramework.Events.InventoryEvent.html": {
     "href": "api/StoryFramework.Events.InventoryEvent.html",
@@ -138,6 +138,11 @@
     "href": "api/StoryFramework.Events.LockableEvent.html",
     "title": "Class LockableEvent | MoxieJam story framework documentation",
     "keywords": "Class LockableEvent Event listener for a lockable object. Inheritance Object LockableEvent Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class LockableEvent : MonoBehaviour"
+  },
+  "api/StoryFramework.Events.MouseOverItem.html": {
+    "href": "api/StoryFramework.Events.MouseOverItem.html",
+    "title": "Class MouseOverItem | MoxieJam story framework documentation",
+    "keywords": "Class MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. Inheritance Object MouseOverItem Implements IPointerEnterHandler IPointerExitHandler Namespace : StoryFramework.Events Assembly : cs.temp.dll.dll Syntax public class MouseOverItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
   },
   "api/StoryFramework.Events.SceneEvent.html": {
     "href": "api/StoryFramework.Events.SceneEvent.html",
@@ -202,7 +207,7 @@
   "api/StoryFramework.html": {
     "href": "api/StoryFramework.html",
     "title": "Namespace StoryFramework | MoxieJam story framework documentation",
-    "keywords": "Namespace StoryFramework Root namespace for the Story Framework. Contains functionality for aiding in creation of point-and-click type of games. Classes ClickItem Invoke a event with the specified item when mouse clicks a object. CursorHandler Dialogue Dialogue handler. DropItemTarget Game GameSaveData Holds the currently active games persistent state. GameSettings GameStateValue<TValue> GameStateValueBool GameStateValueFloat GameStateValueInt GameStateValueString InGameScene IngameUI InteractableItem A composite component, adding multiple functionality for standard scenario. Handles basic interaction of clicking, hoovering, picking up and displaying description. Inventory Inventory.ItemRecord A record of a item in the inventory. Contains a reference to the item and meta data such as amount of the item in the inventory. InventoryItem A representation of an item in the game. InventoryItemSlot A graphical \"slot\" for a inventory item used by the inventory view to display the inventory items. InventoryView A UI element to help with rendering the inventory inside the UI. Uses InventoryItemSlot to render the items. InventoryViewFixedSize A version of inventory view with a fixed number of slots. LockableObject Adds functionality for locking/unlocking this object. A lockable object have a locked state and events for locking/unlocking and using. MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. PersistentObject Adds persistence to the object. The component will save the Active state of the game object and apply it on loading of the scene. SceneLoader A utility for loading a new scene. SceneRefAttribute ShowDescriptionOnClick Shows a descriptive text when mouse clicks the object. ShowDescriptionOnMouseOver Shows a descriptive text when mouse is over the object. Structs SceneRef Interfaces IGameStateValue IPersistentComponent Delegates CursorHandler.ItemDroppedEvent Game.BeginLoadSceneEvent Game.SceneLoadEvent GameStateValueModifiedDelegate Inventory.InventoryItemDelegate Inventory.InventoryUpdatedDelegate"
+    "keywords": "Namespace StoryFramework Root namespace for the Story Framework. Contains functionality for aiding in creation of point-and-click type of games. Classes CursorHandler Dialogue Dialogue handler. DropItemTarget Game GameSaveData Holds the currently active games persistent state. GameSettings GameStateValue<TValue> GameStateValueBool GameStateValueFloat GameStateValueInt GameStateValueString InGameScene IngameUI InteractableItem A composite component, adding multiple functionality for standard scenario. Handles basic interaction of clicking, hoovering, picking up and displaying description. Inventory Inventory.ItemRecord A record of a item in the inventory. Contains a reference to the item and meta data such as amount of the item in the inventory. InventoryItem A representation of an item in the game. InventoryItemSlot A graphical \"slot\" for a inventory item used by the inventory view to display the inventory items. InventoryView A UI element to help with rendering the inventory inside the UI. Uses InventoryItemSlot to render the items. InventoryViewFixedSize A version of inventory view with a fixed number of slots. LockableObject Adds functionality for locking/unlocking this object. A lockable object have a locked state and events for locking/unlocking and using. PersistentObject Adds persistence to the object. The component will save the Active state of the game object and apply it on loading of the scene. SceneLoader A utility for loading a new scene. SceneRefAttribute ShowDescriptionOnClick Shows a descriptive text when mouse clicks the object. ShowDescriptionOnMouseOver Shows a descriptive text when mouse is over the object. Structs SceneRef Interfaces IGameStateValue IPersistentComponent Delegates CursorHandler.ItemDroppedEvent Game.BeginLoadSceneEvent Game.SceneLoadEvent GameStateValueModifiedDelegate Inventory.InventoryItemDelegate Inventory.InventoryUpdatedDelegate"
   },
   "api/StoryFramework.IGameStateValue.html": {
     "href": "api/StoryFramework.IGameStateValue.html",
@@ -273,11 +278,6 @@
     "href": "api/StoryFramework.LockableObject.html",
     "title": "Class LockableObject | MoxieJam story framework documentation",
     "keywords": "Class LockableObject Adds functionality for locking/unlocking this object. A lockable object have a locked state and events for locking/unlocking and using. Inheritance Object LockableObject Implements IPersistentComponent Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class LockableObject : MonoBehaviour, IPersistentComponent Fields IsLocked Is object locked or not? Declaration [NonSerialized] public GameStateValue<bool> IsLocked Field Value Type Description GameStateValue < Boolean > LockedStateId Declaration public const string LockedStateId = \"LockableObject_IsLocked\" Field Value Type Description String Methods LoadPersistentData(GameSaveData) Declaration public void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData Lock() Sets the object as locked. Declaration public void Lock() Start() Declaration public void Start() Unlock() Sets the object as unlocked. Declaration public void Unlock() Use() Try to use the locked object. Will call the StoryFramework.LockableObject.onUseLocked event if object is locked. Otherwise it will call the StoryFramework.LockableObject.onUseUnlocked event if object is unlocked. Declaration public void Use() Implements IPersistentComponent"
-  },
-  "api/StoryFramework.MouseOverItem.html": {
-    "href": "api/StoryFramework.MouseOverItem.html",
-    "title": "Class MouseOverItem | MoxieJam story framework documentation",
-    "keywords": "Class MouseOverItem Invoke a event with the specified item when mouse enter or exit a object. Inheritance Object MouseOverItem Implements IPointerEnterHandler IPointerExitHandler Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class MouseOverItem : MonoBehaviour Remarks Criteria for this event is implementation dependent. For example see StandAloneInputModule. Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
   },
   "api/StoryFramework.PersistentObject.html": {
     "href": "api/StoryFramework.PersistentObject.html",
@@ -402,7 +402,7 @@
   "manual/index.html": {
     "href": "manual/index.html",
     "title": "MoxieJam Story Framework Manual | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework Create a Interactable Item Create a Drop Item Target Components"
+    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework MoxieJam Story Framework Tutorials Components"
   },
   "manual/install.html": {
     "href": "manual/install.html",
@@ -431,7 +431,7 @@
   },
   "manual/tutorials/index.html": {
     "href": "manual/tutorials/index.html",
-    "title": "Components | MoxieJam story framework documentation",
+    "title": "MoxieJam Story Framework Tutorials | MoxieJam story framework documentation",
     "keywords": "MoxieJam Story Framework Tutorials Create a Interactable Item Create a Drop Item Target Create a object with description Advanced Topics"
   }
 }

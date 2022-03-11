@@ -84,18 +84,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.ClickItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.ClickItem.html",
-          "hash": "mZUgVBaHaULsZOjcUmfL1VL8C8ns5JcCd9xGEpK8pHQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.CursorHandler.ItemDroppedEvent.yml",
       "output": {
         ".html": {
@@ -324,6 +312,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Events.ClickItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Events.ClickItem.html",
+          "hash": "YwOjfXFkXkxkY+SIWCP6HtMX4rC5rn1rrOh7dieUxLQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.Events.InventoryEvent.yml",
       "output": {
         ".html": {
@@ -348,6 +348,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Events.MouseOverItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Events.MouseOverItem.html",
+          "hash": "JOnYKPAHTG1UzpncVLTRccxbjuE3mq7Ml4SBp2QvpUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.Events.SceneEvent.yml",
       "output": {
         ".html": {
@@ -364,7 +376,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.Events.html",
-          "hash": "VQAcJexwekzvYocL808WZ/J5+lBeaiPhC2gtunEMwBc="
+          "hash": "rbWsCAv8Aj8pY+A68ZGE4ey5p27LcnxX1R8APb8zS18="
         }
       },
       "is_incremental": false,
@@ -672,18 +684,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/StoryFramework.MouseOverItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/StoryFramework.MouseOverItem.html",
-          "hash": "diju3i8FKVpU48lN9DcO8/0Ga2e6pGH4U1GQfWouQg8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.PersistentObject.yml",
       "output": {
         ".html": {
@@ -892,7 +892,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.html",
-          "hash": "7gHQ4KWZjgQrPdU1+c2n9a+0XYdhAAtgqC/rpaodUR0="
+          "hash": "UcsmyCYXWJHHUH3E7xvCQVtamcpyUmDobfNXLDh+gSU="
         }
       },
       "is_incremental": false,
@@ -904,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7SazgR7NPEGJAs0v2jZsFq24I/LNh/kHopa/SW5sb6A="
+          "hash": "T4PvvfXE0WiECAQMp96Dh22Nb+eQwfscvestpmqeK24="
         }
       },
       "is_incremental": false,
@@ -986,9 +986,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/components/index.md",
       "output": {
@@ -1006,7 +1003,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "QrtCDpKtt+G6O3aVkIdvq0QkIrg8UimyTaolJqCwycY="
+          "hash": "tMsJ7fkH59Wi1sr512hk5I0vec2RG9DiZudEq5Wp7Cw="
         }
       },
       "is_incremental": false,
@@ -1030,7 +1027,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "7ea1//Au2NNCoI+2h7AeHmlxwHXPHg9EugIu6LBVv7I="
+          "hash": "gBHyOOZZhhyq4mYpmZj6cEFsWq1rJ0UohGsovgPXYt4="
         }
       },
       "is_incremental": false,
@@ -1090,7 +1087,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/index.html",
-          "hash": "zP1PWczqdfc2DALDKehM3sxUE+3c4ToST+RXYHEZpUo="
+          "hash": "oIp+IvCMjP7vMOKgwmB92pVr2f3Pi8UYDth/aEoospU="
         }
       },
       "is_incremental": false,

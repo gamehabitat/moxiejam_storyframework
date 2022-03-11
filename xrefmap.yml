@@ -177,25 +177,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Audio.StopMusic.Stop
   nameWithType: StopMusic.Stop
-- uid: StoryFramework.ClickItem
-  name: ClickItem
-  href: api/StoryFramework.ClickItem.html
-  commentId: T:StoryFramework.ClickItem
-  fullName: StoryFramework.ClickItem
-  nameWithType: ClickItem
-- uid: StoryFramework.ClickItem.OnPointerClick(PointerEventData)
-  name: OnPointerClick(PointerEventData)
-  href: api/StoryFramework.ClickItem.html#StoryFramework_ClickItem_OnPointerClick_PointerEventData_
-  commentId: M:StoryFramework.ClickItem.OnPointerClick(PointerEventData)
-  fullName: StoryFramework.ClickItem.OnPointerClick(PointerEventData)
-  nameWithType: ClickItem.OnPointerClick(PointerEventData)
-- uid: StoryFramework.ClickItem.OnPointerClick*
-  name: OnPointerClick
-  href: api/StoryFramework.ClickItem.html#StoryFramework_ClickItem_OnPointerClick_
-  commentId: Overload:StoryFramework.ClickItem.OnPointerClick
-  isSpec: "True"
-  fullName: StoryFramework.ClickItem.OnPointerClick
-  nameWithType: ClickItem.OnPointerClick
 - uid: StoryFramework.CursorHandler
   name: CursorHandler
   href: api/StoryFramework.CursorHandler.html
@@ -685,6 +666,25 @@ references:
   commentId: N:StoryFramework.Events
   fullName: StoryFramework.Events
   nameWithType: StoryFramework.Events
+- uid: StoryFramework.Events.ClickItem
+  name: ClickItem
+  href: api/StoryFramework.Events.ClickItem.html
+  commentId: T:StoryFramework.Events.ClickItem
+  fullName: StoryFramework.Events.ClickItem
+  nameWithType: ClickItem
+- uid: StoryFramework.Events.ClickItem.OnPointerClick(PointerEventData)
+  name: OnPointerClick(PointerEventData)
+  href: api/StoryFramework.Events.ClickItem.html#StoryFramework_Events_ClickItem_OnPointerClick_PointerEventData_
+  commentId: M:StoryFramework.Events.ClickItem.OnPointerClick(PointerEventData)
+  fullName: StoryFramework.Events.ClickItem.OnPointerClick(PointerEventData)
+  nameWithType: ClickItem.OnPointerClick(PointerEventData)
+- uid: StoryFramework.Events.ClickItem.OnPointerClick*
+  name: OnPointerClick
+  href: api/StoryFramework.Events.ClickItem.html#StoryFramework_Events_ClickItem_OnPointerClick_
+  commentId: Overload:StoryFramework.Events.ClickItem.OnPointerClick
+  isSpec: "True"
+  fullName: StoryFramework.Events.ClickItem.OnPointerClick
+  nameWithType: ClickItem.OnPointerClick
 - uid: StoryFramework.Events.InventoryEvent
   name: InventoryEvent
   href: api/StoryFramework.Events.InventoryEvent.html
@@ -697,6 +697,38 @@ references:
   commentId: T:StoryFramework.Events.LockableEvent
   fullName: StoryFramework.Events.LockableEvent
   nameWithType: LockableEvent
+- uid: StoryFramework.Events.MouseOverItem
+  name: MouseOverItem
+  href: api/StoryFramework.Events.MouseOverItem.html
+  commentId: T:StoryFramework.Events.MouseOverItem
+  fullName: StoryFramework.Events.MouseOverItem
+  nameWithType: MouseOverItem
+- uid: StoryFramework.Events.MouseOverItem.OnPointerEnter(PointerEventData)
+  name: OnPointerEnter(PointerEventData)
+  href: api/StoryFramework.Events.MouseOverItem.html#StoryFramework_Events_MouseOverItem_OnPointerEnter_PointerEventData_
+  commentId: M:StoryFramework.Events.MouseOverItem.OnPointerEnter(PointerEventData)
+  fullName: StoryFramework.Events.MouseOverItem.OnPointerEnter(PointerEventData)
+  nameWithType: MouseOverItem.OnPointerEnter(PointerEventData)
+- uid: StoryFramework.Events.MouseOverItem.OnPointerEnter*
+  name: OnPointerEnter
+  href: api/StoryFramework.Events.MouseOverItem.html#StoryFramework_Events_MouseOverItem_OnPointerEnter_
+  commentId: Overload:StoryFramework.Events.MouseOverItem.OnPointerEnter
+  isSpec: "True"
+  fullName: StoryFramework.Events.MouseOverItem.OnPointerEnter
+  nameWithType: MouseOverItem.OnPointerEnter
+- uid: StoryFramework.Events.MouseOverItem.OnPointerExit(PointerEventData)
+  name: OnPointerExit(PointerEventData)
+  href: api/StoryFramework.Events.MouseOverItem.html#StoryFramework_Events_MouseOverItem_OnPointerExit_PointerEventData_
+  commentId: M:StoryFramework.Events.MouseOverItem.OnPointerExit(PointerEventData)
+  fullName: StoryFramework.Events.MouseOverItem.OnPointerExit(PointerEventData)
+  nameWithType: MouseOverItem.OnPointerExit(PointerEventData)
+- uid: StoryFramework.Events.MouseOverItem.OnPointerExit*
+  name: OnPointerExit
+  href: api/StoryFramework.Events.MouseOverItem.html#StoryFramework_Events_MouseOverItem_OnPointerExit_
+  commentId: Overload:StoryFramework.Events.MouseOverItem.OnPointerExit
+  isSpec: "True"
+  fullName: StoryFramework.Events.MouseOverItem.OnPointerExit
+  nameWithType: MouseOverItem.OnPointerExit
 - uid: StoryFramework.Events.SceneEvent
   name: SceneEvent
   href: api/StoryFramework.Events.SceneEvent.html
@@ -1799,38 +1831,6 @@ references:
   isSpec: "True"
   fullName: StoryFramework.LockableObject.Use
   nameWithType: LockableObject.Use
-- uid: StoryFramework.MouseOverItem
-  name: MouseOverItem
-  href: api/StoryFramework.MouseOverItem.html
-  commentId: T:StoryFramework.MouseOverItem
-  fullName: StoryFramework.MouseOverItem
-  nameWithType: MouseOverItem
-- uid: StoryFramework.MouseOverItem.OnPointerEnter(PointerEventData)
-  name: OnPointerEnter(PointerEventData)
-  href: api/StoryFramework.MouseOverItem.html#StoryFramework_MouseOverItem_OnPointerEnter_PointerEventData_
-  commentId: M:StoryFramework.MouseOverItem.OnPointerEnter(PointerEventData)
-  fullName: StoryFramework.MouseOverItem.OnPointerEnter(PointerEventData)
-  nameWithType: MouseOverItem.OnPointerEnter(PointerEventData)
-- uid: StoryFramework.MouseOverItem.OnPointerEnter*
-  name: OnPointerEnter
-  href: api/StoryFramework.MouseOverItem.html#StoryFramework_MouseOverItem_OnPointerEnter_
-  commentId: Overload:StoryFramework.MouseOverItem.OnPointerEnter
-  isSpec: "True"
-  fullName: StoryFramework.MouseOverItem.OnPointerEnter
-  nameWithType: MouseOverItem.OnPointerEnter
-- uid: StoryFramework.MouseOverItem.OnPointerExit(PointerEventData)
-  name: OnPointerExit(PointerEventData)
-  href: api/StoryFramework.MouseOverItem.html#StoryFramework_MouseOverItem_OnPointerExit_PointerEventData_
-  commentId: M:StoryFramework.MouseOverItem.OnPointerExit(PointerEventData)
-  fullName: StoryFramework.MouseOverItem.OnPointerExit(PointerEventData)
-  nameWithType: MouseOverItem.OnPointerExit(PointerEventData)
-- uid: StoryFramework.MouseOverItem.OnPointerExit*
-  name: OnPointerExit
-  href: api/StoryFramework.MouseOverItem.html#StoryFramework_MouseOverItem_OnPointerExit_
-  commentId: Overload:StoryFramework.MouseOverItem.OnPointerExit
-  isSpec: "True"
-  fullName: StoryFramework.MouseOverItem.OnPointerExit
-  nameWithType: MouseOverItem.OnPointerExit
 - uid: StoryFramework.PersistentObject
   name: PersistentObject
   href: api/StoryFramework.PersistentObject.html
@@ -2331,6 +2331,9 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Utilities.SetDialogueText.SetText
   nameWithType: SetDialogueText.SetText
+- uid: tutorials
+  name: MoxieJam Story Framework Tutorials
+  href: manual/tutorials/index.html
 - uid: tutorials_advanced_topics
   name: Advanced Topics
   href: manual/tutorials/AdvancedTopics.html
