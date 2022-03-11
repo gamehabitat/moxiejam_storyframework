@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Createa a Drop Item Target | MoxieJam story framework documentation </title>
+    <title>Inventory Item | MoxieJam story framework documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Createa a Drop Item Target | MoxieJam story framework documentation ">
+    <meta name="title" content="Inventory Item | MoxieJam story framework documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,28 +76,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="create_drop_item_target">
-<h1 id="create-a-drop-item-target">Create a drop item target</h1>
+            <article class="content wrap" id="_content" data-uid="component_inventory_item">
+<h1 id="inventory-item">Inventory Item</h1>
 
-<p>A drop item target, pretty much does what it is called - it is a object you can dag and drop inventory items on.</p>
-<p>When a inventory item is dropped it can either be accepted or rejected depending on if you configured it to only accept a certain <code>Inventory Item</code> or a certain amount of the <code>Inventory Item</code>.</p>
-<h2 id="create-a-target-to-drop-an-item-on">Create a target to drop an item on</h2>
-<p>The easiest way to create a drop item target is to right click in the hierarchy window and in the menu select:</p>
-<p><code>MoxieJam-&gt;StoryFramework-&gt;Create Drop Item Target</code></p>
-<p><img src="../../resources/images/CreateDropItemTarget.png" alt="Right click in hierarchy and select MoxieJam/StoryFramework/Create Drop Item target"></p>
-<p>You have now created a drop item target, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the object you just created:</p>
-<ol>
-<li><code>Transform</code> decided where to place the object in the scene. You can also use it to rotate or change the size of the object.</li>
-<li><code>Box Collider 2D</code> is used to decide the clickable/mouser-over area of the object.</li>
-<li><code>Sprite Renderer</code> like the name implies is used to render (draw) the sprite. You can assign a <code>Sprite</code> (image) here and do things such as flip it, and change what layer and order it&#39;s being drawn.</li>
-<li>See <a class="xref" href="../components/PersistentObject.html">Persistent Object</a>.</li>
-<li>See <a class="xref" href="../components/DropItemTarget.html">Drop Item Target</a></li>
-<li>See <a class="xref" href="../components/ShowDescriptionOnMouseOver.html">Show Description On Mouse Over</a></li>
-<li><p>The last component is the material used by the <code>Sprite Renderer</code> to draw the image.</p>
-</li>
-<li><p><img src="../../resources/images/DropItemTarget.png" alt="A drop item target"></p>
-</li>
-</ol>
+<p><img src="../../resources/images/components/InventoryItem.png" alt="Inventory Item"></p>
+<p>A inventory item represent a object that can be placed in the inventory. You can assign one to a <code>Interactable Item</code> (see <a class="xref" href="InteractableItem.html">Interactable Item</a>) to allow it to be picked up in to the inventory. It is also used when dragging from the inventory and dropping on the <code>Drop Item Target</code> (see <a class="xref" href="DropItemTarget.html">Drop Item Target</a>). </p>
+<h2 id="settings">Settings</h2>
+<h3 id="name">Name</h3>
+<p>A name for the item.</p>
+<h3 id="description">Description</h3>
+<p>A description of the item, used by the inventory to display information in the dialogue.</p>
+<h3 id="icon">Icon</h3>
+<p>A graphical representation of the item. Used by the inventory to display the item. Also used when dragging the item from the inventory.</p>
+<h2 id="related-components">Related components</h2>
+<ul>
+<li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
+<li><a class="xref" href="DropItemTarget.html">Drop Item Target</a></li>
+</ul>
 </article>
           </div>
           
@@ -106,7 +101,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/tutorials/CreateDropItemTarget.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/InventoryItem.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

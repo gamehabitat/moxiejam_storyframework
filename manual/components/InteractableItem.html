@@ -79,12 +79,33 @@
             <article class="content wrap" id="_content" data-uid="component_interactable_item">
 <h1 id="interactable-item">Interactable Item</h1>
 
-<p><img src="../../resources/images/components/InteractableItem.png" alt="Persistent Object component"></p>
+<p><img src="../../resources/images/components/InteractableItem.png" alt="Interactable Item component"></p>
 <p>The interactable item is a composite component gathering often-used functionality relating to items:</p>
 <ul>
-<li>It allow you to pick up an item</li>
+<li>It allow you to pick up an Inventory Item</li>
+<li>See some descriptive text in the dialogue when user click and/or have the mouse over.</li>
+<li>Do some action when mouse is over, clicking or when picking up the item (see Events section).</li>
 </ul>
 <h2 id="settings">Settings</h2>
+<h3 id="item">Item</h3>
+<p>A item to associate with this component. This is the item that would be picked up if the user clicks on this component. The item also provide the default description text.</p>
+<h2 id="custom-description">Custom description</h2>
+<p>If you do not want to use the description provided in the items settings you can override it with this text.</p>
+<p>Leave empty to use the items text.</p>
+<h2 id="events">Events</h2>
+<p>The component provide some useful events you can use to make something happen when interacting with the component.</p>
+<h3 id="on-mouse-enter">On Mouse enter</h3>
+<p>This event happens when the mouse cursor enter over this object.</p>
+<h3 id="on-mouse-exit">On Mouse exit</h3>
+<p>This event happens when the mouse cursor exit from this object.</p>
+<h3 id="on-mouse-click">On Mouse click</h3>
+<p>This event happens when the user clicks on this object.</p>
+<h3 id="on-pick-up">On Pick Up</h3>
+<p>This event happens the moment the user clicks to pick up the item.</p>
+<h2 id="related-components">Related components</h2>
+<ul>
+<li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
+</ul>
 </article>
           </div>
           

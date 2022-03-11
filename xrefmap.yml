@@ -1,12 +1,21 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: component_drop_item_target
+  name: Drop Item Target
+  href: manual/components/DropItemTarget.html
 - uid: component_interactable_item
   name: Interactable Item
   href: manual/components/InteractableItem.html
+- uid: component_inventory_item
+  name: Inventory Item
+  href: manual/components/InventoryItem.html
 - uid: component_persistent_object
   name: Persistent Object
   href: manual/components/PersistentObject.html
+- uid: component_show_description_on_mouse_over
+  name: Show Description On Mouse Over
+  href: manual/components/ShowDescriptionOnMouseOver.html
 - uid: components
   name: Components
   href: manual/components/index.html
@@ -16,6 +25,9 @@ references:
 - uid: create_interactable_item
   name: Create a Interactable Item
   href: manual/tutorials/CreateInteractableItem.html
+- uid: create_object_with_description
+  name: Create a object with description
+  href: manual/tutorials/CreateDropObjectWithDescription.html
 - uid: install_framework
   name: Install MoxieJam Story Framework
   href: manual/install.html
@@ -388,6 +400,18 @@ references:
   commentId: N:StoryFramework.Editor
   fullName: StoryFramework.Editor
   nameWithType: StoryFramework.Editor
+- uid: StoryFramework.Editor.Core
+  name: StoryFramework.Editor.Core
+  href: api/StoryFramework.Editor.Core.html
+  commentId: N:StoryFramework.Editor.Core
+  fullName: StoryFramework.Editor.Core
+  nameWithType: StoryFramework.Editor.Core
+- uid: StoryFramework.Editor.Core.GameSettingsEditor
+  name: GameSettingsEditor
+  href: api/StoryFramework.Editor.Core.GameSettingsEditor.html
+  commentId: T:StoryFramework.Editor.Core.GameSettingsEditor
+  fullName: StoryFramework.Editor.Core.GameSettingsEditor
+  nameWithType: GameSettingsEditor
 - uid: StoryFramework.Editor.CreateGameeObjectUtility
   name: CreateGameeObjectUtility
   href: api/StoryFramework.Editor.CreateGameeObjectUtility.html

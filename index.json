@@ -49,6 +49,16 @@
     "title": "Class DropItemTarget | MoxieJam story framework documentation",
     "keywords": "Class DropItemTarget Inheritance Object DropItemTarget Namespace : StoryFramework Assembly : cs.temp.dll.dll Syntax public class DropItemTarget : MonoBehaviour Methods TryDropItem(InventoryItem) Declaration public bool TryDropItem(InventoryItem item) Parameters Type Name Description InventoryItem item Returns Type Description Boolean"
   },
+  "api/StoryFramework.Editor.Core.GameSettingsEditor.html": {
+    "href": "api/StoryFramework.Editor.Core.GameSettingsEditor.html",
+    "title": "Class GameSettingsEditor | MoxieJam story framework documentation",
+    "keywords": "Class GameSettingsEditor Inheritance Object GameSettingsEditor Namespace : StoryFramework.Editor.Core Assembly : cs.temp.dll.dll Syntax public class GameSettingsEditor"
+  },
+  "api/StoryFramework.Editor.Core.html": {
+    "href": "api/StoryFramework.Editor.Core.html",
+    "title": "Namespace StoryFramework.Editor.Core | MoxieJam story framework documentation",
+    "keywords": "Namespace StoryFramework.Editor.Core Classes GameSettingsEditor"
+  },
   "api/StoryFramework.Editor.CreateGameeObjectUtility.html": {
     "href": "api/StoryFramework.Editor.CreateGameeObjectUtility.html",
     "title": "Class CreateGameeObjectUtility | MoxieJam story framework documentation",
@@ -359,20 +369,35 @@
     "title": "MoxieJam Story Framework | MoxieJam story framework documentation",
     "keywords": "MoxieJam Story Framework The MoxieJam story framework contains a collection of components and tools to aid in creation of story based point-and-click games for the MoxieJam game jam. Create a interactable item The easiest way to create a interactable item is to right click in the hierarchy window and in the menu select: MoxieJam->StoryFramework->Create Interactable Item A new window will now open with settings for the interactable item: Name of the game object What image to use Weather it's possible to pick up the item or not. A Inventory Item to associate with this object. This is the actual item that will be picked up in to the inventory. If you have not created the Inventory Item before hand, you can press Create Item to create one now. Once you are satisfied with your settings you click Create and it will be available in the scene. If you have changed your mind about creating the object just click cancel. You have now created a interactable item, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the intractable item you just created: Transform decided where to place the object in the scene. You can also use it to rotate or change the size of the object. Create a target to drop an item on"
   },
+  "manual/components/DropItemTarget.html": {
+    "href": "manual/components/DropItemTarget.html",
+    "title": "Drop Item Target | MoxieJam story framework documentation",
+    "keywords": "Drop Item Target The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event. Settings Required item If you want this component to only allow a certain item you can specify it here. Required item amount If the user can collect more than one of the item you can make it so the drop target only accept the item if it have a certain amount of it in its inventory. Events The component provide some useful events you can use to make something happen when interacting with the component. On Item Accepted This event happens if the user have dropped the require item (if any is needed) and have the required amount of the item in its inventory. On Item Rejected This event happens if the user dropped and item on this object and it was either the wrong item or the user did not have enough of the item in the inventory. Related components Inventory Item"
+  },
   "manual/components/index.html": {
     "href": "manual/components/index.html",
     "title": "Components | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Components An in-depth guide of some commonly used components: Persistent Object Interactable Item"
+    "keywords": "MoxieJam Story Framework Components An in-depth guide of some commonly used components: Persistent Object Inventory Item Interactable Item Drop Item Target Show Description On Mouse Over"
   },
   "manual/components/InteractableItem.html": {
     "href": "manual/components/InteractableItem.html",
     "title": "Interactable Item | MoxieJam story framework documentation",
-    "keywords": "Interactable Item The interactable item is a composite component gathering often-used functionality relating to items: It allow you to pick up an item Settings"
+    "keywords": "Interactable Item The interactable item is a composite component gathering often-used functionality relating to items: It allow you to pick up an Inventory Item See some descriptive text in the dialogue when user click and/or have the mouse over. Do some action when mouse is over, clicking or when picking up the item (see Events section). Settings Item A item to associate with this component. This is the item that would be picked up if the user clicks on this component. The item also provide the default description text. Custom description If you do not want to use the description provided in the items settings you can override it with this text. Leave empty to use the items text. Events The component provide some useful events you can use to make something happen when interacting with the component. On Mouse enter This event happens when the mouse cursor enter over this object. On Mouse exit This event happens when the mouse cursor exit from this object. On Mouse click This event happens when the user clicks on this object. On Pick Up This event happens the moment the user clicks to pick up the item. Related components Inventory Item"
+  },
+  "manual/components/InventoryItem.html": {
+    "href": "manual/components/InventoryItem.html",
+    "title": "Inventory Item | MoxieJam story framework documentation",
+    "keywords": "Inventory Item A inventory item represent a object that can be placed in the inventory. You can assign one to a Interactable Item (see Interactable Item ) to allow it to be picked up in to the inventory. It is also used when dragging from the inventory and dropping on the Drop Item Target (see Drop Item Target ). Settings Name A name for the item. Description A description of the item, used by the inventory to display information in the dialogue. Icon A graphical representation of the item. Used by the inventory to display the item. Also used when dragging the item from the inventory. Related components Inventory Item Drop Item Target"
   },
   "manual/components/PersistentObject.html": {
     "href": "manual/components/PersistentObject.html",
     "title": "Persistent Object | MoxieJam story framework documentation",
     "keywords": "Persistent Object The persistent object component is used for two things: It allow for a game object to have a unique identifier that is used to remember the state of a object when entering and exiting scenes. It remembers if a game object was active (enabled) or not when entering and exiting a scene. Settings Active On Start If this is enabled (default) the game object will be enabled (active) when entering the scene first time, otherwise it is hidden. Custom identifier A persistent object have a internal generated identifer private to it. If you rather want to specify your own, this can be done in this field. A custom identifier is useful if you want to be able to refrence this game objects state from antoher scene (e.g. activate/deactivate a game object from another scene)."
+  },
+  "manual/components/ShowDescriptionOnMouseOver.html": {
+    "href": "manual/components/ShowDescriptionOnMouseOver.html",
+    "title": "Show Description On Mouse Over | MoxieJam story framework documentation",
+    "keywords": "Show Description On Mouse Over This component allows use to display some text when user have the mouser over the object. Settings Description The text to display in the dialogue"
   },
   "manual/index.html": {
     "href": "manual/index.html",
@@ -387,7 +412,12 @@
   "manual/tutorials/CreateDropItemTarget.html": {
     "href": "manual/tutorials/CreateDropItemTarget.html",
     "title": "Createa a Drop Item Target | MoxieJam story framework documentation",
-    "keywords": "Create a drop item target Create a target to drop an item on"
+    "keywords": "Create a drop item target A drop item target, pretty much does what it is called - it is a object you can dag and drop inventory items on. When a inventory item is dropped it can either be accepted or rejected depending on if you configured it to only accept a certain Inventory Item or a certain amount of the Inventory Item . Create a target to drop an item on The easiest way to create a drop item target is to right click in the hierarchy window and in the menu select: MoxieJam->StoryFramework->Create Drop Item Target You have now created a drop item target, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the object you just created: Transform decided where to place the object in the scene. You can also use it to rotate or change the size of the object. Box Collider 2D is used to decide the clickable/mouser-over area of the object. Sprite Renderer like the name implies is used to render (draw) the sprite. You can assign a Sprite (image) here and do things such as flip it, and change what layer and order it's being drawn. See Persistent Object . See Drop Item Target See Show Description On Mouse Over The last component is the material used by the Sprite Renderer to draw the image."
+  },
+  "manual/tutorials/CreateDropObjectWithDescription.html": {
+    "href": "manual/tutorials/CreateDropObjectWithDescription.html",
+    "title": "Create a object with description | MoxieJam story framework documentation",
+    "keywords": "Create a object with description This is a simple but useful object that allows you display text in the dialogue when you have the mouse cursor over an object in the scene. Create a target to drop an item on The easiest way to create a object with description is to right click in the hierarchy window and in the menu select: MoxieJam->StoryFramework->Create Object with description You have now created a object with description, congratulations! Select the newly created object in the hierarchy window and take a look in the inspector window. This is all the components of the object you just created: Transform decided where to place the object in the scene. You can also use it to rotate or change the size of the object. Box Collider 2D is used to decide the clickable/mouser-over area of the object. Sprite Renderer like the name implies is used to render (draw) the sprite. You can assign a Sprite (image) here and do things such as flip it, and change what layer and order it's being drawn. See Show Description On Mouse Over . The last component is the material used by the Sprite Renderer to draw the image."
   },
   "manual/tutorials/CreateInteractableItem.html": {
     "href": "manual/tutorials/CreateInteractableItem.html",
@@ -397,6 +427,6 @@
   "manual/tutorials/index.html": {
     "href": "manual/tutorials/index.html",
     "title": "Components | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Tutorials Create a Interactable Item Createa a Drop Item Target"
+    "keywords": "MoxieJam Story Framework Tutorials Create a Interactable Item Createa a Drop Item Target Create a object with description Advanced Starting from scratch"
   }
 }

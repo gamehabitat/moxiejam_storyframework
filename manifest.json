@@ -144,6 +144,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Editor.Core.GameSettingsEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Editor.Core.GameSettingsEditor.html",
+          "hash": "zLYbZZxs9yvJtV61LftLuIoXoluUgdSwdS43B38U+Q8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Editor.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Editor.Core.html",
+          "hash": "GlQbuZ8SBxNTe8nnBi8RQALG5NxjKo7CKOXp1Ns9veE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.Editor.CreateGameeObjectUtility.yml",
       "output": {
         ".html": {
@@ -880,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gN1T0iGQl6UPrzUStNV8UCHzu0VjfVE/xepenF7EMrw="
+          "hash": "7SazgR7NPEGJAs0v2jZsFq24I/LNh/kHopa/SW5sb6A="
         }
       },
       "is_incremental": false,
@@ -900,11 +924,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/components/DropItemTarget.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/DropItemTarget.html",
+          "hash": "lWBQf4dbgmqax/QnLwihN9ZK1x9JL0eIuEQ75eFoynA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/components/InteractableItem.md",
       "output": {
         ".html": {
           "relative_path": "manual/components/InteractableItem.html",
-          "hash": "3tgP9PIDTSbZS6YZeDRA+BWUzsoQ85lWdpjyaJKX144="
+          "hash": "5vKfQGgcram6X77v98eLfz95rbaTRb8c+YTWMouoWP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/InventoryItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/InventoryItem.html",
+          "hash": "iBE8JcMkKVY8EtOAxRe6k0vcuRb8n8rrZUJJ242wdjk="
         }
       },
       "is_incremental": false,
@@ -923,6 +971,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/ShowDescriptionOnMouseOver.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/ShowDescriptionOnMouseOver.html",
+          "hash": "vBB6FVcwX+GhURiy9DJsXipv9epRU/TQnAycRy2XOSY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "DuplicateUids"
       ],
@@ -931,7 +991,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/index.html",
-          "hash": "koCf89yfR6A7AurTerbeCq9FD1fDUG+AnTFTNVQobKM="
+          "hash": "NmsBMgDmMmPvNfk9c9qa0jQP4cI9qJ/cOYMTr+NKyFM="
         }
       },
       "is_incremental": false,
@@ -967,7 +1027,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "MwOkkz2/AZjD03/fcWBAs76mquA5C35k1ZAxzNYMF38="
+          "hash": "2JsDrOtsPFFBI1Jkq/9bAQbfQ3ht7z5E/nAo04V08+w="
         }
       },
       "is_incremental": false,
@@ -979,7 +1039,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/CreateDropItemTarget.html",
-          "hash": "hDkIWI4sRD3Xwk17X96jRxyFq3EkFCGqhBV230kvktc="
+          "hash": "HTJ5oF8+63NdJem5kgrGX7Tj20zPI6E0fmEPkHmzji0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/CreateDropObjectWithDescription.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/CreateDropObjectWithDescription.html",
+          "hash": "GT4eSraepJtaiRQIFk2fQcwDD7V3JgzUyOw+dPO2128="
         }
       },
       "is_incremental": false,
@@ -1003,7 +1075,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/tutorials/index.html",
-          "hash": "UsLTrEIfZa/yzRBtJ+JxdtOTOoI4wlVg2uXlio5GMdc="
+          "hash": "8+f+PZvDIRgWDthmcMuKxdEXndRH2VLw1QcyMut52LQ="
         }
       },
       "is_incremental": false,
@@ -1044,6 +1116,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/images/CreateInteractableObjectWithDescription.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/CreateInteractableObjectWithDescription.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/CreateInteractableObjectWithDescription2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/CreateInteractableObjectWithDescription2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/images/DropItemTarget.png",
       "output": {
         "resource": {
@@ -1066,6 +1160,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/images/components/DropItemTarget.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DropItemTarget.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/images/components/InteractableItem.png",
       "output": {
         "resource": {
@@ -1077,10 +1182,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/images/components/InventoryItem.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/InventoryItem.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/images/components/PersistentObject.png",
       "output": {
         "resource": {
           "relative_path": "resources/images/components/PersistentObject.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/ShowDescriptionOnMouseOver.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/ShowDescriptionOnMouseOver.png"
         }
       },
       "is_incremental": false,
@@ -1267,13 +1394,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 73,
+          "total_file_count": 75,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
