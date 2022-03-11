@@ -10,6 +10,7 @@ namespace StoryFramework
     /// <summary>
     /// A graphical "slot" for a inventory item used by the inventory view to display the inventory items.
     /// </summary>
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/Inventory Item Slot")]
     public class InventoryItemSlot : Selectable, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         [SerializeField]

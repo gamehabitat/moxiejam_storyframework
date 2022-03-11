@@ -12,6 +12,7 @@ using UnityEngine.SceneManagement;
 
 namespace StoryFramework
 {
+    [AddComponentMenu("MoxieJam/StoryFramework/Core/Game")]
     public class Game : MonoBehaviour
     {
         public delegate void SceneLoadEvent(string sceneName);

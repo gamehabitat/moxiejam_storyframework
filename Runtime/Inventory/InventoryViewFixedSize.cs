@@ -6,6 +6,7 @@ namespace StoryFramework
     /// <summary>
     /// A version of inventory view with a fixed number of slots. 
     /// </summary>
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/Inventory Fixed Size")]
     public class InventoryViewFixedSize : MonoBehaviour
     {
         [SerializeField]

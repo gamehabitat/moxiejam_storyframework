@@ -1,6 +1,6 @@
 ﻿---
 uid: create_drop_item_target
-title: Createa a Drop Item Target
+title: Create a Drop Item Target
 ---
 # Create a drop item target
 

@@ -7,7 +7,4 @@ title: Components
 * <xref:create_interactable_item>
 * <xref:create_drop_item_target>
 * <xref:create_object_with_description>
-
-## Advanced
-
-* Starting from scratch
+* <xref:tutorials_advanced_topics>

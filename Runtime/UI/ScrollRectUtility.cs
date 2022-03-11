@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 namespace StoryFramework.Utilities
 {
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/ScrollRect Utility")]
     public class ScrollRectUtility : MonoBehaviour
     {
         [SerializeField]

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 namespace StoryFramework
 {
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/Cursor Handler")]
     public class CursorHandler : MonoBehaviour
     {
         public delegate void ItemDroppedEvent(InventoryItem item);

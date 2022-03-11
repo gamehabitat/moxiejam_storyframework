@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace StoryFramework
 {
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/In-game UI")]
     public class IngameUI : MonoBehaviour
     {
         [SerializeField]

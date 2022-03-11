@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 namespace StoryFramework
 {
+    [AddComponentMenu("MoxieJam/StoryFramework/Core/In-game Scene")]
     public class InGameScene : MonoBehaviour
     {
         [SerializeField]

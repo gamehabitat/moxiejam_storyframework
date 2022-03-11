@@ -9,6 +9,7 @@ namespace StoryFramework
     /// A UI element to help with rendering the inventory inside the UI.
     /// Uses InventoryItemSlot to render the items. 
     /// </summary>
+    [AddComponentMenu("MoxieJam/StoryFramework/UI/Inventory View")]
     public class InventoryView : MonoBehaviour
     {
         [SerializeField]
