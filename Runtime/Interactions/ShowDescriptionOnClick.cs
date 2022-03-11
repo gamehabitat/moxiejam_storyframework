@@ -10,7 +10,7 @@ namespace StoryFramework
     /// <remarks>
     /// Criteria for this event is implementation dependent. For example see StandAloneInputModule.
     /// </remarks>
-    [AddComponentMenu("MoxieJam/StoryFramework/Show Description On Mouse Click")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Interactions/Show Description On Mouse Click")]
     public class ShowDescriptionOnClick : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField]

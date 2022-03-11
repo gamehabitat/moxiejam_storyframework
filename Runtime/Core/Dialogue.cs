@@ -7,7 +7,7 @@ namespace StoryFramework
     /// <summary>
     /// Dialogue handler.
     /// </summary>
-    [AddComponentMenu("MoxieJam/StoryFramework/Dialogue")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Core/Dialogue")]
     public class Dialogue : MonoBehaviour
     {
         /// <summary>

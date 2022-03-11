@@ -1,6 +1,6 @@
 ﻿---
-uid: components
-title: Components
+uid: tutorials
+title: MoxieJam Story Framework Tutorials
 ---
 # MoxieJam Story Framework Tutorials
 

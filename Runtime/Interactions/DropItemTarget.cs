@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 namespace StoryFramework
 {
-    [AddComponentMenu("MoxieJam/StoryFramework/Drop Item Target")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Interactions/Drop Item Target")]
     public class DropItemTarget : MonoBehaviour
     {
         [FormerlySerializedAs("ExprectedItem")]

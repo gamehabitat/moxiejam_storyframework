@@ -10,7 +10,7 @@ namespace StoryFramework
     /// <remarks>
     /// Criteria for this event is implementation dependent. For example see StandAloneInputModule.
     /// </remarks>
-    [AddComponentMenu("MoxieJam/StoryFramework/Show Description On Mouse Over")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Interactions/Show Description On Mouse Over")]
     public class ShowDescriptionOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         /// <summary>

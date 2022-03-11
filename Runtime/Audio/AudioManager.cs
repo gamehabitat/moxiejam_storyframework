@@ -8,7 +8,7 @@ namespace StoryFramework.Audio
     /// <summary>
     /// Handles playing of music and sound effects.
     /// </summary>
-    [AddComponentMenu("MoxieJam/StoryFramework/Audio Manager")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Audio/Audio Manager")]
     public class AudioManager : MonoBehaviour
     {
         [SerializeField]

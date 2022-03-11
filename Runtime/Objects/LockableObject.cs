@@ -9,7 +9,7 @@ namespace StoryFramework
     /// Adds functionality for locking/unlocking this object.
     /// A lockable object have a locked state and events for locking/unlocking and using.
     /// </summary>
-    [AddComponentMenu("MoxieJam/StoryFramework/Lockable Object")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Objects/Lockable Object")]
     [RequireComponent(typeof(PersistentObject))]
     public class LockableObject : MonoBehaviour, IPersistentComponent
     {

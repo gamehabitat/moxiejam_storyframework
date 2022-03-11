@@ -18,7 +18,7 @@ namespace StoryFramework
     /// Adds persistence to the object.
     /// The component will save the Active state of the game object and apply it on loading of the scene. 
     /// </summary>
-    [AddComponentMenu("MoxieJam/StoryFramework/Persistent Object")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Objects/Persistent Object")]
     [DisallowMultipleComponent]
     public class PersistentObject : GuidComponent, IPersistentComponent
     {

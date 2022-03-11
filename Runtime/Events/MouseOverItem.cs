@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-namespace StoryFramework
+namespace StoryFramework.Events
 {
     /// <summary>
     /// Invoke a event with the specified item when mouse enter or exit a object.
@@ -10,7 +10,7 @@ namespace StoryFramework
     /// <remarks>
     /// Criteria for this event is implementation dependent. For example see StandAloneInputModule.
     /// </remarks>
-    [AddComponentMenu("MoxieJam/StoryFramework/Mouse Over Item Event")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Events/Mouse Over Item")]
     public class MouseOverItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]

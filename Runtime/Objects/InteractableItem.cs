@@ -9,7 +9,7 @@ namespace StoryFramework
     /// A composite component, adding multiple functionality for standard scenario.
     /// Handles basic interaction of clicking, hoovering, picking up and displaying description.
     /// </summary>
-    [AddComponentMenu("MoxieJam/StoryFramework/Interactable Item")]
+    [AddComponentMenu("MoxieJam/StoryFramework/Objects/Interactable Item")]
     [RequireComponent(typeof(PersistentObject))]
     public class InteractableItem : MonoBehaviour, IPersistentComponent, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
