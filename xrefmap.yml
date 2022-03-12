@@ -4,6 +4,9 @@ references:
 - uid: component_drop_item_target
   name: Drop Item Target
   href: manual/components/DropItemTarget.html
+- uid: component_drop_multi_item_target
+  name: Drop Multi Item Target
+  href: manual/components/DropMultiItemTarget.html
 - uid: component_interactable_item
   name: Interactable Item
   href: manual/components/InteractableItem.html
@@ -183,12 +186,12 @@ references:
   commentId: T:StoryFramework.CursorHandler
   fullName: StoryFramework.CursorHandler
   nameWithType: CursorHandler
-- uid: StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.DropItemTarget)
-  name: ClearDropTarget(DropItemTarget)
-  href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_ClearDropTarget_StoryFramework_DropItemTarget_
-  commentId: M:StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.DropItemTarget)
-  fullName: StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.DropItemTarget)
-  nameWithType: CursorHandler.ClearDropTarget(DropItemTarget)
+- uid: StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.IDropItemTarget)
+  name: ClearDropTarget(IDropItemTarget)
+  href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_ClearDropTarget_StoryFramework_IDropItemTarget_
+  commentId: M:StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.IDropItemTarget)
+  fullName: StoryFramework.CursorHandler.ClearDropTarget(StoryFramework.IDropItemTarget)
+  nameWithType: CursorHandler.ClearDropTarget(IDropItemTarget)
 - uid: StoryFramework.CursorHandler.ClearDropTarget*
   name: ClearDropTarget
   href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_ClearDropTarget_
@@ -266,12 +269,12 @@ references:
   isSpec: "True"
   fullName: StoryFramework.CursorHandler.SetCursor
   nameWithType: CursorHandler.SetCursor
-- uid: StoryFramework.CursorHandler.SetDropTarget(StoryFramework.DropItemTarget)
-  name: SetDropTarget(DropItemTarget)
-  href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_SetDropTarget_StoryFramework_DropItemTarget_
-  commentId: M:StoryFramework.CursorHandler.SetDropTarget(StoryFramework.DropItemTarget)
-  fullName: StoryFramework.CursorHandler.SetDropTarget(StoryFramework.DropItemTarget)
-  nameWithType: CursorHandler.SetDropTarget(DropItemTarget)
+- uid: StoryFramework.CursorHandler.SetDropTarget(StoryFramework.IDropItemTarget)
+  name: SetDropTarget(IDropItemTarget)
+  href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_SetDropTarget_StoryFramework_IDropItemTarget_
+  commentId: M:StoryFramework.CursorHandler.SetDropTarget(StoryFramework.IDropItemTarget)
+  fullName: StoryFramework.CursorHandler.SetDropTarget(StoryFramework.IDropItemTarget)
+  nameWithType: CursorHandler.SetDropTarget(IDropItemTarget)
 - uid: StoryFramework.CursorHandler.SetDropTarget*
   name: SetDropTarget
   href: api/StoryFramework.CursorHandler.html#StoryFramework_CursorHandler_SetDropTarget_
@@ -304,6 +307,19 @@ references:
   commentId: F:StoryFramework.Dialogue.ActiveDialogue
   fullName: StoryFramework.Dialogue.ActiveDialogue
   nameWithType: Dialogue.ActiveDialogue
+- uid: StoryFramework.Dialogue.ActiveDialogueText
+  name: ActiveDialogueText
+  href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_ActiveDialogueText
+  commentId: P:StoryFramework.Dialogue.ActiveDialogueText
+  fullName: StoryFramework.Dialogue.ActiveDialogueText
+  nameWithType: Dialogue.ActiveDialogueText
+- uid: StoryFramework.Dialogue.ActiveDialogueText*
+  name: ActiveDialogueText
+  href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_ActiveDialogueText_
+  commentId: Overload:StoryFramework.Dialogue.ActiveDialogueText
+  isSpec: "True"
+  fullName: StoryFramework.Dialogue.ActiveDialogueText
+  nameWithType: Dialogue.ActiveDialogueText
 - uid: StoryFramework.Dialogue.AppendText(System.String)
   name: AppendText(String)
   href: api/StoryFramework.Dialogue.html#StoryFramework_Dialogue_AppendText_System_String_
@@ -375,6 +391,38 @@ references:
   isSpec: "True"
   fullName: StoryFramework.DropItemTarget.TryDropItem
   nameWithType: DropItemTarget.TryDropItem
+- uid: StoryFramework.DropMultiItemTarget
+  name: DropMultiItemTarget
+  href: api/StoryFramework.DropMultiItemTarget.html
+  commentId: T:StoryFramework.DropMultiItemTarget
+  fullName: StoryFramework.DropMultiItemTarget
+  nameWithType: DropMultiItemTarget
+- uid: StoryFramework.DropMultiItemTarget.ClearDroppedItems
+  name: ClearDroppedItems()
+  href: api/StoryFramework.DropMultiItemTarget.html#StoryFramework_DropMultiItemTarget_ClearDroppedItems
+  commentId: M:StoryFramework.DropMultiItemTarget.ClearDroppedItems
+  fullName: StoryFramework.DropMultiItemTarget.ClearDroppedItems()
+  nameWithType: DropMultiItemTarget.ClearDroppedItems()
+- uid: StoryFramework.DropMultiItemTarget.ClearDroppedItems*
+  name: ClearDroppedItems
+  href: api/StoryFramework.DropMultiItemTarget.html#StoryFramework_DropMultiItemTarget_ClearDroppedItems_
+  commentId: Overload:StoryFramework.DropMultiItemTarget.ClearDroppedItems
+  isSpec: "True"
+  fullName: StoryFramework.DropMultiItemTarget.ClearDroppedItems
+  nameWithType: DropMultiItemTarget.ClearDroppedItems
+- uid: StoryFramework.DropMultiItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  name: TryDropItem(InventoryItem)
+  href: api/StoryFramework.DropMultiItemTarget.html#StoryFramework_DropMultiItemTarget_TryDropItem_StoryFramework_InventoryItem_
+  commentId: M:StoryFramework.DropMultiItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  fullName: StoryFramework.DropMultiItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  nameWithType: DropMultiItemTarget.TryDropItem(InventoryItem)
+- uid: StoryFramework.DropMultiItemTarget.TryDropItem*
+  name: TryDropItem
+  href: api/StoryFramework.DropMultiItemTarget.html#StoryFramework_DropMultiItemTarget_TryDropItem_
+  commentId: Overload:StoryFramework.DropMultiItemTarget.TryDropItem
+  isSpec: "True"
+  fullName: StoryFramework.DropMultiItemTarget.TryDropItem
+  nameWithType: DropMultiItemTarget.TryDropItem
 - uid: StoryFramework.Editor
   name: StoryFramework.Editor
   href: api/StoryFramework.Editor.html
@@ -387,57 +435,107 @@ references:
   commentId: N:StoryFramework.Editor.Core
   fullName: StoryFramework.Editor.Core
   nameWithType: StoryFramework.Editor.Core
+- uid: StoryFramework.Editor.Core.GameEditorSceneBuildSettings
+  name: GameEditorSceneBuildSettings
+  href: api/StoryFramework.Editor.Core.GameEditorSceneBuildSettings.html
+  commentId: T:StoryFramework.Editor.Core.GameEditorSceneBuildSettings
+  fullName: StoryFramework.Editor.Core.GameEditorSceneBuildSettings
+  nameWithType: GameEditorSceneBuildSettings
+- uid: StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow
+  name: InitWindow()
+  href: api/StoryFramework.Editor.Core.GameEditorSceneBuildSettings.html#StoryFramework_Editor_Core_GameEditorSceneBuildSettings_InitWindow
+  commentId: M:StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow
+  fullName: StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow()
+  nameWithType: GameEditorSceneBuildSettings.InitWindow()
+- uid: StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow*
+  name: InitWindow
+  href: api/StoryFramework.Editor.Core.GameEditorSceneBuildSettings.html#StoryFramework_Editor_Core_GameEditorSceneBuildSettings_InitWindow_
+  commentId: Overload:StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Core.GameEditorSceneBuildSettings.InitWindow
+  nameWithType: GameEditorSceneBuildSettings.InitWindow
 - uid: StoryFramework.Editor.Core.GameSettingsEditor
   name: GameSettingsEditor
   href: api/StoryFramework.Editor.Core.GameSettingsEditor.html
   commentId: T:StoryFramework.Editor.Core.GameSettingsEditor
   fullName: StoryFramework.Editor.Core.GameSettingsEditor
   nameWithType: GameSettingsEditor
-- uid: StoryFramework.Editor.CreateGameeObjectUtility
-  name: CreateGameeObjectUtility
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html
-  commentId: T:StoryFramework.Editor.CreateGameeObjectUtility
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility
-  nameWithType: CreateGameeObjectUtility
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget
+- uid: StoryFramework.Editor.Core.SceneAssetPostProcessor
+  name: SceneAssetPostProcessor
+  href: api/StoryFramework.Editor.Core.SceneAssetPostProcessor.html
+  commentId: T:StoryFramework.Editor.Core.SceneAssetPostProcessor
+  fullName: StoryFramework.Editor.Core.SceneAssetPostProcessor
+  nameWithType: SceneAssetPostProcessor
+- uid: StoryFramework.Editor.Core.SceneAssetPostProcessor.AssetDatabaseScenesModified
+  name: SceneAssetPostProcessor.AssetDatabaseScenesModified
+  href: api/StoryFramework.Editor.Core.SceneAssetPostProcessor.AssetDatabaseScenesModified.html
+  commentId: T:StoryFramework.Editor.Core.SceneAssetPostProcessor.AssetDatabaseScenesModified
+  fullName: StoryFramework.Editor.Core.SceneAssetPostProcessor.AssetDatabaseScenesModified
+  nameWithType: SceneAssetPostProcessor.AssetDatabaseScenesModified
+- uid: StoryFramework.Editor.Core.SceneAssetPostProcessor.OnAssetDatabaseScenesModified
+  name: OnAssetDatabaseScenesModified
+  href: api/StoryFramework.Editor.Core.SceneAssetPostProcessor.html#StoryFramework_Editor_Core_SceneAssetPostProcessor_OnAssetDatabaseScenesModified
+  commentId: E:StoryFramework.Editor.Core.SceneAssetPostProcessor.OnAssetDatabaseScenesModified
+  fullName: StoryFramework.Editor.Core.SceneAssetPostProcessor.OnAssetDatabaseScenesModified
+  nameWithType: SceneAssetPostProcessor.OnAssetDatabaseScenesModified
+- uid: StoryFramework.Editor.CreateGameObjectUtility
+  name: CreateGameObjectUtility
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html
+  commentId: T:StoryFramework.Editor.CreateGameObjectUtility
+  fullName: StoryFramework.Editor.CreateGameObjectUtility
+  nameWithType: CreateGameObjectUtility
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget
   name: CreateDropItemTarget()
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateDropItemTarget
-  commentId: M:StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget()
-  nameWithType: CreateGameeObjectUtility.CreateDropItemTarget()
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget*
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateDropItemTarget
+  commentId: M:StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget()
+  nameWithType: CreateGameObjectUtility.CreateDropItemTarget()
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget*
   name: CreateDropItemTarget
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateDropItemTarget_
-  commentId: Overload:StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateDropItemTarget_
+  commentId: Overload:StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget
   isSpec: "True"
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateDropItemTarget
-  nameWithType: CreateGameeObjectUtility.CreateDropItemTarget
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateDropItemTarget
+  nameWithType: CreateGameObjectUtility.CreateDropItemTarget
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget
+  name: CreateDropMultiItemTarget()
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateDropMultiItemTarget
+  commentId: M:StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget()
+  nameWithType: CreateGameObjectUtility.CreateDropMultiItemTarget()
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget*
+  name: CreateDropMultiItemTarget
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateDropMultiItemTarget_
+  commentId: Overload:StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget
+  isSpec: "True"
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateDropMultiItemTarget
+  nameWithType: CreateGameObjectUtility.CreateDropMultiItemTarget
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem
   name: CreateInteractableItem()
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateInteractableItem
-  commentId: M:StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem()
-  nameWithType: CreateGameeObjectUtility.CreateInteractableItem()
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem*
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateInteractableItem
+  commentId: M:StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem()
+  nameWithType: CreateGameObjectUtility.CreateInteractableItem()
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem*
   name: CreateInteractableItem
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateInteractableItem_
-  commentId: Overload:StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateInteractableItem_
+  commentId: Overload:StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem
   isSpec: "True"
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateInteractableItem
-  nameWithType: CreateGameeObjectUtility.CreateInteractableItem
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateInteractableItem
+  nameWithType: CreateGameObjectUtility.CreateInteractableItem
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription
   name: CreateObjectWithDescription()
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateObjectWithDescription
-  commentId: M:StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription()
-  nameWithType: CreateGameeObjectUtility.CreateObjectWithDescription()
-- uid: StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription*
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateObjectWithDescription
+  commentId: M:StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription()
+  nameWithType: CreateGameObjectUtility.CreateObjectWithDescription()
+- uid: StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription*
   name: CreateObjectWithDescription
-  href: api/StoryFramework.Editor.CreateGameeObjectUtility.html#StoryFramework_Editor_CreateGameeObjectUtility_CreateObjectWithDescription_
-  commentId: Overload:StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription
+  href: api/StoryFramework.Editor.CreateGameObjectUtility.html#StoryFramework_Editor_CreateGameObjectUtility_CreateObjectWithDescription_
+  commentId: Overload:StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription
   isSpec: "True"
-  fullName: StoryFramework.Editor.CreateGameeObjectUtility.CreateObjectWithDescription
-  nameWithType: CreateGameeObjectUtility.CreateObjectWithDescription
+  fullName: StoryFramework.Editor.CreateGameObjectUtility.CreateObjectWithDescription
+  nameWithType: CreateGameObjectUtility.CreateObjectWithDescription
 - uid: StoryFramework.Editor.GameEditor
   name: GameEditor
   href: api/StoryFramework.Editor.GameEditor.html
@@ -1195,6 +1293,25 @@ references:
   commentId: T:StoryFramework.GameStateValueString
   fullName: StoryFramework.GameStateValueString
   nameWithType: GameStateValueString
+- uid: StoryFramework.IDropItemTarget
+  name: IDropItemTarget
+  href: api/StoryFramework.IDropItemTarget.html
+  commentId: T:StoryFramework.IDropItemTarget
+  fullName: StoryFramework.IDropItemTarget
+  nameWithType: IDropItemTarget
+- uid: StoryFramework.IDropItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  name: TryDropItem(InventoryItem)
+  href: api/StoryFramework.IDropItemTarget.html#StoryFramework_IDropItemTarget_TryDropItem_StoryFramework_InventoryItem_
+  commentId: M:StoryFramework.IDropItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  fullName: StoryFramework.IDropItemTarget.TryDropItem(StoryFramework.InventoryItem)
+  nameWithType: IDropItemTarget.TryDropItem(InventoryItem)
+- uid: StoryFramework.IDropItemTarget.TryDropItem*
+  name: TryDropItem
+  href: api/StoryFramework.IDropItemTarget.html#StoryFramework_IDropItemTarget_TryDropItem_
+  commentId: Overload:StoryFramework.IDropItemTarget.TryDropItem
+  isSpec: "True"
+  fullName: StoryFramework.IDropItemTarget.TryDropItem
+  nameWithType: IDropItemTarget.TryDropItem
 - uid: StoryFramework.IGameStateValue
   name: IGameStateValue
   href: api/StoryFramework.IGameStateValue.html
@@ -2072,6 +2189,25 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Utilities.DialogueUtility.SetDialogue
   nameWithType: DialogueUtility.SetDialogue
+- uid: StoryFramework.Utilities.DoIfItemIs
+  name: DoIfItemIs
+  href: api/StoryFramework.Utilities.DoIfItemIs.html
+  commentId: T:StoryFramework.Utilities.DoIfItemIs
+  fullName: StoryFramework.Utilities.DoIfItemIs
+  nameWithType: DoIfItemIs
+- uid: StoryFramework.Utilities.DoIfItemIs.TryDo(StoryFramework.InventoryItem)
+  name: TryDo(InventoryItem)
+  href: api/StoryFramework.Utilities.DoIfItemIs.html#StoryFramework_Utilities_DoIfItemIs_TryDo_StoryFramework_InventoryItem_
+  commentId: M:StoryFramework.Utilities.DoIfItemIs.TryDo(StoryFramework.InventoryItem)
+  fullName: StoryFramework.Utilities.DoIfItemIs.TryDo(StoryFramework.InventoryItem)
+  nameWithType: DoIfItemIs.TryDo(InventoryItem)
+- uid: StoryFramework.Utilities.DoIfItemIs.TryDo*
+  name: TryDo
+  href: api/StoryFramework.Utilities.DoIfItemIs.html#StoryFramework_Utilities_DoIfItemIs_TryDo_
+  commentId: Overload:StoryFramework.Utilities.DoIfItemIs.TryDo
+  isSpec: "True"
+  fullName: StoryFramework.Utilities.DoIfItemIs.TryDo
+  nameWithType: DoIfItemIs.TryDo
 - uid: StoryFramework.Utilities.DoOnce
   name: DoOnce
   href: api/StoryFramework.Utilities.DoOnce.html

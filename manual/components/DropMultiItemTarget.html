@@ -5,21 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace StoryFramework.Editor
-   | MoxieJam story framework documentation </title>
+    <title>Drop Multi Item Target | MoxieJam story framework documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace StoryFramework.Editor
-   | MoxieJam story framework documentation ">
+    <meta name="title" content="Drop Multi Item Target | MoxieJam story framework documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -36,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -78,30 +76,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="StoryFramework.Editor">
-  
-  <h1 id="StoryFramework_Editor" data-uid="StoryFramework.Editor" class="text-break">Namespace StoryFramework.Editor
-  </h1>
-  <div class="markdown level0 summary"><p>Root namespace for the Story Framework Editor functionality.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="StoryFramework.Editor.CreateGameObjectUtility.html">CreateGameObjectUtility</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.GameEditor.html">GameEditor</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.GameSceneTemplatePipeline.html">GameSceneTemplatePipeline</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.InteractableItemEditor.html">InteractableItemEditor</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.InteractableItemSettings.html">InteractableItemSettings</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.SceneRefAttributeDrawer.html">SceneRefAttributeDrawer</a></h4>
-      <section></section>
-      <h4><a class="xref" href="StoryFramework.Editor.SceneRefEditor.html">SceneRefEditor</a></h4>
-      <section></section>
+            <article class="content wrap" id="_content" data-uid="component_drop_multi_item_target">
+<h1 id="drop-multi-item-target">Drop Multi Item Target</h1>
+
+<p><img src="../../resources/images/components/DropMultiItemTarget.png" alt="Drop Item Target component"></p>
+<p>The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event.</p>
+<h2 id="settings">Settings</h2>
+<h3 id="remove-item-from-inventory">Remove Item From Inventory</h3>
+<p>Enable this if you want the item (or an amount of the item) to be removed from the inventory when item is accepted.</p>
+<h3 id="needs-all-items">Needs All Items</h3>
+<p>Enable this if you require the user to drop one of each of the items. If this is enabled, the event On Dropped All Items happens once all items have been dropped. It will only accept dropping one of each item once.</p>
+<h3 id="required-items">Required items</h3>
+<p>If you want this component to only allow a certain items you can specify them here. </p>
+<h2 id="events">Events</h2>
+<p>The component provide some useful events you can use to make something happen when interacting with the component.</p>
+<h3 id="on-item-accepted">On Item Accepted</h3>
+<p>This event happens if the user have dropped the require item (if any is needed) and have the required amount of the item in its inventory.</p>
+<h3 id="on-dropped-all-items">On Dropped All Items</h3>
+<p>This event happens if the user have dropped all the required item (if any is needed). It requires the <code>Needs All Items</code> setting to be enabled.</p>
+<h3 id="on-item-rejected">On Item Rejected</h3>
+<p>This event happens if the user dropped and item on this object and it was either the wrong item or the user did not have enough of the item in the inventory.</p>
+<h2 id="related-components">Related components</h2>
+<ul>
+<li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
+</ul>
 </article>
           </div>
           
@@ -110,7 +108,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Editor/StoryFramework.Editor.md/#L2" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/DropMultiItemTarget.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -137,8 +135,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
