@@ -417,7 +417,7 @@
   "manual/components/index.html": {
     "href": "manual/components/index.html",
     "title": "Components | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Components An in-depth guide of some commonly used components: Persistent Object Inventory Item Interactable Item Drop Item Target Show Description On Mouse Over"
+    "keywords": "MoxieJam Story Framework Components An in-depth guide of some commonly used components: Persistent Object Inventory Item Interactable Item Drop Item Target Drop Multi Item Target Show Description On Mouse Over More components to document: Audio: AudioManager PlayMusic PlaySound StopMusic Core: Dialogue Game Events: ClickItem InventoryEvent LockableEvent MouseOverItem SceneEvent Interactions: ShopwDescriptionOnClick Inventory: InventoryItemSlot InventoryView InventoryViewFixedSize Objects: LockableObject UI: CursorHandler IngameUI ScrollRectUtility Utilities: ActivateStateSetter DialogueTextList DialogueUtility DoIfItemIs DoOnce GameStateSetter GameUtility LockableStateSetter SceneLoader SetDialogueText InGameScene"
   },
   "manual/components/InteractableItem.html": {
     "href": "manual/components/InteractableItem.html",
