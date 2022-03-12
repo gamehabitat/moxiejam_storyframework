@@ -9,7 +9,7 @@ The MoxieJam story framework contains a collection of components and tools to ai
 ## Sections
 
 * [Manual](manual/) contains tutorials and description of commonly used functionality
-* [Scripting API](api/) contains technica description of the scripts in the framework.
+* [Scripting API](api/) contains technical description of the scripts in the framework.
 
 ## Resources
 
