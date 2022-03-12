@@ -339,6 +339,11 @@
     "title": "Class ActiveStateSetter | MoxieJam story framework documentation",
     "keywords": "Class ActiveStateSetter A utility for setting a active state on persistent objects. Inheritance Object ActiveStateSetter Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class ActiveStateSetter : MonoBehaviour Methods SetActive(Boolean) Sets the active state value. Declaration public void SetActive(bool value) Parameters Type Name Description Boolean value"
   },
+  "api/StoryFramework.Utilities.DialogueTextList.html": {
+    "href": "api/StoryFramework.Utilities.DialogueTextList.html",
+    "title": "Class DialogueTextList | MoxieJam story framework documentation",
+    "keywords": "Class DialogueTextList A utility for showing different texts each time. Inheritance Object DialogueTextList Implements IPersistentComponent Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class DialogueTextList : MonoBehaviour, IPersistentComponent Fields AdvanceToNextOnShowTextStateId Declaration public const string AdvanceToNextOnShowTextStateId = \"DialogueTextList_AdvanceToNextOnShowText\" Field Value Type Description String CurrentTextIndexStateId Declaration public const string CurrentTextIndexStateId = \"DialogueTextList_CurrentTextIndex\" Field Value Type Description String LoopTextsStateId Declaration public const string LoopTextsStateId = \"DialogueTextList_LoopTexts\" Field Value Type Description String Methods AdvanceToNextText() Advance the current text index to the next text, and if looping is enabled it will wrap around to the first text on the end. Declaration public void AdvanceToNextText() LoadPersistentData(GameSaveData) Declaration public void LoadPersistentData(GameSaveData saveData) Parameters Type Name Description GameSaveData saveData ResetToFirstText() Reset current text index back to the first text in the list. Declaration public void ResetToFirstText() ShowRandomText() Shows a random text from the text list. Declaration public void ShowRandomText() ShowText() Shows the current text in the dialogue. Declaration public void ShowText() ShowTextIndex(Int32) Shows a specific text from the list. Declaration public void ShowTextIndex(int index) Parameters Type Name Description Int32 index The index of the text Implements IPersistentComponent"
+  },
   "api/StoryFramework.Utilities.DialogueUtility.html": {
     "href": "api/StoryFramework.Utilities.DialogueUtility.html",
     "title": "Class DialogueUtility | MoxieJam story framework documentation",
@@ -372,7 +377,7 @@
   "api/StoryFramework.Utilities.html": {
     "href": "api/StoryFramework.Utilities.html",
     "title": "Namespace StoryFramework.Utilities | MoxieJam story framework documentation",
-    "keywords": "Namespace StoryFramework.Utilities Classes ActiveStateSetter A utility for setting a active state on persistent objects. DialogueUtility Utility for modifying the dialogue. DoIfItemIs Executes a event if it receive a specified item. DoOnce Executes a event once when the component starts. GameStateSetter A utility for setting a global game state. GameUtility A general utility for controlling the game. LockableStateSetter A utility for setting a locks state. ScrollRectUtility SetDialogueText Utility for setting dialogue texts. Enums GameStateSetter.Types LockableStateSetter.LockStates"
+    "keywords": "Namespace StoryFramework.Utilities Classes ActiveStateSetter A utility for setting a active state on persistent objects. DialogueTextList A utility for showing different texts each time. DialogueUtility Utility for modifying the dialogue. DoIfItemIs Executes a event if it receive a specified item. DoOnce Executes a event once when the component starts. GameStateSetter A utility for setting a global game state. GameUtility A general utility for controlling the game. LockableStateSetter A utility for setting a locks state. ScrollRectUtility SetDialogueText Utility for setting dialogue texts. Enums GameStateSetter.Types LockableStateSetter.LockStates"
   },
   "api/StoryFramework.Utilities.LockableStateSetter.html": {
     "href": "api/StoryFramework.Utilities.LockableStateSetter.html",

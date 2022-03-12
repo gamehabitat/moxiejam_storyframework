@@ -828,6 +828,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/StoryFramework.Utilities.DialogueTextList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StoryFramework.Utilities.DialogueTextList.html",
+          "hash": "TAr7rOp5rw2EK/YqttjEC4/hwglaocMZS23eIkgwUeE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/StoryFramework.Utilities.DialogueUtility.yml",
       "output": {
         ".html": {
@@ -952,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "api/StoryFramework.Utilities.html",
-          "hash": "DQueYZhrkq5vQXUuejzjL9037R/lkQsICZ+/KMGDVSE="
+          "hash": "Ac/C5DNAofFIppJMW7HY1DAf3AfttjKmYrGV3lLzWLQ="
         }
       },
       "is_incremental": false,
@@ -976,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "X/qnUC/X5GnEeJ4+djs0quId7LdSKaDzAQgxpoX/Ykk="
+          "hash": "j6PBapRjNGQb65VIQ6wLvYlsc/UJjA7+R76G39dmKkE="
         }
       },
       "is_incremental": false,
@@ -1551,7 +1563,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 81,
+          "total_file_count": 82,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
