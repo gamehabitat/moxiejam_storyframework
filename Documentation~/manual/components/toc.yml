@@ -6,5 +6,7 @@
   href: InteractableItem.md
 - name: Drop Item Target
   href: DropItemTarget.md
+- name: Drop Multi Item Target
+  href: DropMultiItemTarget.md
 - name: Show Description On Mouse Over
   href: ShowDescriptionOnMouseOver.md

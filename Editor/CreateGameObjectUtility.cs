@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace StoryFramework.Editor
 {
-    public class CreateGameeObjectUtility : UnityEditor.Editor
+    public class CreateGameObjectUtility : UnityEditor.Editor
     {
         [MenuItem("GameObject/MoxieJam/StoryFramework/Create Interactable Item", false)]
         public static void CreateInteractableItem()
@@ -37,6 +37,38 @@ namespace StoryFramework.Editor
             serializedObject = new SerializedObject(descriptionOnClick);
             serializedObject.Update();
             serializedObject.FindProperty("description").stringValue = "Try dropping an item on me.";
+            serializedObject.ApplyModifiedProperties();
+
+            /*var lockableObject = obj.AddComponent<LockableObject>();
+            serializedObject = new SerializedObject(lockableObject);
+            serializedObject.Update();
+            serializedObject.FindProperty("isLockedOnStart").boolValue = true;
+            serializedObject.ApplyModifiedProperties();*/
+        }
+        
+        
+        [MenuItem("GameObject/MoxieJam/StoryFramework/Create Drop Multi Item target", false)]
+        public static void CreateDropMultiItemTarget()
+        {
+            SerializedObject serializedObject;
+
+            var obj = new GameObject("DropMultiItemTarget");
+            var boxCollider2D = obj.AddComponent<BoxCollider2D>();
+            boxCollider2D.isTrigger = true;
+            var spriteRenderer = obj.AddComponent<SpriteRenderer>();
+            var persistentObject = obj.AddComponent<PersistentObject>();
+
+            var dropMultiItemTarget = obj.AddComponent<DropMultiItemTarget>();
+            serializedObject = new SerializedObject(dropMultiItemTarget);
+            serializedObject.Update();
+            serializedObject.FindProperty("removeItemFromInventory").boolValue = true;
+            serializedObject.FindProperty("needsAllItems").boolValue = true;
+            serializedObject.ApplyModifiedProperties();
+            
+            var descriptionOnClick = obj.AddComponent<ShowDescriptionOnMouseOver>();
+            serializedObject = new SerializedObject(descriptionOnClick);
+            serializedObject.Update();
+            serializedObject.FindProperty("description").stringValue = "Try dropping lots of items on me.";
             serializedObject.ApplyModifiedProperties();
 
             /*var lockableObject = obj.AddComponent<LockableObject>();

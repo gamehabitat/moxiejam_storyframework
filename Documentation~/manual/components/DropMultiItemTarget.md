@@ -1,10 +1,10 @@
 ﻿---
-uid: component_drop_item_target
-title: Drop Item Target
+uid: component_drop_multi_item_target
+title: Drop Multi Item Target
 ---
-# Drop Item Target
+# Drop Multi Item Target
 
-![Drop Item Target component](../../resources/images/components/DropItemTarget.png)
+![Drop Item Target component](../../resources/images/components/DropMultiItemTarget.png)
 
 The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event.
 
@@ -14,13 +14,13 @@ The drop item target works as a drop target for Inventory Items when dragging th
 
 Enable this if you want the item (or an amount of the item) to be removed from the inventory when item is accepted.
 
-### Required item
+### Needs All Items
 
-If you want this component to only allow a certain item you can specify it here. 
+Enable this if you require the user to drop one of each of the items. If this is enabled, the event On Dropped All Items happens once all items have been dropped. It will only accept dropping one of each item once.
 
-## Required item amount
+### Required items
 
-If the user can collect more than one of the item you can make it so the drop target only accept the item if it have a certain amount of it in its inventory.
+If you want this component to only allow a certain items you can specify them here. 
 
 ## Events
 
@@ -29,6 +29,10 @@ The component provide some useful events you can use to make something happen wh
 ### On Item Accepted
 
 This event happens if the user have dropped the require item (if any is needed) and have the required amount of the item in its inventory.
+
+### On Dropped All Items
+
+This event happens if the user have dropped all the required item (if any is needed). It requires the `Needs All Items` setting to be enabled.
 
 ### On Item Rejected
 

@@ -14,6 +14,30 @@ namespace StoryFramework
         /// Currently active dialogue.
         /// </summary>
         public static Dialogue ActiveDialogue;
+        
+        /// <summary>
+        /// Property for setting/getting current text on the active dialogue.
+        /// </summary>
+        public static string ActiveDialogueText
+        {
+            get
+            {
+                if (ActiveDialogue)
+                {
+                    return ActiveDialogue.Text;
+                }
+
+                return string.Empty;
+            }
+
+            set
+            {
+                if (ActiveDialogue)
+                {
+                    ActiveDialogue.Text = value;
+                }
+            }
+        }
 
         /// <summary>
         /// Graphical text target.

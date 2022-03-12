@@ -120,11 +120,11 @@ namespace StoryFramework
         {
             if (!string.IsNullOrEmpty(customDescription))
             {
-                Dialogue.ActiveDialogue.SetText(customDescription);
+                Dialogue.ActiveDialogueText = customDescription; 
             }
             else
             {
-                Dialogue.ActiveDialogue.SetText(item.Description);
+                Dialogue.ActiveDialogueText = item.Description; 
             }
         }
 
@@ -133,7 +133,7 @@ namespace StoryFramework
         /// </summary>
         void ClearDescription()
         {
-            Dialogue.ActiveDialogue.Clear();
+            Dialogue.ActiveDialogueText = string.Empty; 
         }
 
         /// <summary>

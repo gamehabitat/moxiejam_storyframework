@@ -6,13 +6,28 @@ using UnityEngine.Serialization;
 
 namespace StoryFramework
 {
+    /// <summary>
+    /// A drop item target accepting a single item.
+    /// </summary>
     [AddComponentMenu("MoxieJam/StoryFramework/Interactions/Drop Item Target")]
-    public class DropItemTarget : MonoBehaviour
+    public class DropItemTarget : MonoBehaviour, IDropItemTarget
     {
+        /// <summary>
+        /// If we should remove the item from inventory when dropping.
+        /// </summary>
+        [SerializeField]
+        bool removeItemFromInventory = true;
+
+        /// <summary>
+        /// Requited item for this drop target.
+        /// </summary>
         [FormerlySerializedAs("ExprectedItem")]
         [SerializeField]
         InventoryItem requiredItem;
 
+        /// <summary>
+        /// Requited amount of the item for this drop target.
+        /// </summary>
         [FormerlySerializedAs("AmountNeeded")]
         [SerializeField]
         int requiredAmount = 1;
@@ -39,6 +54,7 @@ namespace StoryFramework
             }
         }
 
+        ///<inheritdoc />
         public bool TryDropItem(InventoryItem item)
         {
             var itemRecord = Game.Instance.SaveData.Inventory.Find(item);
@@ -50,7 +66,10 @@ namespace StoryFramework
 
             if (itemAccepted)
             {
-                Game.Instance.SaveData.Inventory.Remove(item, requiredAmount);
+                if (removeItemFromInventory)
+                {
+                    Game.Instance.SaveData.Inventory.Remove(item, requiredAmount);
+                }
                 onItemAccepted.Invoke(item);
             }
             else

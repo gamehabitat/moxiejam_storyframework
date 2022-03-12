@@ -16,7 +16,7 @@ namespace StoryFramework
         Image dragIcon;
 
         Camera mainCamera;
-        DropItemTarget currentDropTarget;
+        IDropItemTarget currentDropTarget;
 
         public Texture2D Current { get; private set; }
         public InventoryItem ItemDragged { get; private set; }
@@ -80,7 +80,7 @@ namespace StoryFramework
             {
                 dragIcon.sprite = null;
                 dragIcon.enabled = false;
-                if (currentDropTarget && currentDropTarget.TryDropItem(ItemDragged))
+                if ((currentDropTarget != null) && currentDropTarget.TryDropItem(ItemDragged))
                 {
                     Game.Instance.SaveData.Inventory.Enable(ItemDragged);
                 }
@@ -95,7 +95,7 @@ namespace StoryFramework
         /// Set active drop target.
         /// </summary>
         /// <param name="dropItemTargetTarget">Current target we can drop an item on.</param>
-        public void SetDropTarget(DropItemTarget dropItemTargetTarget)
+        public void SetDropTarget(IDropItemTarget dropItemTargetTarget)
         {
             currentDropTarget = dropItemTargetTarget;
         }
@@ -104,7 +104,7 @@ namespace StoryFramework
         /// Clear the drop target if the specified target is the current target.
         /// </summary>
         /// <param name="dropItemTargetTarget">The drop target to clear.</param>
-        public void ClearDropTarget(DropItemTarget dropItemTargetTarget)
+        public void ClearDropTarget(IDropItemTarget dropItemTargetTarget)
         {
             if (currentDropTarget == dropItemTargetTarget)
             {

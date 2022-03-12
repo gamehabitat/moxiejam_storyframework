@@ -25,12 +25,12 @@ namespace StoryFramework
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            Dialogue.ActiveDialogue.SetText(description);
+            Dialogue.ActiveDialogueText = description; 
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            Dialogue.ActiveDialogue.Clear();
+            Dialogue.ActiveDialogueText = string.Empty;
         }
     }
 }

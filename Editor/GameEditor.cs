@@ -14,7 +14,7 @@ namespace StoryFramework.Editor
             // Make sure the play scene is the first file in the build list.
             SceneAsset startScene = AssetDatabase.LoadMainAssetAtPath(SceneUtility.GetScenePathByBuildIndex(0)) as SceneAsset;
             EditorSceneManager.playModeStartScene = startScene;
-            
+
             // React to build settings change.
             EditorBuildSettings.sceneListChanged += OnSceneListChanged;
             
