@@ -268,15 +268,15 @@ namespace StoryFramework
             }
             else if (typeof(TValue) == typeof(int))
             {
-                return gameObjectStateBools as Dictionary<string, GameStateValue<TValue>>;
+                return gameObjectStateInts as Dictionary<string, GameStateValue<TValue>>;
             }
             else if (typeof(TValue) == typeof(float))
             {
-                return gameObjectStateBools as Dictionary<string, GameStateValue<TValue>>;
+                return gameObjectStateFloats as Dictionary<string, GameStateValue<TValue>>;
             }
             else if (typeof(TValue) == typeof(string))
             {
-                return gameObjectStateBools as Dictionary<string, GameStateValue<TValue>>;
+                return gameObjectStateStrings as Dictionary<string, GameStateValue<TValue>>;
             }
 
             return null;
