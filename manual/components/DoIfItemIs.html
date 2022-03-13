@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Drop Item Target | MoxieJam story framework documentation </title>
+    <title>Do If Item Is | MoxieJam story framework documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Drop Item Target | MoxieJam story framework documentation ">
+    <meta name="title" content="Do If Item Is | MoxieJam story framework documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,28 +76,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="component_drop_item_target">
-<h1 id="drop-item-target">Drop Item Target</h1>
+            <article class="content wrap" id="_content" data-uid="component_do_if_item_is">
+<h1 id="do-if-item-is">Do If Item Is</h1>
 
-<p><img src="../../resources/images/components/DropItemTarget.png" alt="Drop Item Target component"></p>
-<p>The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event.</p>
+<p><img src="../../resources/images/components/DoIfItemIs.png" alt="Persistent Object component"></p>
+<p>The Do If Item Is component is useful for drop target actions to do conditional tests on the dropped item.</p>
 <h2 id="settings">Settings</h2>
-<h3 id="remove-item-from-inventory">Remove Item From Inventory</h3>
-<p>Enable this if you want the item (or an amount of the item) to be removed from the inventory when item is accepted.</p>
 <h3 id="required-item">Required item</h3>
-<p>If you want this component to only allow a certain item you can specify it here. </p>
-<h2 id="required-item-amount">Required item amount</h2>
-<p>If the user can collect more than one of the item you can make it so the drop target only accept the item if it have a certain amount of it in its inventory.</p>
+<p>The item to test against.</p>
 <h2 id="events">Events</h2>
 <p>The component provide some useful events you can use to make something happen when interacting with the component.</p>
 <h3 id="on-item-accepted">On Item Accepted</h3>
-<p>This event happens if the user have dropped the require item (if any is needed) and have the required amount of the item in its inventory.</p>
+<p>This event happens if the user have passed the require item.</p>
 <h3 id="on-item-rejected">On Item Rejected</h3>
-<p>This event happens if the user dropped and item on this object and it was either the wrong item or the user did not have enough of the item in the inventory.</p>
+<p>This event happens if the user passed an item on this object and it was the wrong item.</p>
 <h2 id="related-components">Related components</h2>
 <ul>
-<li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
-<li><a class="xref" href="DoIfItemIs.html">Do If Item Is</a></li>
+<li><a class="xref" href="DropMultiItemTarget.html">Drop Multi Item Target</a></li>
 </ul>
 </article>
           </div>
@@ -107,7 +102,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/DropItemTarget.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/components/DoIfItemIs.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

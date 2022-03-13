@@ -1011,11 +1011,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/components/DialogueTextList.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/DialogueTextList.html",
+          "hash": "gf5HY2pRjrKZ5qz1wfCvTRTCBMeFToY3JzKo/qPGkTc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/components/DoIfItemIs.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/components/DoIfItemIs.html",
+          "hash": "Yt8ayHqBjzKfgF30J28+bFgdfg7Dta7r5v7zv5gb5u8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/components/DropItemTarget.md",
       "output": {
         ".html": {
           "relative_path": "manual/components/DropItemTarget.html",
-          "hash": "ufp/ZrIZlvADoshw2qrTgO401Scu/8VCGw7qQzU/Wus="
+          "hash": "Qs4wh+O5hkXjNfeX2LzBwv0/F2+4LxqtXPRYi1Wljvc="
         }
       },
       "is_incremental": false,
@@ -1027,7 +1051,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/DropMultiItemTarget.html",
-          "hash": "sIsSjq0lvh7sxoHXkU8TpIckBJaEMB7rJHLl0r75dkg="
+          "hash": "tnddSzSt/yj+PjTz4Sa9vlJG1RrKodF0z3J2++zmsU8="
         }
       },
       "is_incremental": false,
@@ -1123,7 +1147,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "m4Q5ao0RkygMWt5edKsHw/wN0kVpOBNZcNNAGtAwW7o="
+          "hash": "LFU1Eu4FeFFd59ZyKRxl1LtNTfz2zcckdsBZ5azEmy8="
         }
       },
       "is_incremental": false,
@@ -1290,6 +1314,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/images/components/DialogueTextList.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DialogueTextList.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DialogueTextListExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DialogueTextListExample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DialogueTextListExample2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DialogueTextListExample2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DoIfItemIs.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DoIfItemIs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/images/components/DropItemTarget.png",
       "output": {
         "resource": {
@@ -1305,6 +1373,28 @@
       "output": {
         "resource": {
           "relative_path": "resources/images/components/DropMultiItemTarget.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DropMultiItemTargetExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DropMultiItemTargetExample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DropMultiItemTargetExample2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DropMultiItemTargetExample2.png"
         }
       },
       "is_incremental": false,
@@ -1557,7 +1647,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 15,
+          "total_file_count": 17,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

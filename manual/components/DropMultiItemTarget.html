@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="component_drop_multi_item_target">
 <h1 id="drop-multi-item-target">Drop Multi Item Target</h1>
 
-<p><img src="../../resources/images/components/DropMultiItemTarget.png" alt="Drop Item Target component"></p>
+<p><img src="../../resources/images/components/DropMultiItemTarget.png" alt="Drop Multi Item Target component"></p>
 <p>The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event.</p>
 <h2 id="settings">Settings</h2>
 <h3 id="remove-item-from-inventory">Remove Item From Inventory</h3>
@@ -96,9 +96,16 @@
 <p>This event happens if the user have dropped all the required item (if any is needed). It requires the <code>Needs All Items</code> setting to be enabled.</p>
 <h3 id="on-item-rejected">On Item Rejected</h3>
 <p>This event happens if the user dropped and item on this object and it was either the wrong item or the user did not have enough of the item in the inventory.</p>
+<h2 id="example">Example</h2>
+<p>Here is a example that needs two items, a diary and needles.</p>
+<p>If the user drops either of the items it will do the <code>On Item Accepted</code> actions and pass the dropped item on to the <code>Do If Item Is</code> components. They will in turn test if the item is the required item. If it is, it will change the sprite image to another.</p>
+<p>If the user have dropped both a diary and needles on the target, it will now do what the <code>On Dropped All Items</code> action and change the sprite image again to a lock.</p>
+<p><img src="../../resources/images/components/DropMultiItemTargetExample.png" alt="Drop Multi Item Target example">
+<img src="../../resources/images/components/DropMultiItemTargetExample2.png" alt="Drop Multi Item Target example2"></p>
 <h2 id="related-components">Related components</h2>
 <ul>
 <li><a class="xref" href="InventoryItem.html">Inventory Item</a></li>
+<li><a class="xref" href="DoIfItemIs.html">Do If Item Is</a></li>
 </ul>
 </article>
           </div>
