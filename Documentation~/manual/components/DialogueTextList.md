@@ -1,8 +1,8 @@
 ---
 uid: component_dialogue_text_List
-title: Do If Item Is
+title: Dialogue Text List
 ---
-# Do If Item Is
+# Dialogue Text List
 
 ![Persistent Object component](../../resources/images/components/DialogueTextList.png)
 
