@@ -79,8 +79,10 @@
             <article class="content wrap" id="_content" data-uid="component_do_if_item_is">
 <h1 id="do-if-item-is">Do If Item Is</h1>
 
-<p><img src="../../resources/images/components/DoIfItemIs.png" alt="Persistent Object component"></p>
+<p><img src="../../resources/images/components/DoIfItemIs.png" alt="Do If Item Is component"></p>
 <p>The Do If Item Is component is useful for drop target actions to do conditional tests on the dropped item.</p>
+<p>If you want to use this together with a drop (multi) item target, remember to select the dynamic version of TryDo in order for the drop target to pass the dropped item on to this component:</p>
+<p><img src="../../resources/images/components/DoIfItemIsSelectDynamic.png" alt="Use dynamic TryDo"></p>
 <h2 id="settings">Settings</h2>
 <h3 id="required-item">Required item</h3>
 <p>The item to test against.</p>
@@ -90,6 +92,10 @@
 <p>This event happens if the user have passed the require item.</p>
 <h3 id="on-item-rejected">On Item Rejected</h3>
 <p>This event happens if the user passed an item on this object and it was the wrong item.</p>
+<h2 id="methods-to-use-in-events">Methods to use in events</h2>
+<ul>
+<li><code>TryDo</code> takes a inventory item and test if this item is the required item and depending on if it is it will do one of the two events specified above. </li>
+</ul>
 <h2 id="related-components">Related components</h2>
 <ul>
 <li><a class="xref" href="DropMultiItemTarget.html">Drop Multi Item Target</a></li>

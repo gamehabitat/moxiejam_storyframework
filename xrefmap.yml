@@ -2,7 +2,7 @@
 sorted: true
 references:
 - uid: component_dialogue_text_List
-  name: Do If Item Is
+  name: Dialogue Text List
   href: manual/components/DialogueTextList.html
 - uid: component_do_if_item_is
   name: Do If Item Is

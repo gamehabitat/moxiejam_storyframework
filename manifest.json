@@ -1015,7 +1015,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/DialogueTextList.html",
-          "hash": "gf5HY2pRjrKZ5qz1wfCvTRTCBMeFToY3JzKo/qPGkTc="
+          "hash": "J52zfu8oiwQVCq3YBGax3vFb3Dv+WxMi725LNCJjgTk="
         }
       },
       "is_incremental": false,
@@ -1027,7 +1027,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/components/DoIfItemIs.html",
-          "hash": "Yt8ayHqBjzKfgF30J28+bFgdfg7Dta7r5v7zv5gb5u8="
+          "hash": "jPDRpB489kPgwJugIHb4u2syXfldV2IQmWWc1gOR884="
         }
       },
       "is_incremental": false,
@@ -1351,6 +1351,17 @@
       "output": {
         "resource": {
           "relative_path": "resources/images/components/DoIfItemIs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/components/DoIfItemIsSelectDynamic.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/components/DoIfItemIsSelectDynamic.png"
         }
       },
       "is_incremental": false,
