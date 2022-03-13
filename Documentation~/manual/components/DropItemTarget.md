@@ -37,3 +37,4 @@ This event happens if the user dropped and item on this object and it was either
 ## Related components
 
 * <xref:component_inventory_item>
+* <xref:component_do_if_item_is>

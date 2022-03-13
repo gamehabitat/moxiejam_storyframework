@@ -4,7 +4,7 @@ title: Drop Multi Item Target
 ---
 # Drop Multi Item Target
 
-![Drop Item Target component](../../resources/images/components/DropMultiItemTarget.png)
+![Drop Multi Item Target component](../../resources/images/components/DropMultiItemTarget.png)
 
 The drop item target works as a drop target for Inventory Items when dragging them from the inventory. It is a basic building block for interactions in a point and click game that allow the user to combine items to perform actions. When a dropped item is accepted or rejected it calls an event.
 
@@ -38,6 +38,18 @@ This event happens if the user have dropped all the required item (if any is nee
 
 This event happens if the user dropped and item on this object and it was either the wrong item or the user did not have enough of the item in the inventory.
 
+## Example
+
+Here is a example that needs two items, a diary and needles.
+
+If the user drops either of the items it will do the `On Item Accepted` actions and pass the dropped item on to the `Do If Item Is` components. They will in turn test if the item is the required item. If it is, it will change the sprite image to another.
+
+If the user have dropped both a diary and needles on the target, it will now do what the `On Dropped All Items` action and change the sprite image again to a lock.
+
+![Drop Multi Item Target example](../../resources/images/components/DropMultiItemTargetExample.png)
+![Drop Multi Item Target example2](../../resources/images/components/DropMultiItemTargetExample2.png)
+
 ## Related components
 
 * <xref:component_inventory_item>
+* <xref:component_do_if_item_is>
