@@ -63,7 +63,6 @@ namespace StoryFramework
         /// <summary>
         /// Persistent object states.
         /// </summary>
-        Dictionary<string, IGameStateValue> gameObjectStates = new();
         Dictionary<string, GameStateValue<bool>> gameObjectStateBools = new();
         Dictionary<string, GameStateValue<int>> gameObjectStateInts = new();
         Dictionary<string, GameStateValue<float>> gameObjectStateFloats = new();
@@ -78,10 +77,16 @@ namespace StoryFramework
         public Inventory Inventory { get; private set; } = new();
 
         /// <summary>
+        /// State manager.
+        /// </summary>
+        public StateManager stateManager = new();
+
+        /// <summary>
         /// Constructs a new save data.
         /// </summary>
         public GameSaveData()
         {
+            stateManager.Load(GameSettings.Instance.GlobalGameStates);
             Game.OnBeginLoadScene += OnBeginLoadScene;
         }
 
@@ -106,6 +111,9 @@ namespace StoryFramework
 
                 Inventory.Clear();
                 Inventory = null;
+                
+                stateManager.Dispose();
+                stateManager = null;
             }
 
             isDisposed = true;

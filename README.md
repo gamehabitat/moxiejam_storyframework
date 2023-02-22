@@ -4,7 +4,13 @@
 
 This is a simple framework for creating story based point-and-click adventure games.
 
-It was created to aid in creating games for the MoxieJam held in March 2022.
+It was created to aid in creating games for the MoxieJam held in March 2022 and 2023.
+
+## Important for MoxieJam 2022 attendances!
+
+If your project is no longer working as intended. Please follow this guide on installing the MoxieJam 2022 framework:
+
+https://gamehabitat.github.io/moxiejam_storyframework/manual/install2022.html
 
 ## Installation
 
