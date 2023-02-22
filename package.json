@@ -1,6 +1,6 @@
 {
   "name": "se.gamehabitat.moxiejam.storyframework",
-  "version": "1.48.3",
+  "version": "2.0.0",
   "description": "Game Habitat's MoxieJam framework for story games.",
   "displayName": "MoxieJam story framework",
   "keywords": [
@@ -16,7 +16,7 @@
   },
   "license": "",
   "licensesUrl": "",
-  "unity": "2021.2",
+  "unity": "2021.3.19f1",
   "repository": {
     "type": "git",
     "url": "https://github.com/gamehabitat/moxiejam_storyframework.git"
