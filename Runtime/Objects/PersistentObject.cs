@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -11,6 +10,7 @@ namespace StoryFramework
 {
     public interface IPersistentComponent
     {
+        GameStateIdentifier[] GameStates { get; }
         void LoadPersistentData(GameSaveData saveData);
     }
     
@@ -36,42 +36,56 @@ namespace StoryFramework
         public bool HasCustomIdentifier => !string.IsNullOrEmpty(customIdentifier);
         public string Identifier => HasCustomIdentifier ? customIdentifier : GetGuid().ToString("D");
 
-        GameStateValue<bool> IsActive = new GameStateValue<bool>();
+        GameState IsActiveState => new()
+        {
+            Identifier = new(Identifier, IsActiveStateId),
+            Value = StateManager.Global.GetOrCreate(new(Identifier, IsActiveStateId), new(activeOnStart)).Value
+        };
+        bool isActive;
+
+        /// <summary>
+        /// Available states on this persistent object.
+        /// </summary>
+        public GameStateIdentifier[] GameStates => new[] { IsActiveState.Identifier };
 
         protected override void OnDestroy()
         {
-            IsActive.OnValueModified -= OnActiveStateChanged;
+            StateManager.Global.OnStateChanged -= OnStateChanged;
             Game.OnBeginLoadScene -= OnBeginLoadScene;
             base.OnDestroy();
         }
 
         void OnEnable()
         {
-            IsActive.Value = true;
+            isActive = true;
         }
 
         void OnDisable()
         {
-            IsActive.Value = false;
+            isActive = false;
         }
 
-        void OnActiveStateChanged()
-        {
-            gameObject.SetActive(IsActive);
-        }
-
-        void OnBeginLoadScene(string scenename)
+        void OnBeginLoadScene(string sceneName)
         {
             // Hack to ignore disable on unload of scene.
-            IsActive.OnValueModified -= OnActiveStateChanged;
-            IsActive = new GameStateValue<bool>();
+            StateManager.Global.OnStateChanged -= OnStateChanged;
+            isActive = default;
         }
-
+        
+        void OnStateChanged(in GameState state)
+        {
+            if (state.Identifier.Equals(IsActiveState.Identifier))
+            {
+                isActive = state;
+                gameObject.SetActive(state);
+            }
+        }
+        
         public void LoadPersistentData(GameSaveData saveData)
         {
-            IsActive = saveData.GetState(this, IsActiveStateId, activeOnStart);
-            gameObject.SetActive(IsActive);
-            IsActive.OnValueModified += OnActiveStateChanged;
+            var isActiveState = StateManager.Global.GetOrCreate(IsActiveState.Identifier, new(activeOnStart));
+            gameObject.SetActive(isActiveState);
+            StateManager.Global.OnStateChanged += OnStateChanged;
             Game.OnBeginLoadScene += OnBeginLoadScene;
         }
     }

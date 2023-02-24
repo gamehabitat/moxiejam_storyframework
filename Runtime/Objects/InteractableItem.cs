@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using static StoryFramework.Utilities.GameStateUtilities;
 
 namespace StoryFramework
 {
@@ -42,12 +43,23 @@ namespace StoryFramework
         [SerializeField]
         UnityEvent<InventoryItem> onPickUp;
 
-        [NonSerialized]
-        GameStateValue<bool> isPickedUp = new GameStateValue<bool>();
+        public GameState IsPickedUpState => new() { Identifier = GetIdentifier(this, PickedUpStateId), Value = new(isPickedUp) };
+        bool isPickedUp;
+
+        /// <summary>
+        /// Available states on this persistent object.
+        /// </summary>
+        public GameStateIdentifier[] GameStates => new[] { IsPickedUpState.Identifier };
 
         void Start()
         {
-            gameObject.SetActive(!isPickedUp);
+            gameObject.SetActive(!IsPickedUpState);
+            StateManager.Global.OnStateChanged += OnStateChanged;
+        }
+
+        private void OnDestroy()
+        {
+            StateManager.Global.OnStateChanged -= OnStateChanged;
         }
 
         /// <summary>
@@ -142,10 +154,17 @@ namespace StoryFramework
         /// </summary>
         public void PickUp()
         {
-            isPickedUp.Value = true;
+            StateManager.Global.SetState(IsPickedUpState.Identifier, new(true));
             onPickUp.Invoke(item);
             Game.Instance.SaveData.Inventory.Add(item);
             gameObject.SetActive(false);
+        }
+
+        void OnStateChanged(in GameState state)
+        {
+            if (state.Identifier.Equals(IsPickedUpState.Identifier))
+            {
+            }
         }
 
         public void LoadPersistentData(GameSaveData saveData)

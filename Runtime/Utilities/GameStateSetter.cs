@@ -41,6 +41,9 @@ namespace StoryFramework.Utilities
         [SerializeField]
         string stringValue;
 
+        [SerializeField, GameStateRef]
+        GameStateIdentifier gameState;
+
         void Start()
         {
             if (setStateOnStart)
@@ -54,6 +57,25 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void SetState()
         {
+            if (gameState.IsValid())
+            {
+                switch (stateType)
+                {
+                case Types.Bool:
+                    StateManager.Global.SetState(in gameState, new GameStateValue(boolValue));
+                    break;
+                case Types.Int:
+                    StateManager.Global.SetState(in gameState, new GameStateValue(intValue));
+                    break;
+                case Types.Float:
+                    StateManager.Global.SetState(in gameState, new GameStateValue(floatValue));
+                    break;
+                case Types.String:
+                    StateManager.Global.SetState(in gameState, new GameStateValue(stringValue));
+                    break;
+                }
+            }
+            
             if ((!string.IsNullOrEmpty(identifier)) && Game.Instance && (Game.Instance.SaveData != null))
             {
                 switch (stateType)

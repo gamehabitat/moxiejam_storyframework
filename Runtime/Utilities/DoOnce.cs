@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using static StoryFramework.Utilities.GameStateUtilities;
 
 namespace StoryFramework.Utilities
 {
@@ -23,11 +24,23 @@ namespace StoryFramework.Utilities
         /// <summary>
         /// Have the event executed once?
         /// </summary>
-        GameStateValue<bool> haveDoneAction { get; set; } = new();
+        public GameState HaveDoneActionState => new() { Identifier = GetIdentifier(this, HaveDoneActionId), Value = new(haveDoneAction) };
+        bool haveDoneAction;
+
+        /// <summary>
+        /// Available states on this persistent object.
+        /// </summary>
+        public GameStateIdentifier[] GameStates => new[] { HaveDoneActionState.Identifier };
 
         void Start()
         {
             Do();
+            StateManager.Global.OnStateChanged += OnStateChanged;
+        }
+
+        void OnDestroy()
+        {
+            StateManager.Global.OnStateChanged -= OnStateChanged;
         }
 
         /// <summary>
@@ -35,9 +48,9 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void Do()
         {
-            if (!haveDoneAction)
+            if (!HaveDoneActionState)
             {
-                haveDoneAction.Value = true;
+                StateManager.Global.SetState(HaveDoneActionState.Identifier, new(true));
                 StartCoroutine(DoEvent());
             }
         }
@@ -51,9 +64,16 @@ namespace StoryFramework.Utilities
             eventToDo.Invoke();
         }
 
+        void OnStateChanged(in GameState state)
+        {
+            if (state.Identifier.Equals(HaveDoneActionState.Identifier))
+            {
+            }
+        }
+
         public void LoadPersistentData(GameSaveData saveData)
         {
-            haveDoneAction = saveData.GetState(this, HaveDoneActionId, false);
+            haveDoneAction = StateManager.Global.GetOrCreate(HaveDoneActionState.Identifier, new(false));
         }
     }
 }

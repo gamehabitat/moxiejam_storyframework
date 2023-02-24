@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using StoryFramework.Editor.Utilities;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace StoryFramework.Editor
 {
@@ -12,7 +14,8 @@ namespace StoryFramework.Editor
 		const float popupWidth = 80.0f;
 		const float spacing = 5.0f;
 
-		private List<GUIContent> m_Labels = new List<GUIContent>();// Array.Empty<GUIContent>();
+		private List<int> m_Indices = new();
+		private List<GUIContent> m_Labels = new();
 		GUIContent m_ValueContent = new("Value");
 
 		public GameStateIdentifierDrawer()
@@ -77,7 +80,7 @@ namespace StoryFramework.Editor
 
 		void DrawRef(GameStateRefAttribute gameStateRef, Rect position, SerializedProperty property, GUIContent label)
 		{
-			string value = property.GetGameStateIdentifier();
+			string value = property.GetGameStateIdentifier().ToString();
 			int selected = -1;
 
 			var settingsObject = GameSettings.GetSerializedSettings();
@@ -85,6 +88,7 @@ namespace StoryFramework.Editor
 
 			// Create labels for all global states.
 			m_Labels.Clear();
+			m_Indices.Clear();
 			var globalStatesProp = settingsObject.FindProperty("GlobalGameStates");
 			for (int i = 0; i < globalStatesProp.arraySize; ++i)
 			{
@@ -97,15 +101,35 @@ namespace StoryFramework.Editor
 					continue;
 				}
 
-				string identifier = stateProp.GetGameStateIdentifierProperty().GetGameStateIdentifier();
+				if (gameStateRef.IsPropertyConstrained &&
+				    (!gameStateRef.PropertyConstraint.Equals(stateProp.GetGameStateIdentifierProperty().GetGameStateIdentifier().Property, StringComparison.OrdinalIgnoreCase)))
+				{
+					continue;
+				}
+
+				string identifier = stateProp.GetGameStateIdentifierProperty().GetGameStateIdentifier().ToString();
 				m_Labels.Add(new GUIContent(identifier));
+				m_Indices.Add(i);
 			
 				// Check if this is the currently selected value.
 				if (identifier.Equals(value))
 				{
-					selected = i;
+					selected = m_Labels.Count - 1;
 				}
 			}
+
+			/*var component = property.serializedObject.targetObject as Component;
+			if (component)
+			{
+				var persistentObjects = component
+					.gameObject
+					.scene
+					.GetRootGameObjects()
+					.Select(x => x.GetComponentsInChildren<PersistentObject>());
+				foreach (var persistentObject in persistentObjects)
+				{
+				}
+			}*/
 
 			EditorGUI.BeginProperty(position, label, property);
 			position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
@@ -140,13 +164,13 @@ namespace StoryFramework.Editor
 				selected = EditorGUI.Popup(rect, GUIContent.none, selected, m_Labels.ToArray());
 
 				// Update identifier of game state ref to use the identifier from the selected global state.
-				var stateProp = globalStatesProp.GetArrayElementAtIndex(selected);
-				property.CopyGameStateIdentifier(stateProp.FindPropertyRelative("Identifier"));
+				var stateProp = globalStatesProp.GetArrayElementAtIndex(m_Indices[selected]);
+				property.CopyGameStateIdentifier(stateProp.GetGameStateIdentifierProperty());
 			}
 			else
 			{
 				// No global states exist yet.
-				EditorGUI.LabelField(rect, label, new GUIContent("No global states exist."));
+				EditorGUI.LabelField(rect, GUIContent.none, new GUIContent("No global states exist."));
 			}
 
 			rect.x += rect.width + spacing;

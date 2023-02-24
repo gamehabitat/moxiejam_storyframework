@@ -16,6 +16,9 @@ namespace StoryFramework.Utilities
             Unlocked
         }
 
+        [SerializeField, GameStateRef(GameStateTypes.BooleanFlag, LockableObject.LockedStateId)]
+        GameStateIdentifier lockStateRef;
+
         [SerializeField]
         bool setStateOnStart;
 
@@ -24,7 +27,7 @@ namespace StoryFramework.Utilities
 
         [SerializeField]
         LockStates setValue;
-
+        
         void Start()
         {
             if (setStateOnStart)
@@ -38,17 +41,10 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void SetState(LockStates value)
         {
-            if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
+            if (lockStateRef.IsValid())
             {
-                switch (value)
-                {
-                case LockStates.Locked:
-                    Game.Instance.SaveData.SetGlobalState<bool>(id, LockableObject.LockedStateId, true);
-                    break;
-                case LockStates.Unlocked:
-                    Game.Instance.SaveData.SetGlobalState<bool>(id, LockableObject.LockedStateId, false);
-                    break;
-                }
+                // TODO: Use property LockableObject.LockedStateId
+                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, new GameStateValue(value == LockStates.Locked));
             }
         }
 
@@ -57,14 +53,7 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void Lock()
         {
-            if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
-            {
-                var lockState = Game.Instance.SaveData.GetGlobalState<bool>(id, LockableObject.LockedStateId);
-                if (lockState != null)
-                {
-                    lockState.Value = true;
-                }
-            }
+            SetLockState(true);
         }
 
         /// <summary>
@@ -72,13 +61,14 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void Unlock()
         {
-            if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
+            SetLockState(false);
+        }
+
+        void SetLockState(bool locked)
+        {
+            if (lockStateRef.IsValid() && StateManager.Global.Exists(in lockStateRef))
             {
-                var lockState = Game.Instance.SaveData.GetGlobalState<bool>(id, LockableObject.LockedStateId);
-                if (lockState != null)
-                {
-                    lockState.Value = false;
-                }
+                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, new GameStateValue(locked));
             }
         }
     }

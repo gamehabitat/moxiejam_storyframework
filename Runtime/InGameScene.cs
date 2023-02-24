@@ -13,6 +13,9 @@ namespace StoryFramework
         [SerializeField]
         IngameUI inGameUI;
 
+        [SerializeField, GameStateRef]
+        GameStateIdentifier m_stateIdentifier;
+
         void Awake()
         {
             Game.Instance.IngameUi = inGameUI;

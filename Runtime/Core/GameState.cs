@@ -19,7 +19,7 @@ namespace StoryFramework
     /// Identifier used by game states.
     /// </summary>
     [Serializable]
-    public struct GameStateIdentifier
+    public struct GameStateIdentifier : IEquatable<GameStateIdentifier>
     {
         [SerializeField]
         public string Identifier;
@@ -27,9 +27,27 @@ namespace StoryFramework
         [SerializeField]
         public string Property;
 
+        public GameStateIdentifier(string identifier, string property)
+        {
+            Identifier = identifier;
+            Property = property;
+        }
+
         public static string MakeIdentifier(string identifier, string property)
         {
-            return $"{identifier}.{property}";
+            return $"{identifier}[{property}]";
+        }
+
+        public bool IsValid()
+        {
+            return (!string.IsNullOrEmpty(Identifier)) && (!string.IsNullOrEmpty(Property));
+        }
+        
+        public bool Equals(GameStateIdentifier other)
+        {
+            return
+                Identifier.Equals(other.Identifier, StringComparison.OrdinalIgnoreCase) &&
+                Property.Equals(other.Property, StringComparison.OrdinalIgnoreCase);
         }
 
         public override string ToString()
@@ -44,9 +62,6 @@ namespace StoryFramework
     [Serializable]
     public struct GameStateValue
     {
-        public delegate void ValueChangedEvent(in GameState state);
-        public event ValueChangedEvent OnValueChanged;
-
         [SerializeField]
         public GameStateTypes Type; 
 
@@ -61,6 +76,42 @@ namespace StoryFramework
 
         [SerializeField]
         string m_TextValue;
+
+        public GameStateValue(bool value)
+        {
+            Type = GameStateTypes.BooleanFlag;
+            m_BooleanValue = value;
+            m_IntegerValue = default;
+            m_FloatValue = default;
+            m_TextValue = default;
+        }
+
+        public GameStateValue(int value)
+        {
+            Type = GameStateTypes.BooleanFlag;
+            m_BooleanValue = default;
+            m_IntegerValue = value;
+            m_FloatValue = default;
+            m_TextValue = default;
+        }
+
+        public GameStateValue(float value)
+        {
+            Type = GameStateTypes.BooleanFlag;
+            m_BooleanValue = default;
+            m_IntegerValue = default;
+            m_FloatValue = value;
+            m_TextValue = default;
+        }
+
+        public GameStateValue(string value)
+        {
+            Type = GameStateTypes.BooleanFlag;
+            m_BooleanValue = default;
+            m_IntegerValue = default;
+            m_FloatValue = default;
+            m_TextValue = value;
+        }
 
         void AssertType(in GameState owner, GameStateTypes type)
         {
@@ -97,28 +148,24 @@ namespace StoryFramework
         {
             AssertType(in owner, GameStateTypes.BooleanFlag);
             m_BooleanValue = value;
-            OnValueChanged?.Invoke(in owner);
         }
 
         public void SetValue(in GameState owner, int value)
         {
             AssertType(in owner, GameStateTypes.IntegerNumber);
             m_IntegerValue = value;
-            OnValueChanged?.Invoke(in owner);
         }
 
         public void SetValue(in GameState owner, float value)
         {
             AssertType(in owner, GameStateTypes.FloatNumber);
             m_FloatValue = value;
-            OnValueChanged?.Invoke(in owner);
         }
 
         public void SetValue(in GameState owner, string value)
         {
             AssertType(in owner, GameStateTypes.Text);
             m_TextValue = value;
-            OnValueChanged?.Invoke(in owner);
         }
     }
     
@@ -133,5 +180,15 @@ namespace StoryFramework
 
         [SerializeField]
         public GameStateValue Value;
+
+        public bool BooleanValue => Value.GetBooleanValue(in this);
+        public int IntegerValue => Value.GetIntegerValue(in this);
+        public float FloatValue => Value.GetFloatValue(in this);
+        public string TextValue => Value.GetTextValue(in this);
+        
+        public static implicit operator bool(in GameState state) => state.BooleanValue;
+        public static implicit operator int(in GameState state) => state.IntegerValue;
+        public static implicit operator float(in GameState state) => state.FloatValue;
+        public static implicit operator string(in GameState state) => state.TextValue;
     }
 }

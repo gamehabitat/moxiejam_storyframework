@@ -10,6 +10,8 @@ namespace StoryFramework
 	/// </summary>
 	public class StateManager
 	{
+		public static StateManager Global = new();
+		
 		// Game states.
 		List<GameState> m_States;
 		public IReadOnlyList<GameState> States => m_States;
@@ -66,12 +68,23 @@ namespace StoryFramework
 			Assert.IsTrue(index < 0,
 				$"A state {identifier} already exist. Please try a different identifier.");
 
-			value.OnValueChanged += OnStateValueChanged;
 			m_States.Add(new GameState()
 			{
 				Identifier = identifier,
 				Value = value
 			});
+		}
+
+		public GameState GetOrCreate(in GameStateIdentifier identifier, in GameStateValue initialValue)
+		{
+			if (TryGetState(in identifier, out var state))
+			{
+				return state;
+			}
+			
+			Register(in identifier, in initialValue);
+
+			return m_States[m_States.Count - 1];
 		}
 
 		public bool TryGetState(in GameStateIdentifier identifier, out GameState state)
@@ -120,6 +133,11 @@ namespace StoryFramework
 			return m_States.FindIndex(x =>
 				x.Identifier.Identifier.Equals(id, StringComparison.OrdinalIgnoreCase) &&
 				x.Identifier.Property.Equals(prop, StringComparison.OrdinalIgnoreCase));
+		}
+
+		public bool Exists(in GameStateIdentifier identifier)
+		{
+			return FindState(in identifier) >= 0;
 		}
 
 		void OnStateValueChanged(in GameState state)

@@ -129,45 +129,6 @@ namespace StoryFramework
         }
 
         /// <summary>
-        /// Gets a global state. Useful for cross-scene states.
-        /// </summary>
-        /// <param name="id">State identifier</param>
-        /// <param name="property">Property on object with id</param>
-        /// <param name="createIfNeeded">Create the state if it doesn't exist.</param>
-        /// <param name="defaultValue">Default value if state is crated.</param>
-        /// <returns>Current state value</returns>
-        public GameStateValue<TValue> GetGlobalState<TValue>(string id, string property, bool createIfNeeded = false, TValue defaultValue = default) where TValue : IEquatable<TValue>
-        {
-            if (!string.IsNullOrEmpty(property))
-            {
-                id = SanitizeId($"{id}[{property}]");
-            }
-            else
-            {
-                id = SanitizeId(id);
-            }
-
-            var states = GetStateStorage<TValue>();
-            if (states == null)
-            {
-                Debug.LogError($"Unsupported storage type {typeof(TValue).Name} in container.");
-                return default;
-            }
-
-            if (!ContainsState<TValue>(id))
-            {
-                if (!createIfNeeded)
-                {
-                    return default;
-                }
-                
-                states.Add(id, new GameStateValue<TValue>(property, defaultValue));
-            }
-
-            return states[id];
-        }
-
-        /// <summary>
         /// Sets a global state. Useful for cross-scene states.
         /// </summary>
         /// <param name="id">State identifier</param>

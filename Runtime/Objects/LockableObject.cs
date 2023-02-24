@@ -1,7 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using static StoryFramework.Utilities.GameStateUtilities;
 
 namespace StoryFramework
 {
@@ -40,12 +40,17 @@ namespace StoryFramework
         /// <summary>
         /// Is object locked or not?
         /// </summary>
-        [NonSerialized]
-        public GameStateValue<bool> IsLocked = new GameStateValue<bool>();
+        public GameState IsLockedState => new() { Identifier = GetIdentifier(this, LockedStateId), Value = new(isLockedValue) };
+        bool isLockedValue;
+
+        /// <summary>
+        /// Available states on this persistent object.
+        /// </summary>
+        public GameStateIdentifier[] GameStates => new[] { IsLockedState.Identifier };
 
         public void Start()
         {
-            if (IsLocked)
+            if (IsLockedState)
             {
                 onStartLocked.Invoke();
             }
@@ -54,12 +59,12 @@ namespace StoryFramework
                 onStartUnlocked.Invoke();
             }
 
-            IsLocked.OnValueModified += OnLockedStateChanged;
+            StateManager.Global.OnStateChanged += OnStateChanged;
         }
 
         void OnDestroy()
         {
-            IsLocked.OnValueModified -= OnLockedStateChanged;
+            StateManager.Global.OnStateChanged -= OnStateChanged;
         }
 
         /// <summary>
@@ -69,7 +74,7 @@ namespace StoryFramework
         /// </summary>
         public void Use()
         {
-            if (IsLocked)
+            if (IsLockedState)
             {
                 onUseLocked?.Invoke();
             }
@@ -84,9 +89,9 @@ namespace StoryFramework
         /// </summary>
         public void Lock()
         {
-            if (!IsLocked)
+            if (!IsLockedState)
             {
-                IsLocked.Value = true;
+                StateManager.Global.SetState(IsLockedState.Identifier, new(true));
             }
         }
 
@@ -98,25 +103,28 @@ namespace StoryFramework
             //if (IsLocked.Value)
             if (isLocked)
             {
-                IsLocked.Value = false;
+                StateManager.Global.SetState(IsLockedState.Identifier, new(false));
             }
         }
 
-        void OnLockedStateChanged()
+        void OnStateChanged(in GameState state)
         {
-            if (IsLocked)
+            if (state.Identifier.Equals(IsLockedState.Identifier))
             {
-                onLocked?.Invoke();
-            }
-            else
-            {
-                onUnlocked?.Invoke();
+                if (state)
+                {
+                    onLocked?.Invoke();
+                }
+                else
+                {
+                    onUnlocked?.Invoke();
+                }
             }
         }
-        
+
         public void LoadPersistentData(GameSaveData saveData)
         {
-            IsLocked = saveData.GetState(this, LockedStateId, isLocked);
+            isLockedValue = StateManager.Global.GetOrCreate(IsLockedState.Identifier, new(isLocked));
         }
     }
 }

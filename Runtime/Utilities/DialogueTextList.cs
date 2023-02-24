@@ -1,7 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
+using static StoryFramework.Utilities.GameStateUtilities;
 
 namespace StoryFramework.Utilities
 {
@@ -40,9 +40,39 @@ namespace StoryFramework.Utilities
         [SerializeField]
         UnityEvent onLastTextWasShown;
 
-        private GameStateValue<int> currentTextIndex = new();
-        private GameStateValue<bool> advanceToNextOnShowTextValue = new();
-        private GameStateValue<bool> loopTextsValue = new(); 
+        GameState CurrentTextIndexState => new()
+        {
+            Identifier = GetIdentifier(this, CurrentTextIndexStateId),
+            Value = StateManager.Global.GetOrCreate(GetIdentifier(this, CurrentTextIndexStateId), new(0)).Value
+        };
+        GameState AdvanceToNextOnShowTextValueState => new()
+        {
+            Identifier = GetIdentifier(this, AdvanceToNextOnShowTextStateId),
+            Value = StateManager.Global.GetOrCreate(GetIdentifier(this, AdvanceToNextOnShowTextStateId), new(advanceToNextOnShowTextValue)).Value
+        };
+        GameState LoopTextsValueState => new()
+        {
+            Identifier = GetIdentifier(this, LoopTextsStateId),
+            Value = StateManager.Global.GetOrCreate(GetIdentifier(this, AdvanceToNextOnShowTextStateId), new(loopTextsValue)).Value
+        };
+
+        //public GameState CurrentTextIndexState => new() { Identifier = GetIdentifier(this, CurrentTextIndexStateId), Value = new(currentTextIndex) };
+        int currentTextIndex;
+        //public GameState AdvanceToNextOnShowTextValueState => new() { Identifier = GetIdentifier(this, AdvanceToNextOnShowTextStateId), Value = new(advanceToNextOnShowTextValue) };
+        bool advanceToNextOnShowTextValue;
+        //public GameState LoopTextsValueState => new() { Identifier = GetIdentifier(this, LoopTextsStateId), Value = new(loopTextsValue) };
+        bool loopTextsValue;
+
+
+        /// <summary>
+        /// Available states on this persistent object.
+        /// </summary>
+        public GameStateIdentifier[] GameStates => new[]
+        {
+            CurrentTextIndexState.Identifier,
+            AdvanceToNextOnShowTextValueState.Identifier,
+            LoopTextsValueState.Identifier,
+        };
 
         private void Start()
         {
@@ -53,7 +83,7 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void ResetToFirstText()
         {
-            currentTextIndex.Value = 0;
+            StateManager.Global.SetState(CurrentTextIndexState.Identifier, new(0));
         }
 
         /// <summary>
@@ -61,7 +91,8 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void AdvanceToNextText()
         {
-            currentTextIndex.Value = currentTextIndex + 1;
+            currentTextIndex++;
+            StateManager.Global.SetState(CurrentTextIndexState.Identifier, new(currentTextIndex));
 
             if (currentTextIndex == texts.Length)
             {
@@ -118,9 +149,9 @@ namespace StoryFramework.Utilities
 
         public void LoadPersistentData(GameSaveData saveData)
         {
-            currentTextIndex = saveData.GetState(this, CurrentTextIndexStateId, 0);
-            advanceToNextOnShowTextValue = saveData.GetState(this, AdvanceToNextOnShowTextStateId, advanceToNextOnShowText);
-            loopTextsValue = saveData.GetState(this, CurrentTextIndexStateId, loopTexts);
+            currentTextIndex = StateManager.Global.GetOrCreate(CurrentTextIndexState.Identifier, new(0));
+            advanceToNextOnShowTextValue = StateManager.Global.GetOrCreate(AdvanceToNextOnShowTextValueState.Identifier, new(advanceToNextOnShowText));
+            loopTextsValue = StateManager.Global.GetOrCreate(LoopTextsValueState.Identifier, new(loopTexts));
         }
     }
 }

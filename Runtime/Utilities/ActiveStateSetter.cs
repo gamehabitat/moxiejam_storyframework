@@ -16,6 +16,9 @@ namespace StoryFramework.Utilities
 
         [SerializeField]
         bool isActive;
+        
+        [SerializeField, GameStateRef(GameStateTypes.BooleanFlag, PersistentObject.IsActiveStateId)]
+        GameStateIdentifier gameState;
 
         void Start()
         {
@@ -30,6 +33,11 @@ namespace StoryFramework.Utilities
         /// </summary>
         public void SetActive(bool value)
         {
+            if (gameState.IsValid())
+            {
+                StateManager.Global.SetState(in gameState, new GameStateValue(value));
+            }
+
             if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))
             {
                 Game.Instance.SaveData.SetGlobalState<bool>(id, PersistentObject.IsActiveStateId, value);

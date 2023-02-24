@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 
 namespace StoryFramework.Editor.Utilities
@@ -21,11 +22,32 @@ namespace StoryFramework.Editor.Utilities
 		}
 
 		/// <summary>
-		/// Returns a stringified version of game state identifier.
+		/// Returns the value property associated with the value type of a game state property.
 		/// </summary>
-		public static string GetGameStateIdentifier(this SerializedProperty identifierProp)
+		/// <exception cref="ArgumentOutOfRangeException">Thrown if type isn't supported.</exception>
+		public static SerializedProperty GetGameStateValueProp(this SerializedProperty gameStateValueProp, GameStateTypes type)
 		{
-			return GameStateIdentifier.MakeIdentifier(
+			switch (type)
+			{
+			case GameStateTypes.BooleanFlag:
+				return gameStateValueProp.FindPropertyRelative("m_BooleanValue");
+			case GameStateTypes.IntegerNumber:
+				return gameStateValueProp.FindPropertyRelative("m_IntegerValue");
+			case GameStateTypes.FloatNumber:
+				return gameStateValueProp.FindPropertyRelative("m_FloatValue");
+			case GameStateTypes.Text:
+				return gameStateValueProp.FindPropertyRelative("m_TextValue");
+			default:
+				throw new ArgumentOutOfRangeException();
+			}
+		}
+
+		/// <summary>
+		/// Returns a game state identifier.
+		/// </summary>
+		public static GameStateIdentifier GetGameStateIdentifier(this SerializedProperty identifierProp)
+		{
+			return new GameStateIdentifier(
 				identifierProp.FindPropertyRelative("Identifier").stringValue,
 				identifierProp.FindPropertyRelative("Property").stringValue);
 		}
@@ -33,11 +55,11 @@ namespace StoryFramework.Editor.Utilities
 		/// <summary>
 		/// Copies the game state identifier from one serialized property to another.
 		/// </summary>
-		public static void CopyGameStateIdentifier(this SerializedProperty targetProp, SerializedProperty identifierProp)
+		public static void CopyGameStateIdentifier(this SerializedProperty targetIdentifierProp, SerializedProperty identifierProp)
 		{
-			targetProp.FindPropertyRelative("Identifier").stringValue =
-				identifierProp.FindPropertyRelative("Property").stringValue;
-			targetProp.FindPropertyRelative("Property").stringValue =
+			targetIdentifierProp.FindPropertyRelative("Identifier").stringValue =
+				identifierProp.FindPropertyRelative("Identifier").stringValue;
+			targetIdentifierProp.FindPropertyRelative("Property").stringValue =
 				identifierProp.FindPropertyRelative("Property").stringValue;
 		}
 
