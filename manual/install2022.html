@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Install MoxieJam Story Framework | MoxieJam story framework documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Install MoxieJam Story Framework | MoxieJam story framework documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="install_framework">
+<h1 id="installation">Installation</h1>
+
+<p>Due to potential incompatibilities with newer version of MoxieJam framework your project form 2022 might not work as intended. This document will guide you through installing the framework used during MoxieJam 2022.</p>
+<p>Once Unity is open it will try and install the latest version of the framework, we do not want this, but rather a specific version. To fix this you need to change the URL for the MoxieJam Story Framework.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This package requires Unity LTS version 2021.3.19f1 (newer version might potential work but can&#39;t be guaranteed).</p>
+<h2 id="installing-the-framework-through-unity">Installing the framework through Unity.</h2>
+<p>Open your project with Unity.</p>
+<p><img src="../resources/images/install/Unity1.png" alt="Unity window is open"></p>
+<h2 id="install-the-moxiejam-2022-story-framework">Install the MoxieJam 2022 Story Framework</h2>
+<p>In the <code>Window</code> menu in unity click on <code>Package Manager</code>.</p>
+<p><img src="../resources/images/install/UnityAddPackage1.png" alt="In the `Window` menu in unity click on `Package Manager`."></p>
+<p>A new window with the <code>Package Manager</code> is now opened. You should <code>MoxieJam story framework</code> listed on the left side. This is the thing that we will replace with a specific version.</p>
+<p><img src="../resources/images/install/UnityAddPackage4.png" alt="Unity window is open"></p>
+<p>Inside this window, Select <code>MoxieJam story framework</code> and then in the bottom right corner click on the <code>Remove</code> button.</p>
+<p>A new window will pop up asking you to confirm if you want to remove this package. Click the <code>Remove</code> button and wait for Unity to finish removing the package. You might notice some errors in the status bar of Unity after this. You can safely ignore them as we will automatically fix this once we install MoxieJam story framework again.</p>
+<p>So once the package has been removed you can press the <code>+</code> menu in the top left corner and click on <code>Add package from git URL...</code>.</p>
+<p><img src="../resources/images/install/UnityAddPackage2.png" alt="Press the `+` menu in the top left corner and click on `Add package from git URL...`"></p>
+<p>In this new window paste in the MoxieJam Story Frameworks URL:</p>
+<p><code>https://github.com/gamehabitat/moxiejam_storyframework.git#moxiejam2022</code></p>
+<p><img src="../resources/images/install/UnityAddPackage3.png" alt="Unity window is open"></p>
+<p>Unity&#39;s package manager will now start downloading and installing the package. Once it is completed you will see a green checkmark to the right of the version number of the package.</p>
+<p>Congratulations, now your project should be using the MoxieJam 2022 story framework again.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/install2022.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            MoxieJam story framework documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

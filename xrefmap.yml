@@ -593,6 +593,166 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Editor.GameSceneTemplatePipeline.IsValidTemplateForInstantiation
   nameWithType: GameSceneTemplatePipeline.IsValidTemplateForInstantiation
+- uid: StoryFramework.Editor.GameSettingsProvider
+  name: GameSettingsProvider
+  href: api/StoryFramework.Editor.GameSettingsProvider.html
+  commentId: T:StoryFramework.Editor.GameSettingsProvider
+  fullName: StoryFramework.Editor.GameSettingsProvider
+  nameWithType: GameSettingsProvider
+- uid: StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider
+  name: CreateGameSettingsProvider()
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_CreateGameSettingsProvider
+  commentId: M:StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider
+  fullName: StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider()
+  nameWithType: GameSettingsProvider.CreateGameSettingsProvider()
+- uid: StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider*
+  name: CreateGameSettingsProvider
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_CreateGameSettingsProvider_
+  commentId: Overload:StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameSettingsProvider.CreateGameSettingsProvider
+  nameWithType: GameSettingsProvider.CreateGameSettingsProvider
+- uid: StoryFramework.Editor.GameSettingsProvider.OnActivate(System.String,VisualElement)
+  name: OnActivate(String, VisualElement)
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_OnActivate_System_String_VisualElement_
+  commentId: M:StoryFramework.Editor.GameSettingsProvider.OnActivate(System.String,VisualElement)
+  fullName: StoryFramework.Editor.GameSettingsProvider.OnActivate(System.String, VisualElement)
+  nameWithType: GameSettingsProvider.OnActivate(String, VisualElement)
+- uid: StoryFramework.Editor.GameSettingsProvider.OnActivate*
+  name: OnActivate
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_OnActivate_
+  commentId: Overload:StoryFramework.Editor.GameSettingsProvider.OnActivate
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameSettingsProvider.OnActivate
+  nameWithType: GameSettingsProvider.OnActivate
+- uid: StoryFramework.Editor.GameSettingsProvider.OnGUI(System.String)
+  name: OnGUI(String)
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_OnGUI_System_String_
+  commentId: M:StoryFramework.Editor.GameSettingsProvider.OnGUI(System.String)
+  fullName: StoryFramework.Editor.GameSettingsProvider.OnGUI(System.String)
+  nameWithType: GameSettingsProvider.OnGUI(String)
+- uid: StoryFramework.Editor.GameSettingsProvider.OnGUI*
+  name: OnGUI
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_OnGUI_
+  commentId: Overload:StoryFramework.Editor.GameSettingsProvider.OnGUI
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameSettingsProvider.OnGUI
+  nameWithType: GameSettingsProvider.OnGUI
+- uid: StoryFramework.Editor.GameSettingsProvider.SettingsPath
+  name: SettingsPath
+  href: api/StoryFramework.Editor.GameSettingsProvider.html#StoryFramework_Editor_GameSettingsProvider_SettingsPath
+  commentId: F:StoryFramework.Editor.GameSettingsProvider.SettingsPath
+  fullName: StoryFramework.Editor.GameSettingsProvider.SettingsPath
+  nameWithType: GameSettingsProvider.SettingsPath
+- uid: StoryFramework.Editor.GameStateDrawer
+  name: GameStateDrawer
+  href: api/StoryFramework.Editor.GameStateDrawer.html
+  commentId: T:StoryFramework.Editor.GameStateDrawer
+  fullName: StoryFramework.Editor.GameStateDrawer
+  nameWithType: GameStateDrawer
+- uid: StoryFramework.Editor.GameStateDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateDrawer.html#StoryFramework_Editor_GameStateDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: GameStateDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/StoryFramework.Editor.GameStateDrawer.html#StoryFramework_Editor_GameStateDrawer_GetPropertyHeight_
+  commentId: Overload:StoryFramework.Editor.GameStateDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateDrawer.GetPropertyHeight
+  nameWithType: GameStateDrawer.GetPropertyHeight
+- uid: StoryFramework.Editor.GameStateDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateDrawer.html#StoryFramework_Editor_GameStateDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: GameStateDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateDrawer.OnGUI*
+  name: OnGUI
+  href: api/StoryFramework.Editor.GameStateDrawer.html#StoryFramework_Editor_GameStateDrawer_OnGUI_
+  commentId: Overload:StoryFramework.Editor.GameStateDrawer.OnGUI
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateDrawer.OnGUI
+  nameWithType: GameStateDrawer.OnGUI
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer
+  name: GameStateIdentifierDrawer
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html
+  commentId: T:StoryFramework.Editor.GameStateIdentifierDrawer
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer
+  nameWithType: GameStateIdentifierDrawer
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.#ctor
+  name: GameStateIdentifierDrawer()
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer__ctor
+  commentId: M:StoryFramework.Editor.GameStateIdentifierDrawer.#ctor
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.GameStateIdentifierDrawer()
+  nameWithType: GameStateIdentifierDrawer.GameStateIdentifierDrawer()
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.#ctor*
+  name: GameStateIdentifierDrawer
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer__ctor_
+  commentId: Overload:StoryFramework.Editor.GameStateIdentifierDrawer.#ctor
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.GameStateIdentifierDrawer
+  nameWithType: GameStateIdentifierDrawer.GameStateIdentifierDrawer
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: GameStateIdentifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer_GetPropertyHeight_
+  commentId: Overload:StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.GetPropertyHeight
+  nameWithType: GameStateIdentifierDrawer.GetPropertyHeight
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: GameStateIdentifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI*
+  name: OnGUI
+  href: api/StoryFramework.Editor.GameStateIdentifierDrawer.html#StoryFramework_Editor_GameStateIdentifierDrawer_OnGUI_
+  commentId: Overload:StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateIdentifierDrawer.OnGUI
+  nameWithType: GameStateIdentifierDrawer.OnGUI
+- uid: StoryFramework.Editor.GameStateValueDrawer
+  name: GameStateValueDrawer
+  href: api/StoryFramework.Editor.GameStateValueDrawer.html
+  commentId: T:StoryFramework.Editor.GameStateValueDrawer
+  fullName: StoryFramework.Editor.GameStateValueDrawer
+  nameWithType: GameStateValueDrawer
+- uid: StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateValueDrawer.html#StoryFramework_Editor_GameStateValueDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: GameStateValueDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/StoryFramework.Editor.GameStateValueDrawer.html#StoryFramework_Editor_GameStateValueDrawer_GetPropertyHeight_
+  commentId: Overload:StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateValueDrawer.GetPropertyHeight
+  nameWithType: GameStateValueDrawer.GetPropertyHeight
+- uid: StoryFramework.Editor.GameStateValueDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/StoryFramework.Editor.GameStateValueDrawer.html#StoryFramework_Editor_GameStateValueDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:StoryFramework.Editor.GameStateValueDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: StoryFramework.Editor.GameStateValueDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: GameStateValueDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: StoryFramework.Editor.GameStateValueDrawer.OnGUI*
+  name: OnGUI
+  href: api/StoryFramework.Editor.GameStateValueDrawer.html#StoryFramework_Editor_GameStateValueDrawer_OnGUI_
+  commentId: Overload:StoryFramework.Editor.GameStateValueDrawer.OnGUI
+  isSpec: "True"
+  fullName: StoryFramework.Editor.GameStateValueDrawer.OnGUI
+  nameWithType: GameStateValueDrawer.OnGUI
 - uid: StoryFramework.Editor.InteractableItemEditor
   name: InteractableItemEditor
   href: api/StoryFramework.Editor.InteractableItemEditor.html
@@ -732,6 +892,77 @@ references:
   commentId: N:StoryFramework.Editor.Utilities
   fullName: StoryFramework.Editor.Utilities
   nameWithType: StoryFramework.Editor.Utilities
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities
+  name: GameStateEditorUtilities
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html
+  commentId: T:StoryFramework.Editor.Utilities.GameStateEditorUtilities
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities
+  nameWithType: GameStateEditorUtilities
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier(SerializedProperty,SerializedProperty)
+  name: CopyGameStateIdentifier(SerializedProperty, SerializedProperty)
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_CopyGameStateIdentifier_SerializedProperty_SerializedProperty_
+  commentId: M:StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier(SerializedProperty,SerializedProperty)
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier(SerializedProperty, SerializedProperty)
+  nameWithType: GameStateEditorUtilities.CopyGameStateIdentifier(SerializedProperty, SerializedProperty)
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier*
+  name: CopyGameStateIdentifier
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_CopyGameStateIdentifier_
+  commentId: Overload:StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.CopyGameStateIdentifier
+  nameWithType: GameStateEditorUtilities.CopyGameStateIdentifier
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier(SerializedProperty)
+  name: GetGameStateIdentifier(SerializedProperty)
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateIdentifier_SerializedProperty_
+  commentId: M:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier(SerializedProperty)
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier(SerializedProperty)
+  nameWithType: GameStateEditorUtilities.GetGameStateIdentifier(SerializedProperty)
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier*
+  name: GetGameStateIdentifier
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateIdentifier_
+  commentId: Overload:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifier
+  nameWithType: GameStateEditorUtilities.GetGameStateIdentifier
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty(SerializedProperty)
+  name: GetGameStateIdentifierProperty(SerializedProperty)
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateIdentifierProperty_SerializedProperty_
+  commentId: M:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty(SerializedProperty)
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty(SerializedProperty)
+  nameWithType: GameStateEditorUtilities.GetGameStateIdentifierProperty(SerializedProperty)
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty*
+  name: GetGameStateIdentifierProperty
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateIdentifierProperty_
+  commentId: Overload:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateIdentifierProperty
+  nameWithType: GameStateEditorUtilities.GetGameStateIdentifierProperty
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty(SerializedProperty)
+  name: GetGameStateValueProperty(SerializedProperty)
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateValueProperty_SerializedProperty_
+  commentId: M:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty(SerializedProperty)
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty(SerializedProperty)
+  nameWithType: GameStateEditorUtilities.GetGameStateValueProperty(SerializedProperty)
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty*
+  name: GetGameStateValueProperty
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateValueProperty_
+  commentId: Overload:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueProperty
+  nameWithType: GameStateEditorUtilities.GetGameStateValueProperty
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType(SerializedProperty)
+  name: GetGameStateValueType(SerializedProperty)
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateValueType_SerializedProperty_
+  commentId: M:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType(SerializedProperty)
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType(SerializedProperty)
+  nameWithType: GameStateEditorUtilities.GetGameStateValueType(SerializedProperty)
+- uid: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType*
+  name: GetGameStateValueType
+  href: api/StoryFramework.Editor.Utilities.GameStateEditorUtilities.html#StoryFramework_Editor_Utilities_GameStateEditorUtilities_GetGameStateValueType_
+  commentId: Overload:StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType
+  isSpec: "True"
+  fullName: StoryFramework.Editor.Utilities.GameStateEditorUtilities.GetGameStateValueType
+  nameWithType: GameStateEditorUtilities.GetGameStateValueType
 - uid: StoryFramework.Editor.Utilities.GameStateSetterEditor
   name: GameStateSetterEditor
   href: api/StoryFramework.Editor.Utilities.GameStateSetterEditor.html
@@ -1162,18 +1393,302 @@ references:
   fullName.vb: StoryFramework.GameSaveData.SetState(Of T, TValue)(T, System.String, TValue)
   nameWithType: GameSaveData.SetState<T, TValue>(T, String, TValue)
   nameWithType.vb: GameSaveData.SetState(Of T, TValue)(T, String, TValue)
+- uid: StoryFramework.GameSaveData.stateManager
+  name: stateManager
+  href: api/StoryFramework.GameSaveData.html#StoryFramework_GameSaveData_stateManager
+  commentId: F:StoryFramework.GameSaveData.stateManager
+  fullName: StoryFramework.GameSaveData.stateManager
+  nameWithType: GameSaveData.stateManager
 - uid: StoryFramework.GameSettings
   name: GameSettings
   href: api/StoryFramework.GameSettings.html
   commentId: T:StoryFramework.GameSettings
   fullName: StoryFramework.GameSettings
   nameWithType: GameSettings
+- uid: StoryFramework.GameSettings.GlobalGameStates
+  name: GlobalGameStates
+  href: api/StoryFramework.GameSettings.html#StoryFramework_GameSettings_GlobalGameStates
+  commentId: F:StoryFramework.GameSettings.GlobalGameStates
+  fullName: StoryFramework.GameSettings.GlobalGameStates
+  nameWithType: GameSettings.GlobalGameStates
+- uid: StoryFramework.GameSettings.Instance
+  name: Instance
+  href: api/StoryFramework.GameSettings.html#StoryFramework_GameSettings_Instance
+  commentId: F:StoryFramework.GameSettings.Instance
+  fullName: StoryFramework.GameSettings.Instance
+  nameWithType: GameSettings.Instance
+- uid: StoryFramework.GameSettings.SettingsPath
+  name: SettingsPath
+  href: api/StoryFramework.GameSettings.html#StoryFramework_GameSettings_SettingsPath
+  commentId: F:StoryFramework.GameSettings.SettingsPath
+  fullName: StoryFramework.GameSettings.SettingsPath
+  nameWithType: GameSettings.SettingsPath
 - uid: StoryFramework.GameSettings.StartScene
   name: StartScene
   href: api/StoryFramework.GameSettings.html#StoryFramework_GameSettings_StartScene
   commentId: F:StoryFramework.GameSettings.StartScene
   fullName: StoryFramework.GameSettings.StartScene
   nameWithType: GameSettings.StartScene
+- uid: StoryFramework.GameState
+  name: GameState
+  href: api/StoryFramework.GameState.html
+  commentId: T:StoryFramework.GameState
+  fullName: StoryFramework.GameState
+  nameWithType: GameState
+- uid: StoryFramework.GameState.Identifier
+  name: Identifier
+  href: api/StoryFramework.GameState.html#StoryFramework_GameState_Identifier
+  commentId: F:StoryFramework.GameState.Identifier
+  fullName: StoryFramework.GameState.Identifier
+  nameWithType: GameState.Identifier
+- uid: StoryFramework.GameState.Value
+  name: Value
+  href: api/StoryFramework.GameState.html#StoryFramework_GameState_Value
+  commentId: F:StoryFramework.GameState.Value
+  fullName: StoryFramework.GameState.Value
+  nameWithType: GameState.Value
+- uid: StoryFramework.GameStateIdentifier
+  name: GameStateIdentifier
+  href: api/StoryFramework.GameStateIdentifier.html
+  commentId: T:StoryFramework.GameStateIdentifier
+  fullName: StoryFramework.GameStateIdentifier
+  nameWithType: GameStateIdentifier
+- uid: StoryFramework.GameStateIdentifier.Identifier
+  name: Identifier
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_Identifier
+  commentId: F:StoryFramework.GameStateIdentifier.Identifier
+  fullName: StoryFramework.GameStateIdentifier.Identifier
+  nameWithType: GameStateIdentifier.Identifier
+- uid: StoryFramework.GameStateIdentifier.MakeIdentifier(System.String,System.String)
+  name: MakeIdentifier(String, String)
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_MakeIdentifier_System_String_System_String_
+  commentId: M:StoryFramework.GameStateIdentifier.MakeIdentifier(System.String,System.String)
+  fullName: StoryFramework.GameStateIdentifier.MakeIdentifier(System.String, System.String)
+  nameWithType: GameStateIdentifier.MakeIdentifier(String, String)
+- uid: StoryFramework.GameStateIdentifier.MakeIdentifier*
+  name: MakeIdentifier
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_MakeIdentifier_
+  commentId: Overload:StoryFramework.GameStateIdentifier.MakeIdentifier
+  isSpec: "True"
+  fullName: StoryFramework.GameStateIdentifier.MakeIdentifier
+  nameWithType: GameStateIdentifier.MakeIdentifier
+- uid: StoryFramework.GameStateIdentifier.Property
+  name: Property
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_Property
+  commentId: F:StoryFramework.GameStateIdentifier.Property
+  fullName: StoryFramework.GameStateIdentifier.Property
+  nameWithType: GameStateIdentifier.Property
+- uid: StoryFramework.GameStateIdentifier.ToString
+  name: ToString()
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_ToString
+  commentId: M:StoryFramework.GameStateIdentifier.ToString
+  fullName: StoryFramework.GameStateIdentifier.ToString()
+  nameWithType: GameStateIdentifier.ToString()
+- uid: StoryFramework.GameStateIdentifier.ToString*
+  name: ToString
+  href: api/StoryFramework.GameStateIdentifier.html#StoryFramework_GameStateIdentifier_ToString_
+  commentId: Overload:StoryFramework.GameStateIdentifier.ToString
+  isSpec: "True"
+  fullName: StoryFramework.GameStateIdentifier.ToString
+  nameWithType: GameStateIdentifier.ToString
+- uid: StoryFramework.GameStateRefAttribute
+  name: GameStateRefAttribute
+  href: api/StoryFramework.GameStateRefAttribute.html
+  commentId: T:StoryFramework.GameStateRefAttribute
+  fullName: StoryFramework.GameStateRefAttribute
+  nameWithType: GameStateRefAttribute
+- uid: StoryFramework.GameStateRefAttribute.#ctor
+  name: GameStateRefAttribute()
+  href: api/StoryFramework.GameStateRefAttribute.html#StoryFramework_GameStateRefAttribute__ctor
+  commentId: M:StoryFramework.GameStateRefAttribute.#ctor
+  fullName: StoryFramework.GameStateRefAttribute.GameStateRefAttribute()
+  nameWithType: GameStateRefAttribute.GameStateRefAttribute()
+- uid: StoryFramework.GameStateRefAttribute.#ctor(StoryFramework.GameStateTypes)
+  name: GameStateRefAttribute(GameStateTypes)
+  href: api/StoryFramework.GameStateRefAttribute.html#StoryFramework_GameStateRefAttribute__ctor_StoryFramework_GameStateTypes_
+  commentId: M:StoryFramework.GameStateRefAttribute.#ctor(StoryFramework.GameStateTypes)
+  fullName: StoryFramework.GameStateRefAttribute.GameStateRefAttribute(StoryFramework.GameStateTypes)
+  nameWithType: GameStateRefAttribute.GameStateRefAttribute(GameStateTypes)
+- uid: StoryFramework.GameStateRefAttribute.#ctor*
+  name: GameStateRefAttribute
+  href: api/StoryFramework.GameStateRefAttribute.html#StoryFramework_GameStateRefAttribute__ctor_
+  commentId: Overload:StoryFramework.GameStateRefAttribute.#ctor
+  isSpec: "True"
+  fullName: StoryFramework.GameStateRefAttribute.GameStateRefAttribute
+  nameWithType: GameStateRefAttribute.GameStateRefAttribute
+- uid: StoryFramework.GameStateRefAttribute.IsTypeConstrained
+  name: IsTypeConstrained
+  href: api/StoryFramework.GameStateRefAttribute.html#StoryFramework_GameStateRefAttribute_IsTypeConstrained
+  commentId: F:StoryFramework.GameStateRefAttribute.IsTypeConstrained
+  fullName: StoryFramework.GameStateRefAttribute.IsTypeConstrained
+  nameWithType: GameStateRefAttribute.IsTypeConstrained
+- uid: StoryFramework.GameStateRefAttribute.Type
+  name: Type
+  href: api/StoryFramework.GameStateRefAttribute.html#StoryFramework_GameStateRefAttribute_Type
+  commentId: F:StoryFramework.GameStateRefAttribute.Type
+  fullName: StoryFramework.GameStateRefAttribute.Type
+  nameWithType: GameStateRefAttribute.Type
+- uid: StoryFramework.GameStateTypes
+  name: GameStateTypes
+  href: api/StoryFramework.GameStateTypes.html
+  commentId: T:StoryFramework.GameStateTypes
+  fullName: StoryFramework.GameStateTypes
+  nameWithType: GameStateTypes
+- uid: StoryFramework.GameStateTypes.BooleanFlag
+  name: BooleanFlag
+  href: api/StoryFramework.GameStateTypes.html#StoryFramework_GameStateTypes_BooleanFlag
+  commentId: F:StoryFramework.GameStateTypes.BooleanFlag
+  fullName: StoryFramework.GameStateTypes.BooleanFlag
+  nameWithType: GameStateTypes.BooleanFlag
+- uid: StoryFramework.GameStateTypes.FloatNumber
+  name: FloatNumber
+  href: api/StoryFramework.GameStateTypes.html#StoryFramework_GameStateTypes_FloatNumber
+  commentId: F:StoryFramework.GameStateTypes.FloatNumber
+  fullName: StoryFramework.GameStateTypes.FloatNumber
+  nameWithType: GameStateTypes.FloatNumber
+- uid: StoryFramework.GameStateTypes.IntegerNumber
+  name: IntegerNumber
+  href: api/StoryFramework.GameStateTypes.html#StoryFramework_GameStateTypes_IntegerNumber
+  commentId: F:StoryFramework.GameStateTypes.IntegerNumber
+  fullName: StoryFramework.GameStateTypes.IntegerNumber
+  nameWithType: GameStateTypes.IntegerNumber
+- uid: StoryFramework.GameStateTypes.Text
+  name: Text
+  href: api/StoryFramework.GameStateTypes.html#StoryFramework_GameStateTypes_Text
+  commentId: F:StoryFramework.GameStateTypes.Text
+  fullName: StoryFramework.GameStateTypes.Text
+  nameWithType: GameStateTypes.Text
+- uid: StoryFramework.GameStateValue
+  name: GameStateValue
+  href: api/StoryFramework.GameStateValue.html
+  commentId: T:StoryFramework.GameStateValue
+  fullName: StoryFramework.GameStateValue
+  nameWithType: GameStateValue
+- uid: StoryFramework.GameStateValue.GetBooleanValue(StoryFramework.GameState@)
+  name: GetBooleanValue(in GameState)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetBooleanValue_StoryFramework_GameState__
+  commentId: M:StoryFramework.GameStateValue.GetBooleanValue(StoryFramework.GameState@)
+  name.vb: GetBooleanValue(ByRef GameState)
+  fullName: StoryFramework.GameStateValue.GetBooleanValue(in StoryFramework.GameState)
+  fullName.vb: StoryFramework.GameStateValue.GetBooleanValue(ByRef StoryFramework.GameState)
+  nameWithType: GameStateValue.GetBooleanValue(in GameState)
+  nameWithType.vb: GameStateValue.GetBooleanValue(ByRef GameState)
+- uid: StoryFramework.GameStateValue.GetBooleanValue*
+  name: GetBooleanValue
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetBooleanValue_
+  commentId: Overload:StoryFramework.GameStateValue.GetBooleanValue
+  isSpec: "True"
+  fullName: StoryFramework.GameStateValue.GetBooleanValue
+  nameWithType: GameStateValue.GetBooleanValue
+- uid: StoryFramework.GameStateValue.GetFloatValue(StoryFramework.GameState@)
+  name: GetFloatValue(in GameState)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetFloatValue_StoryFramework_GameState__
+  commentId: M:StoryFramework.GameStateValue.GetFloatValue(StoryFramework.GameState@)
+  name.vb: GetFloatValue(ByRef GameState)
+  fullName: StoryFramework.GameStateValue.GetFloatValue(in StoryFramework.GameState)
+  fullName.vb: StoryFramework.GameStateValue.GetFloatValue(ByRef StoryFramework.GameState)
+  nameWithType: GameStateValue.GetFloatValue(in GameState)
+  nameWithType.vb: GameStateValue.GetFloatValue(ByRef GameState)
+- uid: StoryFramework.GameStateValue.GetFloatValue*
+  name: GetFloatValue
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetFloatValue_
+  commentId: Overload:StoryFramework.GameStateValue.GetFloatValue
+  isSpec: "True"
+  fullName: StoryFramework.GameStateValue.GetFloatValue
+  nameWithType: GameStateValue.GetFloatValue
+- uid: StoryFramework.GameStateValue.GetIntegerValue(StoryFramework.GameState@)
+  name: GetIntegerValue(in GameState)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetIntegerValue_StoryFramework_GameState__
+  commentId: M:StoryFramework.GameStateValue.GetIntegerValue(StoryFramework.GameState@)
+  name.vb: GetIntegerValue(ByRef GameState)
+  fullName: StoryFramework.GameStateValue.GetIntegerValue(in StoryFramework.GameState)
+  fullName.vb: StoryFramework.GameStateValue.GetIntegerValue(ByRef StoryFramework.GameState)
+  nameWithType: GameStateValue.GetIntegerValue(in GameState)
+  nameWithType.vb: GameStateValue.GetIntegerValue(ByRef GameState)
+- uid: StoryFramework.GameStateValue.GetIntegerValue*
+  name: GetIntegerValue
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetIntegerValue_
+  commentId: Overload:StoryFramework.GameStateValue.GetIntegerValue
+  isSpec: "True"
+  fullName: StoryFramework.GameStateValue.GetIntegerValue
+  nameWithType: GameStateValue.GetIntegerValue
+- uid: StoryFramework.GameStateValue.GetTextValue(StoryFramework.GameState@)
+  name: GetTextValue(in GameState)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetTextValue_StoryFramework_GameState__
+  commentId: M:StoryFramework.GameStateValue.GetTextValue(StoryFramework.GameState@)
+  name.vb: GetTextValue(ByRef GameState)
+  fullName: StoryFramework.GameStateValue.GetTextValue(in StoryFramework.GameState)
+  fullName.vb: StoryFramework.GameStateValue.GetTextValue(ByRef StoryFramework.GameState)
+  nameWithType: GameStateValue.GetTextValue(in GameState)
+  nameWithType.vb: GameStateValue.GetTextValue(ByRef GameState)
+- uid: StoryFramework.GameStateValue.GetTextValue*
+  name: GetTextValue
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_GetTextValue_
+  commentId: Overload:StoryFramework.GameStateValue.GetTextValue
+  isSpec: "True"
+  fullName: StoryFramework.GameStateValue.GetTextValue
+  nameWithType: GameStateValue.GetTextValue
+- uid: StoryFramework.GameStateValue.OnValueChanged
+  name: OnValueChanged
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_OnValueChanged
+  commentId: E:StoryFramework.GameStateValue.OnValueChanged
+  fullName: StoryFramework.GameStateValue.OnValueChanged
+  nameWithType: GameStateValue.OnValueChanged
+- uid: StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Boolean)
+  name: SetValue(in GameState, Boolean)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_SetValue_StoryFramework_GameState__System_Boolean_
+  commentId: M:StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Boolean)
+  name.vb: SetValue(ByRef GameState, Boolean)
+  fullName: StoryFramework.GameStateValue.SetValue(in StoryFramework.GameState, System.Boolean)
+  fullName.vb: StoryFramework.GameStateValue.SetValue(ByRef StoryFramework.GameState, System.Boolean)
+  nameWithType: GameStateValue.SetValue(in GameState, Boolean)
+  nameWithType.vb: GameStateValue.SetValue(ByRef GameState, Boolean)
+- uid: StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Int32)
+  name: SetValue(in GameState, Int32)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_SetValue_StoryFramework_GameState__System_Int32_
+  commentId: M:StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Int32)
+  name.vb: SetValue(ByRef GameState, Int32)
+  fullName: StoryFramework.GameStateValue.SetValue(in StoryFramework.GameState, System.Int32)
+  fullName.vb: StoryFramework.GameStateValue.SetValue(ByRef StoryFramework.GameState, System.Int32)
+  nameWithType: GameStateValue.SetValue(in GameState, Int32)
+  nameWithType.vb: GameStateValue.SetValue(ByRef GameState, Int32)
+- uid: StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Single)
+  name: SetValue(in GameState, Single)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_SetValue_StoryFramework_GameState__System_Single_
+  commentId: M:StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.Single)
+  name.vb: SetValue(ByRef GameState, Single)
+  fullName: StoryFramework.GameStateValue.SetValue(in StoryFramework.GameState, System.Single)
+  fullName.vb: StoryFramework.GameStateValue.SetValue(ByRef StoryFramework.GameState, System.Single)
+  nameWithType: GameStateValue.SetValue(in GameState, Single)
+  nameWithType.vb: GameStateValue.SetValue(ByRef GameState, Single)
+- uid: StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.String)
+  name: SetValue(in GameState, String)
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_SetValue_StoryFramework_GameState__System_String_
+  commentId: M:StoryFramework.GameStateValue.SetValue(StoryFramework.GameState@,System.String)
+  name.vb: SetValue(ByRef GameState, String)
+  fullName: StoryFramework.GameStateValue.SetValue(in StoryFramework.GameState, System.String)
+  fullName.vb: StoryFramework.GameStateValue.SetValue(ByRef StoryFramework.GameState, System.String)
+  nameWithType: GameStateValue.SetValue(in GameState, String)
+  nameWithType.vb: GameStateValue.SetValue(ByRef GameState, String)
+- uid: StoryFramework.GameStateValue.SetValue*
+  name: SetValue
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_SetValue_
+  commentId: Overload:StoryFramework.GameStateValue.SetValue
+  isSpec: "True"
+  fullName: StoryFramework.GameStateValue.SetValue
+  nameWithType: GameStateValue.SetValue
+- uid: StoryFramework.GameStateValue.Type
+  name: Type
+  href: api/StoryFramework.GameStateValue.html#StoryFramework_GameStateValue_Type
+  commentId: F:StoryFramework.GameStateValue.Type
+  fullName: StoryFramework.GameStateValue.Type
+  nameWithType: GameStateValue.Type
+- uid: StoryFramework.GameStateValue.ValueChangedEvent
+  name: GameStateValue.ValueChangedEvent
+  href: api/StoryFramework.GameStateValue.ValueChangedEvent.html
+  commentId: T:StoryFramework.GameStateValue.ValueChangedEvent
+  fullName: StoryFramework.GameStateValue.ValueChangedEvent
+  nameWithType: GameStateValue.ValueChangedEvent
 - uid: StoryFramework.GameStateValue`1
   name: GameStateValue<TValue>
   href: api/StoryFramework.GameStateValue-1.html
@@ -2112,6 +2627,149 @@ references:
   isSpec: "True"
   fullName: StoryFramework.ShowDescriptionOnMouseOver.OnPointerExit
   nameWithType: ShowDescriptionOnMouseOver.OnPointerExit
+- uid: StoryFramework.StateManager
+  name: StateManager
+  href: api/StoryFramework.StateManager.html
+  commentId: T:StoryFramework.StateManager
+  fullName: StoryFramework.StateManager
+  nameWithType: StateManager
+- uid: StoryFramework.StateManager.#ctor
+  name: StateManager()
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager__ctor
+  commentId: M:StoryFramework.StateManager.#ctor
+  fullName: StoryFramework.StateManager.StateManager()
+  nameWithType: StateManager.StateManager()
+- uid: StoryFramework.StateManager.#ctor*
+  name: StateManager
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager__ctor_
+  commentId: Overload:StoryFramework.StateManager.#ctor
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.StateManager
+  nameWithType: StateManager.StateManager
+- uid: StoryFramework.StateManager.Dispose
+  name: Dispose()
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Dispose
+  commentId: M:StoryFramework.StateManager.Dispose
+  fullName: StoryFramework.StateManager.Dispose()
+  nameWithType: StateManager.Dispose()
+- uid: StoryFramework.StateManager.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Dispose_System_Boolean_
+  commentId: M:StoryFramework.StateManager.Dispose(System.Boolean)
+  fullName: StoryFramework.StateManager.Dispose(System.Boolean)
+  nameWithType: StateManager.Dispose(Boolean)
+- uid: StoryFramework.StateManager.Dispose*
+  name: Dispose
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Dispose_
+  commentId: Overload:StoryFramework.StateManager.Dispose
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.Dispose
+  nameWithType: StateManager.Dispose
+- uid: StoryFramework.StateManager.FindState(StoryFramework.GameStateIdentifier@)
+  name: FindState(in GameStateIdentifier)
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_FindState_StoryFramework_GameStateIdentifier__
+  commentId: M:StoryFramework.StateManager.FindState(StoryFramework.GameStateIdentifier@)
+  name.vb: FindState(ByRef GameStateIdentifier)
+  fullName: StoryFramework.StateManager.FindState(in StoryFramework.GameStateIdentifier)
+  fullName.vb: StoryFramework.StateManager.FindState(ByRef StoryFramework.GameStateIdentifier)
+  nameWithType: StateManager.FindState(in GameStateIdentifier)
+  nameWithType.vb: StateManager.FindState(ByRef GameStateIdentifier)
+- uid: StoryFramework.StateManager.FindState*
+  name: FindState
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_FindState_
+  commentId: Overload:StoryFramework.StateManager.FindState
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.FindState
+  nameWithType: StateManager.FindState
+- uid: StoryFramework.StateManager.Load(StoryFramework.GameState[])
+  name: Load(GameState[])
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Load_StoryFramework_GameState___
+  commentId: M:StoryFramework.StateManager.Load(StoryFramework.GameState[])
+  name.vb: Load(GameState())
+  fullName: StoryFramework.StateManager.Load(StoryFramework.GameState[])
+  fullName.vb: StoryFramework.StateManager.Load(StoryFramework.GameState())
+  nameWithType: StateManager.Load(GameState[])
+  nameWithType.vb: StateManager.Load(GameState())
+- uid: StoryFramework.StateManager.Load*
+  name: Load
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Load_
+  commentId: Overload:StoryFramework.StateManager.Load
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.Load
+  nameWithType: StateManager.Load
+- uid: StoryFramework.StateManager.OnStateChanged
+  name: OnStateChanged
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_OnStateChanged
+  commentId: E:StoryFramework.StateManager.OnStateChanged
+  fullName: StoryFramework.StateManager.OnStateChanged
+  nameWithType: StateManager.OnStateChanged
+- uid: StoryFramework.StateManager.Register(StoryFramework.GameStateIdentifier@,StoryFramework.GameStateValue@)
+  name: Register(in GameStateIdentifier, in GameStateValue)
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Register_StoryFramework_GameStateIdentifier__StoryFramework_GameStateValue__
+  commentId: M:StoryFramework.StateManager.Register(StoryFramework.GameStateIdentifier@,StoryFramework.GameStateValue@)
+  name.vb: Register(ByRef GameStateIdentifier, ByRef GameStateValue)
+  fullName: StoryFramework.StateManager.Register(in StoryFramework.GameStateIdentifier, in StoryFramework.GameStateValue)
+  fullName.vb: StoryFramework.StateManager.Register(ByRef StoryFramework.GameStateIdentifier, ByRef StoryFramework.GameStateValue)
+  nameWithType: StateManager.Register(in GameStateIdentifier, in GameStateValue)
+  nameWithType.vb: StateManager.Register(ByRef GameStateIdentifier, ByRef GameStateValue)
+- uid: StoryFramework.StateManager.Register*
+  name: Register
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_Register_
+  commentId: Overload:StoryFramework.StateManager.Register
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.Register
+  nameWithType: StateManager.Register
+- uid: StoryFramework.StateManager.SetState(StoryFramework.GameStateIdentifier@,StoryFramework.GameStateValue@)
+  name: SetState(in GameStateIdentifier, in GameStateValue)
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_SetState_StoryFramework_GameStateIdentifier__StoryFramework_GameStateValue__
+  commentId: M:StoryFramework.StateManager.SetState(StoryFramework.GameStateIdentifier@,StoryFramework.GameStateValue@)
+  name.vb: SetState(ByRef GameStateIdentifier, ByRef GameStateValue)
+  fullName: StoryFramework.StateManager.SetState(in StoryFramework.GameStateIdentifier, in StoryFramework.GameStateValue)
+  fullName.vb: StoryFramework.StateManager.SetState(ByRef StoryFramework.GameStateIdentifier, ByRef StoryFramework.GameStateValue)
+  nameWithType: StateManager.SetState(in GameStateIdentifier, in GameStateValue)
+  nameWithType.vb: StateManager.SetState(ByRef GameStateIdentifier, ByRef GameStateValue)
+- uid: StoryFramework.StateManager.SetState*
+  name: SetState
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_SetState_
+  commentId: Overload:StoryFramework.StateManager.SetState
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.SetState
+  nameWithType: StateManager.SetState
+- uid: StoryFramework.StateManager.StateChangedEvent
+  name: StateManager.StateChangedEvent
+  href: api/StoryFramework.StateManager.StateChangedEvent.html
+  commentId: T:StoryFramework.StateManager.StateChangedEvent
+  fullName: StoryFramework.StateManager.StateChangedEvent
+  nameWithType: StateManager.StateChangedEvent
+- uid: StoryFramework.StateManager.States
+  name: States
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_States
+  commentId: P:StoryFramework.StateManager.States
+  fullName: StoryFramework.StateManager.States
+  nameWithType: StateManager.States
+- uid: StoryFramework.StateManager.States*
+  name: States
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_States_
+  commentId: Overload:StoryFramework.StateManager.States
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.States
+  nameWithType: StateManager.States
+- uid: StoryFramework.StateManager.TryGetState(StoryFramework.GameStateIdentifier@,StoryFramework.GameState@)
+  name: TryGetState(in GameStateIdentifier, out GameState)
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_TryGetState_StoryFramework_GameStateIdentifier__StoryFramework_GameState__
+  commentId: M:StoryFramework.StateManager.TryGetState(StoryFramework.GameStateIdentifier@,StoryFramework.GameState@)
+  name.vb: TryGetState(ByRef GameStateIdentifier, ByRef GameState)
+  fullName: StoryFramework.StateManager.TryGetState(in StoryFramework.GameStateIdentifier, out StoryFramework.GameState)
+  fullName.vb: StoryFramework.StateManager.TryGetState(ByRef StoryFramework.GameStateIdentifier, ByRef StoryFramework.GameState)
+  nameWithType: StateManager.TryGetState(in GameStateIdentifier, out GameState)
+  nameWithType.vb: StateManager.TryGetState(ByRef GameStateIdentifier, ByRef GameState)
+- uid: StoryFramework.StateManager.TryGetState*
+  name: TryGetState
+  href: api/StoryFramework.StateManager.html#StoryFramework_StateManager_TryGetState_
+  commentId: Overload:StoryFramework.StateManager.TryGetState
+  isSpec: "True"
+  fullName: StoryFramework.StateManager.TryGetState
+  nameWithType: StateManager.TryGetState
 - uid: StoryFramework.Utilities
   name: StoryFramework.Utilities
   href: api/StoryFramework.Utilities.html
