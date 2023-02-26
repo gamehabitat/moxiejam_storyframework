@@ -125,14 +125,15 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 --- !u!21 &38780765
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sprites-Default (Instance)
   m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -691,6 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a10cd8e79fc4993a964d91140e3fdd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  removeItemFromInventory: 1
   requiredItem: {fileID: 11400000, guid: 4684c07f7a6a14aee8d06e790aade4e7, type: 2}
   requiredAmount: 1
   onItemAccepted:
@@ -1828,11 +1830,11 @@ MonoBehaviour:
   m_AssetsPPU: 100
   m_RefResolutionX: 1920
   m_RefResolutionY: 1080
-  m_UpscaleRT: 0
+  m_UpscaleRT: 1
   m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
+  m_CropFrameX: 1
+  m_CropFrameY: 1
+  m_StretchFill: 1
 --- !u!1 &975546900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2698,6 +2701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a10cd8e79fc4993a964d91140e3fdd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  removeItemFromInventory: 1
   requiredItem: {fileID: 11400000, guid: 4f40be84af02a4b8ead710c0e0e61b95, type: 2}
   requiredAmount: 1
   onItemAccepted:
@@ -3582,6 +3586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a10cd8e79fc4993a964d91140e3fdd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  removeItemFromInventory: 1
   requiredItem: {fileID: 11400000, guid: d9c574f874aea4242ae6883a39d6166d, type: 2}
   requiredAmount: 1
   onItemAccepted:
