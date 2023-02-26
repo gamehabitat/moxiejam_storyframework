@@ -44,7 +44,7 @@ namespace StoryFramework.Utilities
             if (lockStateRef.IsValid())
             {
                 // TODO: Use property LockableObject.LockedStateId
-                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, new GameStateValue(value == LockStates.Locked));
+                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, value == LockStates.Locked);
             }
         }
 
@@ -68,7 +68,7 @@ namespace StoryFramework.Utilities
         {
             if (lockStateRef.IsValid() && StateManager.Global.Exists(in lockStateRef))
             {
-                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, new GameStateValue(locked));
+                Game.Instance.SaveData.stateManager.SetState(in lockStateRef, locked);
             }
         }
     }

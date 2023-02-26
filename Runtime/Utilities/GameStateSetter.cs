@@ -62,16 +62,16 @@ namespace StoryFramework.Utilities
                 switch (stateType)
                 {
                 case Types.Bool:
-                    StateManager.Global.SetState(in gameState, new GameStateValue(boolValue));
+                    StateManager.Global.SetState(in gameState, boolValue);
                     break;
                 case Types.Int:
-                    StateManager.Global.SetState(in gameState, new GameStateValue(intValue));
+                    StateManager.Global.SetState(in gameState, intValue);
                     break;
                 case Types.Float:
-                    StateManager.Global.SetState(in gameState, new GameStateValue(floatValue));
+                    StateManager.Global.SetState(in gameState, floatValue);
                     break;
                 case Types.String:
-                    StateManager.Global.SetState(in gameState, new GameStateValue(stringValue));
+                    StateManager.Global.SetState(in gameState, stringValue);
                     break;
                 }
             }

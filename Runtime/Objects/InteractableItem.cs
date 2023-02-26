@@ -43,13 +43,15 @@ namespace StoryFramework
         [SerializeField]
         UnityEvent<InventoryItem> onPickUp;
 
-        public GameState IsPickedUpState => new() { Identifier = GetIdentifier(this, PickedUpStateId), Value = new(isPickedUp) };
-        bool isPickedUp;
-
         /// <summary>
         /// Available states on this persistent object.
         /// </summary>
-        public GameStateIdentifier[] GameStates => new[] { IsPickedUpState.Identifier };
+        public GameStateProperty[] GameStateProperties => new[]
+        {
+            new GameStateProperty(PickedUpStateId, GameStateTypes.BooleanFlag)
+        };
+
+        GameState IsPickedUpState => new(GetIdentifier(this, in GameStateProperties[0]), false);
 
         void Start()
         {
@@ -154,7 +156,7 @@ namespace StoryFramework
         /// </summary>
         public void PickUp()
         {
-            StateManager.Global.SetState(IsPickedUpState.Identifier, new(true));
+            StateManager.Global.SetState(IsPickedUpState.Identifier, true);
             onPickUp.Invoke(item);
             Game.Instance.SaveData.Inventory.Add(item);
             gameObject.SetActive(false);
@@ -169,8 +171,7 @@ namespace StoryFramework
 
         public void LoadPersistentData(GameSaveData saveData)
         {
-            isPickedUp = saveData.GetState(this, PickedUpStateId, false);
-            if (isPickedUp)
+            if (IsPickedUpState.BooleanValue)
             {
                 gameObject.SetActive(false);
             }

@@ -14,7 +14,26 @@ namespace StoryFramework
         FloatNumber,
         Text,
     }
-    
+
+    /// <summary>
+    /// Game state property identifier and type. 
+    /// </summary>
+    [Serializable]
+    public struct GameStateProperty 
+    {
+        [SerializeField]
+        public string Name;
+
+        [SerializeField]
+        public GameStateTypes Type;
+        
+        public GameStateProperty(string name, GameStateTypes type)
+        {
+            Name = name;
+            Type = type;
+        }
+    }
+
     /// <summary>
     /// Identifier used by game states.
     /// </summary>
@@ -27,13 +46,17 @@ namespace StoryFramework
         [SerializeField]
         public string Property;
 
-        public GameStateIdentifier(string identifier, string property)
+        [SerializeField]
+        public GameStateTypes Type; 
+
+        public GameStateIdentifier(string identifier, string property, GameStateTypes type)
         {
             Identifier = identifier;
             Property = property;
+            Type = type;
         }
 
-        public static string MakeIdentifier(string identifier, string property)
+        public static string MakeIdentifier(string identifier, string property, GameStateTypes type)
         {
             return $"{identifier}[{property}]";
         }
@@ -47,125 +70,80 @@ namespace StoryFramework
         {
             return
                 Identifier.Equals(other.Identifier, StringComparison.OrdinalIgnoreCase) &&
-                Property.Equals(other.Property, StringComparison.OrdinalIgnoreCase);
+                Property.Equals(other.Property, StringComparison.OrdinalIgnoreCase) &&
+                Type == other.Type;
         }
 
         public override string ToString()
         {
-            return MakeIdentifier(Identifier, Property);
+            return MakeIdentifier(Identifier, Property, Type);
         }
     }
     
     /// <summary>
     /// Value of a game state.
     /// </summary>
-    [Serializable]
-    public struct GameStateValue
+    public readonly struct GameStateValue
     {
-        [SerializeField]
-        public GameStateTypes Type; 
-
-        [SerializeField]
-        bool m_BooleanValue;
-
-        [SerializeField]
-        int m_IntegerValue;
-
-        [SerializeField]
-        float m_FloatValue;
-
-        [SerializeField]
-        string m_TextValue;
+        public readonly GameStateTypes Type; 
+        public readonly bool BooleanValue;
+        public readonly int IntegerValue;
+        public readonly float FloatValue;
+        public readonly string TextValue;
 
         public GameStateValue(bool value)
         {
             Type = GameStateTypes.BooleanFlag;
-            m_BooleanValue = value;
-            m_IntegerValue = default;
-            m_FloatValue = default;
-            m_TextValue = default;
+            BooleanValue = value;
+            IntegerValue = default;
+            FloatValue = default;
+            TextValue = default;
         }
 
         public GameStateValue(int value)
         {
-            Type = GameStateTypes.BooleanFlag;
-            m_BooleanValue = default;
-            m_IntegerValue = value;
-            m_FloatValue = default;
-            m_TextValue = default;
+            Type = GameStateTypes.IntegerNumber;
+            BooleanValue = default;
+            IntegerValue = value;
+            FloatValue = default;
+            TextValue = default;
         }
 
         public GameStateValue(float value)
         {
-            Type = GameStateTypes.BooleanFlag;
-            m_BooleanValue = default;
-            m_IntegerValue = default;
-            m_FloatValue = value;
-            m_TextValue = default;
+            Type = GameStateTypes.FloatNumber;
+            BooleanValue = default;
+            IntegerValue = default;
+            FloatValue = value;
+            TextValue = default;
         }
 
         public GameStateValue(string value)
         {
-            Type = GameStateTypes.BooleanFlag;
-            m_BooleanValue = default;
-            m_IntegerValue = default;
-            m_FloatValue = default;
-            m_TextValue = value;
+            Type = GameStateTypes.Text;
+            BooleanValue = default;
+            IntegerValue = default;
+            FloatValue = default;
+            TextValue = value;
         }
+
+        public static implicit operator bool(in GameStateValue state) => state.BooleanValue;
+        public static implicit operator GameStateValue(in bool value) => new(value);
+
+        public static implicit operator int(in GameStateValue state) => state.IntegerValue;
+        public static implicit operator GameStateValue(in int value) => new(value);
+
+        public static implicit operator float(in GameStateValue state) => state.FloatValue;
+        public static implicit operator GameStateValue(in float value) => new(value);
+
+        public static implicit operator string(in GameStateValue state) => state.TextValue;
+        public static implicit operator GameStateValue(in string value) => new(value);
 
         void AssertType(in GameState owner, GameStateTypes type)
         {
             Assert.IsTrue(Type == GameStateTypes.BooleanFlag,
                 $"Tried accessing the value of game state {owner.Identifier} as a {type} when type is " +
                 $"{Type}. Please make sure the state type is correct and you are trying to access it correctly.");
-        }
-
-        public bool GetBooleanValue(in GameState owner)
-        {
-            AssertType(in owner, GameStateTypes.BooleanFlag);
-            return m_BooleanValue;
-        }
-
-        public int GetIntegerValue(in GameState owner)
-        {
-            AssertType(in owner, GameStateTypes.IntegerNumber);
-            return m_IntegerValue;
-        }
-
-        public float GetFloatValue(in GameState owner)
-        {
-            AssertType(in owner, GameStateTypes.FloatNumber);
-            return m_FloatValue;
-        }
-
-        public string GetTextValue(in GameState owner)
-        {
-            AssertType(in owner, GameStateTypes.Text);
-            return m_TextValue;
-        }
-
-        public void SetValue(in GameState owner, bool value)
-        {
-            AssertType(in owner, GameStateTypes.BooleanFlag);
-            m_BooleanValue = value;
-        }
-
-        public void SetValue(in GameState owner, int value)
-        {
-            AssertType(in owner, GameStateTypes.IntegerNumber);
-            m_IntegerValue = value;
-        }
-
-        public void SetValue(in GameState owner, float value)
-        {
-            AssertType(in owner, GameStateTypes.FloatNumber);
-            m_FloatValue = value;
-        }
-
-        public void SetValue(in GameState owner, string value)
-        {
-            AssertType(in owner, GameStateTypes.Text);
-            m_TextValue = value;
         }
     }
     
@@ -179,16 +157,117 @@ namespace StoryFramework
         public GameStateIdentifier Identifier;
 
         [SerializeField]
-        public GameStateValue Value;
+        public string Owner;
 
-        public bool BooleanValue => Value.GetBooleanValue(in this);
-        public int IntegerValue => Value.GetIntegerValue(in this);
-        public float FloatValue => Value.GetFloatValue(in this);
-        public string TextValue => Value.GetTextValue(in this);
+        [SerializeField]
+        public GameStateProperty Property;
+
+        [SerializeField]
+        bool m_BooleanValue;
+
+        [SerializeField]
+        int m_IntegerValue;
+
+        [SerializeField]
+        float m_FloatValue;
+
+        [SerializeField]
+        string m_TextValue;
+
+        public bool BooleanValue => GetValueBoolean();//Value.GetBooleanValue(in this);
+        public int IntegerValue => GetValueInteger();//Value.GetIntegerValue(in this);
+        public float FloatValue => GetValueFloat();//Value.GetFloatValue(in this);
+        public string TextValue => GetValueText();//Value.GetTextValue(in this);
+
+        public bool BooleanValue2
+        {
+            get => GetValueBoolean();
+            set => SetValue(value);
+        }
+        public string TextValue2
+        {
+            get => GetValueText();
+            set => SetValue(value);
+        }
+
+        public GameState(in GameStateIdentifier identifier)
+        {
+            Identifier = identifier;
+            Owner = identifier.Identifier;
+            Property = new GameStateProperty(identifier.Property, identifier.Type);
+            m_BooleanValue = default;
+            m_IntegerValue = default;
+            m_FloatValue = default;
+            m_TextValue = default;
+        }
+
+        public GameState(in GameStateIdentifier identifier, in GameStateValue value) : this(in identifier)
+        {
+            AssertType(value.Type);
+            switch (value.Type)
+            {
+            case GameStateTypes.BooleanFlag:
+                m_BooleanValue = value.BooleanValue;
+                break;
+            case GameStateTypes.IntegerNumber:
+                m_IntegerValue = value.IntegerValue;
+                break;
+            case GameStateTypes.FloatNumber:
+                m_FloatValue = value.FloatValue;
+                break;
+            case GameStateTypes.Text:
+                m_TextValue = value.TextValue;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+            }
+        }
         
+        public GameState(in GameStateIdentifier identifier, bool value) : this(in identifier)
+        {
+            AssertType(GameStateTypes.BooleanFlag);
+            m_BooleanValue = value;
+        }
+
+        public GameState(in GameStateIdentifier identifier, int value) :this(in identifier)
+        {
+            AssertType(GameStateTypes.IntegerNumber);
+            m_IntegerValue = value;
+        }
+
+        public GameState(in GameStateIdentifier identifier, float value) :this(in identifier)
+        {
+            AssertType(GameStateTypes.FloatNumber);
+            m_FloatValue = value;
+        }
+
+        public GameState(in GameStateIdentifier identifier, string value) :this(in identifier)
+        {
+            AssertType(GameStateTypes.Text);
+            m_TextValue = value;
+        }
+
+        public bool GetValueBoolean() => StateManager.Global.GetOrCreate(Identifier, default(bool));
+        public int GetValueInteger() => StateManager.Global.GetOrCreate(Identifier, default(int));
+        public float GetValueFloat() => StateManager.Global.GetOrCreate(Identifier, default(float));
+        public string GetValueText() => StateManager.Global.GetOrCreate(Identifier, default(string));
+
+        public void SetValue(bool value) => StateManager.Global.SetState(Identifier, value);
+        public void SetValue(int value) => StateManager.Global.SetState(Identifier, value);
+        public void SetValue(float value) => StateManager.Global.SetState(Identifier, value);
+        public void SetValue(string value) => StateManager.Global.SetState(Identifier, value);
+
         public static implicit operator bool(in GameState state) => state.BooleanValue;
         public static implicit operator int(in GameState state) => state.IntegerValue;
         public static implicit operator float(in GameState state) => state.FloatValue;
         public static implicit operator string(in GameState state) => state.TextValue;
+
+        void AssertType(GameStateTypes type)
+        {
+            Assert.IsTrue(Identifier.Type == type,
+                $"Tried accessing the value of game state {Identifier} as a {type} when type is " +
+                $"{Identifier.Type}. Please make sure the state type is correct and you are trying to access it " +
+                $"correctly.");
+        }
     }
 }

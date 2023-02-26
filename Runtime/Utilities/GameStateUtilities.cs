@@ -5,7 +5,7 @@ namespace StoryFramework.Utilities
 {
 	public static class GameStateUtilities
 	{
-		public static bool TryGetIdentifier<T>(T dataContainer, string property, out GameStateIdentifier identifier) where T : MonoBehaviour, IPersistentComponent
+		public static bool TryGetIdentifier<T>(T dataContainer, string property, GameStateTypes type, out GameStateIdentifier identifier) where T : MonoBehaviour, IPersistentComponent
 		{
 			if (!dataContainer.TryGetComponent<PersistentObject>(out var persistentObject))
 			{
@@ -30,13 +30,24 @@ namespace StoryFramework.Utilities
 				id += $"[{dataIndex.ToString()}]";
 			}
 
-			identifier = new GameStateIdentifier(id, property);
+			identifier = new GameStateIdentifier(id, property, type);
 			return true;
 		}
 
-		public static GameStateIdentifier GetIdentifier<T>(T dataContainer, string property) where T : MonoBehaviour, IPersistentComponent
+		public static GameStateIdentifier GetIdentifier<T>(T dataContainer, string property, GameStateTypes type) where T : MonoBehaviour, IPersistentComponent
 		{
-			if (!TryGetIdentifier(dataContainer, property, out var identifier))
+			if (!TryGetIdentifier(dataContainer, property, type, out var identifier))
+			{
+				Debug.LogError($"Unable to find the identifier on the game object {dataContainer.name}. Please add a PersistentObject to it.");
+				return default;
+			}
+
+			return identifier;
+		}
+
+		public static GameStateIdentifier GetIdentifier<T>(T dataContainer, in GameStateProperty property) where T : MonoBehaviour, IPersistentComponent
+		{
+			if (!TryGetIdentifier(dataContainer, property.Name, property.Type, out var identifier))
 			{
 				Debug.LogError($"Unable to find the identifier on the game object {dataContainer.name}. Please add a PersistentObject to it.");
 				return default;

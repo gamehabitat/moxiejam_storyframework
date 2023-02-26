@@ -38,15 +38,17 @@ namespace StoryFramework
         UnityEvent onUseUnlocked;
 
         /// <summary>
-        /// Is object locked or not?
-        /// </summary>
-        public GameState IsLockedState => new() { Identifier = GetIdentifier(this, LockedStateId), Value = new(isLockedValue) };
-        bool isLockedValue;
-
-        /// <summary>
         /// Available states on this persistent object.
         /// </summary>
-        public GameStateIdentifier[] GameStates => new[] { IsLockedState.Identifier };
+        public GameStateProperty[] GameStateProperties => new[]
+        {
+            new GameStateProperty(LockedStateId, GameStateTypes.BooleanFlag)
+        };
+
+        /// <summary>
+        /// Is object locked or not?
+        /// </summary>
+        GameState IsLockedState => StateManager.Global.GetOrCreate(GetIdentifier(this, in GameStateProperties[0]), isLocked);
 
         public void Start()
         {
@@ -91,7 +93,7 @@ namespace StoryFramework
         {
             if (!IsLockedState)
             {
-                StateManager.Global.SetState(IsLockedState.Identifier, new(true));
+                StateManager.Global.SetState(IsLockedState.Identifier, true);
             }
         }
 
@@ -103,7 +105,7 @@ namespace StoryFramework
             //if (IsLocked.Value)
             if (isLocked)
             {
-                StateManager.Global.SetState(IsLockedState.Identifier, new(false));
+                StateManager.Global.SetState(IsLockedState.Identifier, false);
             }
         }
 
@@ -124,7 +126,6 @@ namespace StoryFramework
 
         public void LoadPersistentData(GameSaveData saveData)
         {
-            isLockedValue = StateManager.Global.GetOrCreate(IsLockedState.Identifier, new(isLocked));
         }
     }
 }

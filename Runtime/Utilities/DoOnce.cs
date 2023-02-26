@@ -22,15 +22,17 @@ namespace StoryFramework.Utilities
         UnityEvent eventToDo;
 
         /// <summary>
-        /// Have the event executed once?
-        /// </summary>
-        public GameState HaveDoneActionState => new() { Identifier = GetIdentifier(this, HaveDoneActionId), Value = new(haveDoneAction) };
-        bool haveDoneAction;
-
-        /// <summary>
         /// Available states on this persistent object.
         /// </summary>
-        public GameStateIdentifier[] GameStates => new[] { HaveDoneActionState.Identifier };
+        public GameStateProperty[] GameStateProperties => new[]
+        {
+            new GameStateProperty(HaveDoneActionId, GameStateTypes.BooleanFlag)
+        };
+
+        /// <summary>
+        /// Have the event executed once?
+        /// </summary>
+        public GameState HaveDoneActionState => new(GetIdentifier(this, in GameStateProperties[0]), false);
 
         void Start()
         {
@@ -50,7 +52,7 @@ namespace StoryFramework.Utilities
         {
             if (!HaveDoneActionState)
             {
-                StateManager.Global.SetState(HaveDoneActionState.Identifier, new(true));
+                StateManager.Global.SetState(HaveDoneActionState.Identifier, true);
                 StartCoroutine(DoEvent());
             }
         }
@@ -73,7 +75,6 @@ namespace StoryFramework.Utilities
 
         public void LoadPersistentData(GameSaveData saveData)
         {
-            haveDoneAction = StateManager.Global.GetOrCreate(HaveDoneActionState.Identifier, new(false));
         }
     }
 }

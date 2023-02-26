@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static StoryFramework.Utilities.GameStateUtilities;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,7 +11,7 @@ namespace StoryFramework
 {
     public interface IPersistentComponent
     {
-        GameStateIdentifier[] GameStates { get; }
+        public GameStateProperty[] GameStateProperties { get; }
         void LoadPersistentData(GameSaveData saveData);
     }
     
@@ -31,22 +32,38 @@ namespace StoryFramework
         bool activeOnStart = true;
 
         [SerializeField]
+        bool useCustomIdentifier;
+
+        [SerializeField]
+        [EnableIf(nameof(useCustomIdentifier))]
         string customIdentifier;
 
-        public bool HasCustomIdentifier => !string.IsNullOrEmpty(customIdentifier);
-        public string Identifier => HasCustomIdentifier ? customIdentifier : GetGuid().ToString("D");
+        [SerializeField]
+        [EnableIf(nameof(useCustomIdentifier))]
+        [GameStateType("Active On Start", GameStateTypes.BooleanFlag)]
+        //[CustomLabel("Custom Identifier 2")]
+        GameState isActiveState;
 
-        GameState IsActiveState => new()
-        {
-            Identifier = new(Identifier, IsActiveStateId),
-            Value = StateManager.Global.GetOrCreate(new(Identifier, IsActiveStateId), new(activeOnStart)).Value
-        };
-        bool isActive;
+        [SerializeField]
+        [EnableIf(nameof(useCustomIdentifier))]
+        string customIdentifierTest;
 
         /// <summary>
         /// Available states on this persistent object.
         /// </summary>
-        public GameStateIdentifier[] GameStates => new[] { IsActiveState.Identifier };
+        public GameStateProperty[] GameStateProperties => new[]
+        {
+            new GameStateProperty(IsActiveStateId, GameStateTypes.BooleanFlag)
+        };
+
+        public bool HasCustomIdentifier => !string.IsNullOrEmpty(customIdentifier);
+        public bool NewHasCustomIdentifier => useCustomIdentifier && (!string.IsNullOrEmpty(isActiveState.Identifier.Identifier));
+        private string NewIdentifier => NewHasCustomIdentifier ? isActiveState.Identifier.Identifier : GetGuid().ToString("D");
+        public string Identifier => HasCustomIdentifier
+            ? customIdentifier
+            : NewIdentifier;
+
+        GameState IsActiveState => StateManager.Global.GetOrCreate(GetIdentifier(this, in GameStateProperties[0]), activeOnStart);
 
         protected override void OnDestroy()
         {
@@ -57,34 +74,31 @@ namespace StoryFramework
 
         void OnEnable()
         {
-            isActive = true;
+            IsActiveState.SetValue(true);
         }
 
         void OnDisable()
         {
-            isActive = false;
+            IsActiveState.SetValue(false);
         }
 
         void OnBeginLoadScene(string sceneName)
         {
             // Hack to ignore disable on unload of scene.
             StateManager.Global.OnStateChanged -= OnStateChanged;
-            isActive = default;
         }
         
         void OnStateChanged(in GameState state)
         {
             if (state.Identifier.Equals(IsActiveState.Identifier))
             {
-                isActive = state;
                 gameObject.SetActive(state);
             }
         }
         
         public void LoadPersistentData(GameSaveData saveData)
         {
-            var isActiveState = StateManager.Global.GetOrCreate(IsActiveState.Identifier, new(activeOnStart));
-            gameObject.SetActive(isActiveState);
+            gameObject.SetActive(IsActiveState.BooleanValue);
             StateManager.Global.OnStateChanged += OnStateChanged;
             Game.OnBeginLoadScene += OnBeginLoadScene;
         }

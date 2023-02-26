@@ -35,7 +35,7 @@ namespace StoryFramework.Utilities
         {
             if (gameState.IsValid())
             {
-                StateManager.Global.SetState(in gameState, new GameStateValue(value));
+                StateManager.Global.SetState(in gameState, value);
             }
 
             if ((!string.IsNullOrEmpty(id)) && Game.Instance && (Game.Instance.SaveData != null))

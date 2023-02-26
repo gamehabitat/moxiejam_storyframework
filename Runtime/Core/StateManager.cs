@@ -13,8 +13,10 @@ namespace StoryFramework
 		public static StateManager Global = new();
 		
 		// Game states.
-		List<GameState> m_States;
-		public IReadOnlyList<GameState> States => m_States;
+		List<GameStateIdentifier> m_stateIdentifiers = new();
+		List<GameState> m_stateValues = new();
+		public IReadOnlyList<GameStateIdentifier> StatesIdentifiers => m_stateIdentifiers;
+		public IReadOnlyList<GameState> StateValues => m_stateValues;
 
 		// Dispose flag.
 		bool m_IsDisposed = false;
@@ -34,7 +36,7 @@ namespace StoryFramework
 		{
 			for (int i = 0; i < states.Length; i++)
 			{
-				Register(in states[i].Identifier, in states[i].Value);
+				Register(in states[i]);
 			}
 		}
 		
@@ -55,26 +57,25 @@ namespace StoryFramework
 
 			if (disposing)
 			{
-				m_States.Clear();
+				m_stateIdentifiers.Clear();
+				m_stateValues.Clear();
 				Game.OnBeginLoadScene -= OnBeginLoadScene;
 			}
 
 			m_IsDisposed = true;
 		}
 
-		public void Register(in GameStateIdentifier identifier, in GameStateValue value = default)
+		public void Register(in GameState gameState)
 		{
-			int index = FindState(in identifier);
+			int index = FindState(in gameState.Identifier);
 			Assert.IsTrue(index < 0,
-				$"A state {identifier} already exist. Please try a different identifier.");
+				$"A state {gameState.Identifier} already exist. Please try a different identifier.");
 
-			m_States.Add(new GameState()
-			{
-				Identifier = identifier,
-				Value = value
-			});
+			m_stateIdentifiers.Add(gameState.Identifier);
+			m_stateValues.Add(gameState);
 		}
 
+		// TODO: Other types.
 		public GameState GetOrCreate(in GameStateIdentifier identifier, in GameStateValue initialValue)
 		{
 			if (TryGetState(in identifier, out var state))
@@ -82,9 +83,10 @@ namespace StoryFramework
 				return state;
 			}
 			
-			Register(in identifier, in initialValue);
+			Register(new GameState(in identifier, initialValue));
 
-			return m_States[m_States.Count - 1];
+			int index = m_stateIdentifiers.Count - 1;
+			return m_stateValues[index];
 		}
 
 		public bool TryGetState(in GameStateIdentifier identifier, out GameState state)
@@ -96,7 +98,7 @@ namespace StoryFramework
 				return false;
 			}
 
-			state = m_States[index];
+			state = m_stateValues[index];
 			return true;
 		}
 
@@ -105,34 +107,33 @@ namespace StoryFramework
 			int index = FindState(in identifier);
 			if (index < 0)
 			{
-				Debug.Log($"Adding new state {identifier} of type {value.Type}.");
-				Register(in identifier, in value);
-				index = m_States.Count - 1;
+				Debug.Log($"Adding new state {identifier} of type {identifier.Type}.");
+				Register(new GameState(in identifier, in value));
+				index = m_stateIdentifiers.Count - 1;
 			}
 			else
 			{
-				Assert.IsTrue(m_States[index].Value.Type == value.Type,
+				Assert.IsTrue(m_stateIdentifiers[index].Type == value.Type,
 					$"Trying to set state {identifier} with a different type. Please " +
 					$"make sure correct type is used or that you are trying to set correct state.");
 
-				m_States[index] = new()
-				{
-					Identifier = identifier,
-					Value = value
-				};
+				m_stateIdentifiers[index] = identifier;
+				m_stateValues[index] = new GameState(in identifier, in value);
 			}
 
-			OnStateChanged?.Invoke(m_States[index]);
+			OnStateChanged?.Invoke(m_stateValues[index]);
 		}
 
 		public int FindState(in GameStateIdentifier identifier)
 		{
 			string id = identifier.Identifier;
 			string prop = identifier.Property;
+			var type = identifier.Type;
 
-			return m_States.FindIndex(x =>
-				x.Identifier.Identifier.Equals(id, StringComparison.OrdinalIgnoreCase) &&
-				x.Identifier.Property.Equals(prop, StringComparison.OrdinalIgnoreCase));
+			return m_stateIdentifiers.FindIndex(x =>
+				x.Identifier.Equals(id, StringComparison.OrdinalIgnoreCase) &&
+				x.Property.Equals(prop, StringComparison.OrdinalIgnoreCase) &&
+				x.Type == type);
 		}
 
 		public bool Exists(in GameStateIdentifier identifier)
@@ -142,7 +143,7 @@ namespace StoryFramework
 
 		void OnStateValueChanged(in GameState state)
 		{
-			Debug.Log($"State {state.Identifier} of type {state.Value.Type} changed.");
+			Debug.Log($"State {state.Identifier} of type {state.Identifier.Type} changed.");
 		}
 
 		void OnBeginLoadScene(string sceneName)

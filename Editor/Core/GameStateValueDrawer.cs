@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace StoryFramework.Editor
 {
-	[CustomPropertyDrawer(typeof(GameStateValue))]
+	//[CustomPropertyDrawer(typeof(GameStateValue))]
 	public class GameStateValueDrawer : UnityEditor.PropertyDrawer
 	{
 		GUIContent m_ValueContent = new("Value");
@@ -16,13 +16,13 @@ namespace StoryFramework.Editor
 
 			var rect = position;
 			var typeProp = property.FindPropertyRelative("Type");
+			var valueProp = property.GetGameStateValueProp((GameStateTypes)typeProp.enumValueIndex);
 
 			// Draw fields. 
 			rect.height = EditorGUI.GetPropertyHeight(typeProp);  
 			EditorGUI.PropertyField(rect, typeProp);
 			rect.y += rect.height;
 
-			var valueProp = property.GetGameStateValueProp((GameStateTypes)typeProp.enumValueIndex);
 			rect.height = EditorGUI.GetPropertyHeight(valueProp);  
 			EditorGUI.PropertyField(rect, valueProp, m_ValueContent);
 			rect.y += rect.height;
@@ -35,7 +35,8 @@ namespace StoryFramework.Editor
 			var typeProp = property.FindPropertyRelative("Type");
 			var valueProp = property.GetGameStateValueProp((GameStateTypes)typeProp.enumValueIndex);
 
-			float height = EditorGUI.GetPropertyHeight(typeProp);
+			float height = 0.0f;
+			height += EditorGUI.GetPropertyHeight(typeProp);
 			height += EditorGUI.GetPropertyHeight(valueProp);
 			return height; 
 		}
