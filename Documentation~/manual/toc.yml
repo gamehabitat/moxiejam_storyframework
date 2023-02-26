@@ -2,6 +2,12 @@
   href: index.md
 - name: Install
   href: install.md
+- name: Install the single scene sample
+  href: InstallSimpleProject.md
+- name: Install the larger sample game
+  href: InstallSampleProject.md
+- name: Install (MoxieJam 2022)
+  href: install2022.md
 - name: Tutorials
   href: tutorials/toc.yml
   topicHref: tutorials/index.md

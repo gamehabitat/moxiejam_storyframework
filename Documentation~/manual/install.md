@@ -8,7 +8,7 @@ This document will guide you through creating a new Unity-project and installing
 
 ## Prerequisites
 
-This package requires Unity version 2021.2.7f1 (newer version might potential work but can't be guaranteed).
+This package requires Unity version 2021.3.19f1 (newer version might potential work but can't be guaranteed).
 
 ## Create a new project
 
@@ -69,48 +69,18 @@ The TextMeshPro resources is now installed.
 
 ### After installation
 
-When the package is installed you can optionally install the recommended [StoryFramework Assets](#install-recommended-framework-assets) and / or the [Sample Project](#install-the-sample-game).
+When the package is installed you can optionally install one of the [sample projects](#install-a-sample-project).
 
 ![Unity window is open](../resources/images/install/UnityAddPackage4.png)
 
-## Install recommended framework assets
+## Install a sample project
 
-The framework comes with some recommended assets to aid in creating your game. Among the assets is a scene template that will help you in creating a standard scene for your game.
+The framework comes with two sample projects to help you get started and to demonstrate what can be created using the MoxieJam Story framework.
 
-To install this, inside the package manager window select the `MoxieJam story framework` package. On the right side of the window you can see a section called `Samples` click on the arrow next to it if this section isn't expanded yet. Click on `Import` next to `Sample Project` the sample will now be installed.
+If you want a smaller example to get started quickly, you can install the single scene sample project:
 
-If you can't find the package manager, please refer to [Installation section](#install-the-moxiejam-story-framework) on where to find it.
+<xref:install_simple_project>
 
-![Unity window is open](../resources/images/install/UnityAddPackage4.png)
+If you are more interested in a larger sample with multiple scenes with interactions between the scenes you can install the sample game:
 
-## Install the sample game
-
-The framework comes with a sample game that use much of the frameworks functionality. It is a good way of getting to know the framework.
-
-To install this, inside the package manager window select the `MoxieJam story framework` package. On the right side of the window you can see a section called `Samples` click on the arrow next to it if this section isn't expanded yet. Click on `Import` next to `Storyframework Assets` the sample will now be installed.
-
-If you can't find the package manager, please refer to [Installation section](#install-the-moxiejam-story-framework) on where to find it.
-
-![Unity window is open](../resources/images/install/UnityAddPackage4.png)
-
-Once the sample project is installed, you will now have all the sample assets in your project view.
-
-![Unity window is open](../resources/images/install/SampleImported.png)
-
-There is still one more thing to do before you can run the game. Unity need to know about the scenes in the game, so we will add them in the `Build settings`.
-
-Open the `Build Settings` in the `File` menu.
-
-![Open build settings](../resources/images/install/BuildSettings.png)
-
-A new window will now open with the current `Build Settings`. Inside here we want to add all scenes that belong to the project. So go to the `Scenes` folder inside the samples directory and select all the scene files and drag them to the area under `Scenes In Build`.
-
-![Open build settings](../resources/images/install/AddScenes.png)
-
-With all the scenes added, make sure that the scene named `StartUp` is first in the list. If it is not, select it in the list and drag and drop it at the top. This is important as this is the first scene unity will load when the game starts.
-
-The scenes have now been added to the settings and it should looks something similar to this.
-
-![Open build settings](../resources/images/install/ScenesAdded.png)
-
-The sample project is now fully installed! Press on Play and try it out!
+<xref:install_sample_project>
