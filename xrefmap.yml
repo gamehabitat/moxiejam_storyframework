@@ -40,6 +40,12 @@ references:
 - uid: install_framework
   name: Install MoxieJam Story Framework
   href: manual/install.html
+- uid: install_sample_project
+  name: Install MoxieJam Sample Project
+  href: manual/InstallSampleProject.html
+- uid: install_simple_project
+  name: Install MoxieJam Simple Project
+  href: manual/InstallSimpleProject.html
 - uid: manual
   name: MoxieJam Story Framework Manual
   href: manual/index.html

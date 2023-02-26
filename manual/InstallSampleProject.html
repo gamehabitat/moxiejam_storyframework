@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Install MoxieJam Sample Project | MoxieJam story framework documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Install MoxieJam Sample Project | MoxieJam story framework documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="install_sample_project">
+<h1 id="installation">Installation</h1>
+
+<p>This document will guide you through installing the advanced sample game project.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This document assume you have just created a new project and installed the MoxieJam Story framework.</p>
+<p><img src="../resources/images/install/UnityAddPackage4.png" alt="Unity window is open"></p>
+<h2 id="install-the-sample-game">Install the sample game</h2>
+<p>The framework comes with some recommended assets to aid in creating your game. Among the assets is a scene template that will help you in creating a standard scene for your game.</p>
+<p>To install this, inside the package manager window select the <code>MoxieJam story framework</code> package. On the right side of the window you can see a section called <code>Samples</code> click on the arrow next to it if this section isn&#39;t expanded yet. Click on <code>Import</code> next to <code>Sample Project</code> the sample will now be installed.</p>
+<p>If you can&#39;t find the package manager, please refer to <a href="#install-the-moxiejam-story-framework">Installation section</a> on where to find it.</p>
+<p><img src="../resources/images/install/UnityAddPackage4.png" alt="Unity window is open"></p>
+<h2 id="install-the-sample-game-1">Install the sample game</h2>
+<p>The framework comes with a sample game that use much of the frameworks functionality. It is a good way of getting to know the framework.</p>
+<p>To install this, inside the package manager window select the <code>MoxieJam story framework</code> package. On the right side of the window you can see a section called <code>Samples</code> click on the arrow next to it if this section isn&#39;t expanded yet. Click on <code>Import</code> next to <code>Storyframework Assets</code> the sample will now be installed.</p>
+<p>If you can&#39;t find the package manager, please refer to <a href="#install-the-moxiejam-story-framework">Installation section</a> on where to find it.</p>
+<p><img src="../resources/images/install/UnityAddPackage4.png" alt="Unity window is open"></p>
+<p>Once the sample project is installed, you will now have all the sample assets in your project view.</p>
+<p><img src="../resources/images/install/SampleImported.png" alt="Unity window is open"></p>
+<p>There is still one more thing to do before you can run the game. Unity need to know about the scenes in the game, so we will add them in the <code>Build settings</code>.</p>
+<p>Open the <code>Build Settings</code> in the <code>File</code> menu.</p>
+<p><img src="../resources/images/install/BuildSettings.png" alt="Open build settings"></p>
+<p>A new window will now open with the current <code>Build Settings</code>. Inside here we want to add all scenes that belong to the project. So go to the <code>Scenes</code> folder inside the samples directory and select all the scene files and drag them to the area under <code>Scenes In Build</code>.</p>
+<p><img src="../resources/images/install/AddScenes.png" alt="Open build settings"></p>
+<p>With all the scenes added, make sure that the scene named <code>StartUp</code> is first in the list. If it is not, select it in the list and drag and drop it at the top. This is important as this is the first scene unity will load when the game starts.</p>
+<p>The scenes have now been added to the settings and it should looks something similar to this.</p>
+<p><img src="../resources/images/install/ScenesAdded.png" alt="Open build settings"></p>
+<p>The sample project is now fully installed! Press on Play and try it out!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/InstallSampleProject.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            MoxieJam story framework documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1167,6 +1167,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/InstallSampleProject.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/InstallSampleProject.html",
+          "hash": "W0sXJLoYPyJ727ug2tMulm6kE+S63vbbXJm5hc6ISWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/InstallSimpleProject.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/InstallSimpleProject.html",
+          "hash": "zXKxswOWUDmL+zXmJFWVgqiAc/mDvqQZc8+LExAT5BI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/components/DialogueTextList.md",
       "output": {
         ".html": {
@@ -1294,7 +1318,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/install.html",
-          "hash": "TdTdU2lnDU3ResTQ+fdyUMKVCH5wN41lchXMUD11QfE="
+          "hash": "4fIFJXHsnD6W3yYhjEEqLZADIgmUcCDaxLA4h0Ttwlw="
         }
       },
       "is_incremental": false,
@@ -1318,7 +1342,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "LFU1Eu4FeFFd59ZyKRxl1LtNTfz2zcckdsBZ5azEmy8="
+          "hash": "DKuMNZUEQ0chnbj+e33RdJdVDf+QrV2dvYQJKA3VL6o="
         }
       },
       "is_incremental": false,
@@ -1829,7 +1853,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 18,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
