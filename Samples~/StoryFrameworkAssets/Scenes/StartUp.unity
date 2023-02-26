@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9ee6349f3b4513991a36b6f9672248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: 668726c38c24cea4d89806be966d82f4, type: 2}
+  settings: {fileID: 11400000, guid: 392b0c619a144c63bc2a315e8ddbe9e6, type: 2}
   audioManager: {fileID: 6766514573117289837}
 --- !u!4 &6766514573117289834
 Transform:

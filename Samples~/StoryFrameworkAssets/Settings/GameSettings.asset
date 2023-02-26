@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   StartScene:
-    sceneGUID: 0f11570147e7d554c9aa7ec633db5d38
+    sceneGUID: cceb223064234a25bfa7c7fe9f5116cb
     sceneName: StartMenuScene

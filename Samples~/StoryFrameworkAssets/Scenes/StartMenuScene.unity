@@ -303,11 +303,11 @@ MonoBehaviour:
   m_AssetsPPU: 100
   m_RefResolutionX: 1920
   m_RefResolutionY: 1080
-  m_UpscaleRT: 0
+  m_UpscaleRT: 1
   m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
+  m_CropFrameX: 1
+  m_CropFrameY: 1
+  m_StretchFill: 1
 --- !u!1 &327486074
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -681,11 +682,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 865508214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ab4b1ab11643b5847b10c75612cb53, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a56285941984acbbab0abafa5ccd766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firstInGameScene:
-    sceneGUID: 84b644012df14444780cb1ef518a4a33
+    sceneGUID: 41f1e5c45489479699a0ab8289c57bf8
     sceneName: GameScene
   inGameUiPrefab: {fileID: 0}
 --- !u!1 &956823748
@@ -1114,7 +1115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 965d4729b6fb04de3b391da7ea7cb479, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7edca5d660c7433f98609bd47376f50b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

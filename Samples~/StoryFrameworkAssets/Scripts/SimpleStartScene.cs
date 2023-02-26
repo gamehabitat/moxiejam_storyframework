@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using StoryFramework;
 
-public class StartScene : MonoBehaviour
+public class SimpleStartScene : MonoBehaviour
 {
     [SerializeField]
     SceneRef firstInGameScene;

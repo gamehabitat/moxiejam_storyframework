@@ -59,46 +59,46 @@ MonoBehaviour:
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GameSceneTemplate
   m_EditorClassIdentifier: 
-  templateScene: {fileID: 102900000, guid: 84b644012df14444780cb1ef518a4a33, type: 3}
+  templateScene: {fileID: 102900000, guid: 3f332d8936e14d2281d347f8072c519f, type: 3}
   templateName: In-game scene
   description: Creates a standard in-game scene for the StoryFramework used by MoxieJam
   preview: {fileID: -8261803826987905448}
   dependencies:
-  - dependency: {fileID: 8871797714641259819, guid: 4280276b8e99ee84c8fb71fe66eb7c84, type: 3}
+  - dependency: {fileID: 8871797714641259819, guid: cdbe520b1af74792ac6babf5402c46b3, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 9a3e7afb8cac1405c8097ebd8f655098, type: 3}
+  - dependency: {fileID: 2800000, guid: d38249b9c608435598c35e050c63451a, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 27dd22825405c419cab0eb41f1eadc8a, type: 3}
+  - dependency: {fileID: 2800000, guid: af081d894d4141268aeda698939cbd10, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: e081d083ff2be40deb2448cbf4d2142d, type: 3}
+  - dependency: {fileID: 2800000, guid: 826643ce5bad409ab8b303e5fe595ed8, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 0647b9f2b2c001045b9a7e5706136e1d, type: 3}
+  - dependency: {fileID: 2800000, guid: 5c3fe9cb54324a2282a6d59b50d1c551, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 7ac4fd5b955c44967a31d2593f2fed5a, type: 3}
+  - dependency: {fileID: 2800000, guid: 37e63ab443914c13865da47a49e9e549, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 965d4729b6fb04de3b391da7ea7cb479, type: 3}
+  - dependency: {fileID: 2800000, guid: 7edca5d660c7433f98609bd47376f50b, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: d051ca1962208964487bff6a133c828c, type: 3}
+  - dependency: {fileID: 2800000, guid: f072b4fdd30744fc864994ee66ac3c38, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 6644168522417213888, guid: 73950fa7e17fd40bcb54201bbc544768, type: 3}
+  - dependency: {fileID: 6644168522417213888, guid: 384a31060da94e0d8266422a3963d5ee, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: ee148e281f3c41c5b4ff5f8a5afe5a6c, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 08a04b12dd0d5ec4da08f074806d5bf7, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: ed4dd7e404e644a65998ae8a40495fce, type: 3}
+  - dependency: {fileID: 2800000, guid: 07af11b19ae5406e8e3f584391803c1f, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: e0e193eae97594edfb01b211476126da, type: 3}
+  - dependency: {fileID: 2800000, guid: 0cb1767a251944428103f2c5312beadd, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 11400000, guid: a8d3d1d12d5707144abdf1efc9a93e2b, type: 2}
+  - dependency: {fileID: 11400000, guid: 8fc424699d25486ab17098ec454f926f, type: 2}
     instantiationMode: 1
   templatePipeline: {fileID: 11500000, guid: 4c6ba7ab9cdfddb4abda2b159c04f7d6, type: 3}
   addToDefaults: 0
