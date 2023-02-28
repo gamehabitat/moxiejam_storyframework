@@ -1303,16 +1303,13 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "yiqRWHM7kX5KnXedC5F8oBcaGqJD2FUa50ZHnP6Lu3Y="
+          "hash": "vmLQ9fc/IGNlWIhfDofxcmJSOtyDff/s0+qdyotpVWk="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/install.md",
       "output": {
@@ -1330,7 +1327,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/install2022.html",
-          "hash": "/OphRFzoXl1mAi1aoWhSK/N1NiZOERZv5sKhRtTDRdY="
+          "hash": "CEJsdakhwVWqikRcSThlOemX5UP8xaGILV8vr9kNbDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/sample.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/sample.html",
+          "hash": "WAVs8KOGRlTnMasutcuoVnueD15L5iBwfsqIMlRcbh0="
         }
       },
       "is_incremental": false,
@@ -1342,7 +1351,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "DKuMNZUEQ0chnbj+e33RdJdVDf+QrV2dvYQJKA3VL6o="
+          "hash": "n9HOzX+UiJW2gnZSuDh3BlxpjrHE3ZRgtLjA3vKci+k="
         }
       },
       "is_incremental": false,
@@ -1853,7 +1862,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 20,
+          "total_file_count": 21,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

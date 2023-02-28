@@ -37,6 +37,9 @@ references:
 - uid: create_object_with_description
   name: Create a object with description
   href: manual/tutorials/CreateDropObjectWithDescription.html
+- uid: install_2022_framework
+  name: Install MoxieJam Story Framework
+  href: manual/install2022.html
 - uid: install_framework
   name: Install MoxieJam Story Framework
   href: manual/install.html
@@ -52,6 +55,9 @@ references:
 - uid: moxiejam_story_framework_index
   name: MoxieJam Story Framework
   href: index.html
+- uid: sample_project_walkthrough
+  name: Walkthrough of the MoxieJam Sample Project
+  href: manual/sample.html
 - uid: StoryFramework
   name: StoryFramework
   href: api/StoryFramework.html
