@@ -1,5 +1,5 @@
 ---
-uid: install_framework
+uid: install_2022_framework
 title: Install MoxieJam Story Framework
 ---
 # Installation

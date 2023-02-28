@@ -8,6 +8,8 @@
   href: InstallSampleProject.md
 - name: Install (MoxieJam 2022)
   href: install2022.md
+- name: Samples walkthrough
+  href: sample.md
 - name: Tutorials
   href: tutorials/toc.yml
   topicHref: tutorials/index.md
