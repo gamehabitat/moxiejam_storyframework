@@ -11,7 +11,7 @@ namespace StoryFramework
 	public class StateManager
 	{
 		// Game states.
-		List<GameState> m_States;
+		List<GameState> m_States = new();
 		public IReadOnlyList<GameState> States => m_States;
 
 		// Dispose flag.
