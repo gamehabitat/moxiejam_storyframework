@@ -3251,3 +3251,6 @@ references:
 - uid: tutorials_advanced_topics
   name: Advanced Topics
   href: manual/tutorials/AdvancedTopics.html
+- uid: video_tutorials
+  name: Video Tutorials
+  href: manual/tutorials/VideoTutorials.html

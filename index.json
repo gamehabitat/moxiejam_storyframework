@@ -517,7 +517,7 @@
   "manual/index.html": {
     "href": "manual/index.html",
     "title": "MoxieJam Story Framework Manual | MoxieJam story framework documentation",
-    "keywords": "MoxieJam Story Framework Manual Sections: Install MoxieJam Story Framework Install MoxieJam Story Framework Install MoxieJam Simple Project Install MoxieJam Sample Project Walkthrough of the MoxieJam Sample Project MoxieJam Story Framework Tutorials Components"
+    "keywords": "MoxieJam Story Framework Manual Sections Install MoxieJam Story Framework Install MoxieJam Story Framework Install MoxieJam Simple Project Install MoxieJam Sample Project Walkthrough of the MoxieJam Sample Project MoxieJam Story Framework Tutorials Video Tutorials Components"
   },
   "manual/install.html": {
     "href": "manual/install.html",
@@ -568,5 +568,10 @@
     "href": "manual/tutorials/index.html",
     "title": "MoxieJam Story Framework Tutorials | MoxieJam story framework documentation",
     "keywords": "MoxieJam Story Framework Tutorials Create a Interactable Item Create a Drop Item Target Create a object with description Advanced Topics"
+  },
+  "manual/tutorials/VideoTutorials.html": {
+    "href": "manual/tutorials/VideoTutorials.html",
+    "title": "Video Tutorials | MoxieJam story framework documentation",
+    "keywords": "Video Tutorials You can find video tutorials for a few subjects in the following links Installing the Moxie Jam Story Framework Introduction to Unity and the Moxie Jam Sample Game Moxie Jam Story Framework Basics Making a game build for Moxie Jam Playlist with all tutorials"
   }
 }

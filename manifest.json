@@ -1303,7 +1303,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "vmLQ9fc/IGNlWIhfDofxcmJSOtyDff/s0+qdyotpVWk="
+          "hash": "U6jGDDcKNbKtKNq85PKhqgdKYgYntd8eswEd6RVQe10="
         }
       },
       "is_incremental": false,
@@ -1351,7 +1351,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "n9HOzX+UiJW2gnZSuDh3BlxpjrHE3ZRgtLjA3vKci+k="
+          "hash": "T3MtjKayKWLb0ywNEuqMb2z3wLkUxZ+uPKMeTplaelg="
         }
       },
       "is_incremental": false,
@@ -1400,6 +1400,18 @@
         ".html": {
           "relative_path": "manual/tutorials/CreateInteractableItem.html",
           "hash": "lUytHcSRYKaCDOJtcvpQuI9ZDsFpkrOLpG7hSDnsD9o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials/VideoTutorials.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials/VideoTutorials.html",
+          "hash": "exic/fJmDhS0eVtuPFVtdxcS7TU6kO/Cv++i8fsjjY4="
         }
       },
       "is_incremental": false,
@@ -1862,7 +1874,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 21,
+          "total_file_count": 22,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
