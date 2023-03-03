@@ -12,6 +12,8 @@
   href: sample.md
 - name: Tutorials
   href: tutorials/toc.yml
+- name: Video Tutorials
+  href: tutorials/VideoTutorials.md
   topicHref: tutorials/index.md
 - name: Components
   href: components/toc.yml

@@ -1,4 +1,6 @@
-﻿- name: Create a Interactable Item
+﻿- name: Video Tutorials
+  href: VideoTutorials.md
+- name: Create a Interactable Item
   href: CreateInteractableItem.md
 - name: Create a Drop Item Target
   href: CreateDropItemTarget.md
