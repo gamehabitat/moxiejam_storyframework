@@ -40,11 +40,11 @@ namespace StoryFramework.Events
         [SerializeField]
         UnityEvent onItemDisabled;
         
-        Inventory inventory;
+        // Find the inventory.
+        Inventory inventory => Game.Instance ? Game.Instance.SaveData?.Inventory : null;
 
         void Start()
         {
-            inventory = Game.Instance ? Game.Instance.SaveData?.Inventory : null;
         }
         
         void OnDestroy()
@@ -53,6 +53,7 @@ namespace StoryFramework.Events
 
         void OnEnable()
         {
+            inventory = Game.Instance ? Game.Instance.SaveData?.Inventory : null;
             if (inventory != null)
             {
                 inventory.OnUpdated += OnUpdated;
@@ -65,6 +66,7 @@ namespace StoryFramework.Events
 
         void OnDisable()
         {
+            inventory = Game.Instance ? Game.Instance.SaveData?.Inventory : null;
             if (inventory != null)
             {
                 inventory.OnUpdated -= OnUpdated;
