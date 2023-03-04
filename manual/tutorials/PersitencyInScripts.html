@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Persistency in scripts | MoxieJam story framework documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Persistency in scripts | MoxieJam story framework documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="persistency_in_scripts">
+<h1 id="persistency-in-scripts">Persistency in scripts</h1>
+
+<p>Persistency is useful to share values between scenes in a game. It could be things such as wether a button was pressed or if the pizza at the restaurant was paid for.</p>
+<p>Any object needing persistency always need to also have <code>PersistentObject</code> (see <a class="xref" href="../components/PersistentObject.html">Persistent Object</a>)  component attached. This component provide the persistency with a identifier so this game object know that I am me and any data associated with this identifier is for me. You can see PersistentObject and the identifier as your personal identification number or your name.  Going by this analogy, the persistent values are things associated with you:</p>
+<ul>
+<li>Wether I&#39;ve been at this resturant before</li>
+<li>If I got money for the pizza</li>
+<li>If I left a nice review to the pizza baker.</li>
+</ul>
+<p>Let&#39;s now say you want to store how many times you&#39;ve been in a room (scene) in the game.. there&#39;s no pre-made script for doing this so we will make a new script for this.
+The script will use a <code>GameStateValue&lt;int&gt;</code> to store the room counting. It uses the identifier <code>EnterRoomCounter_EnteredThisRoomCounter</code> to identify this game state value.</p>
+<p>On Start of the script it tells the counter to run the method <code>OnOnValueModified</code> whenever the counter value is updated.</p>
+<p>When a scene is loaded the counter value will be set to a default value (in the case of a number it will be set to 0). The nice thing with the persistency system is that the real counter value is actually stored away and can be used to restore the counter value. When the scene is loaded the method <code>LoadPersistentData</code> is called and can be used to restore the counter value from the persistency system as can be seen in the example code.</p>
+<pre><code class="lang-c#">using UnityEngine;
+using StoryFramework;
+using UnityEngine.Events;
+
+// RequireComponent makes sure that a PersistentObject component is also created when this component is created.
+[RequireComponent(typeof(PersistentObject))]
+public class EnterRoomCounter : MonoBehaviour, IPersistentComponent
+{
+    // This is a identifier for the counter value that will be associated with the identifier of PersistentObject. 
+    public const string EnteredThisRoomCounterStateId = &quot;EnterRoomCounter_EnteredThisRoomCounter&quot;;
+
+    // An event that is called when ever the room counter is updated. It will provide the current counter value.
+    [SerializeField]
+    private UnityEvent&lt;string&gt; onRoomCounterUpdated;
+
+    // How many times we entered the room.
+    [System.NonSerialized]
+    public GameStateValue&lt;int&gt; EnteredThisRoomCounter = new GameStateValue&lt;int&gt;();
+
+    public void Start()
+    {
+        // Make it so OnOnValueModified is executed when ever the counter gets a new value.
+        EnteredThisRoomCounter.OnValueModified += OnOnValueModified;
+
+        // Increase the &quot;entered this room counter&quot; when the script is activated.
+        EnteredThisRoomCounter.Value++;
+    }
+
+    void OnOnValueModified()
+    {
+        // Execute the room counter updated event.
+        onRoomCounterUpdated?.Invoke(EnteredThisRoomCounter.Value.ToString());
+    }
+
+    // Called right before the scene starts and can be used to restore any previously saved data.  
+    public void LoadPersistentData(GameSaveData saveData)
+    {
+        // Try and restore any previously save data and set it to EnteredThisRoomCounter,
+        // if this is the first time the room is entered, the counter will be set to 0. 
+        EnteredThisRoomCounter = saveData.GetState(this, EnteredThisRoomCounterStateId, 0);
+    }
+}
+</code></pre><h2 id="related-components">Related components</h2>
+<ul>
+<li><a class="xref" href="../components/PersistentObject.html">Persistent Object</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gamehabitat/moxiejam_storyframework/blob/main/Documentation~/manual/tutorials/PersitencyInScripts.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            MoxieJam story framework documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

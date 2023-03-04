@@ -55,6 +55,9 @@ references:
 - uid: moxiejam_story_framework_index
   name: MoxieJam Story Framework
   href: index.html
+- uid: persistency_in_scripts
+  name: Persistency in scripts
+  href: manual/tutorials/PersitencyInScripts.html
 - uid: sample_project_walkthrough
   name: Walkthrough of the MoxieJam Sample Project
   href: manual/sample.html
