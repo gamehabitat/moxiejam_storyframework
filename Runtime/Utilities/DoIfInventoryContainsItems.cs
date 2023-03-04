@@ -66,7 +66,7 @@ namespace StoryFramework.Utilities
 				for (int i = 0; i < requiredItems.Length; ++i)
 				{
 					// Is this required item in the inventory.
-					if (inventory.Contains(item))
+					if (inventory.Contains(requiredItems[i]))
 					{
 						// Yay! We have one of the required items. Increase the counter.
 						numberOfRequiredItemsOwned++;

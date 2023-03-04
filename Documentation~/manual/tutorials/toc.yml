@@ -8,3 +8,5 @@
   href: CreateDropObjectWithDescription.md
 - name: Advanced Topics
   href: AdvancedTopics.md
+- name: Persistency in scripts
+  href: PersitencyInScripts.md
