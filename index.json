@@ -414,6 +414,11 @@
     "title": "Class DialogueUtility | MoxieJam story framework documentation",
     "keywords": "Class DialogueUtility Utility for modifying the dialogue. Inheritance Object DialogueUtility Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class DialogueUtility : MonoBehaviour Methods AddToDialogue(String) Appends text to the currently active dialogue. Declaration public void AddToDialogue(string text) Parameters Type Name Description String text ClearDialogue() Clears the currently active dialogue. Declaration public void ClearDialogue() SetActiveDialogue(Dialogue) Sets the specified dialogue as the currently active dialogue that handles text. Declaration public void SetActiveDialogue(Dialogue dialogue) Parameters Type Name Description Dialogue dialogue Dialogue to use. SetDialogue(String) Set the text of the currently active dialogue. Declaration public void SetDialogue(string text) Parameters Type Name Description String text"
   },
+  "api/StoryFramework.Utilities.DoIfInventoryContainsItems.html": {
+    "href": "api/StoryFramework.Utilities.DoIfInventoryContainsItems.html",
+    "title": "Class DoIfInventoryContainsItems | MoxieJam story framework documentation",
+    "keywords": "Class DoIfInventoryContainsItems A script to check if we have some items in the inventory. Inheritance Object DoIfInventoryContainsItems Namespace : StoryFramework.Utilities Assembly : cs.temp.dll.dll Syntax public class DoIfInventoryContainsItems : MonoBehaviour"
+  },
   "api/StoryFramework.Utilities.DoIfItemIs.html": {
     "href": "api/StoryFramework.Utilities.DoIfItemIs.html",
     "title": "Class DoIfItemIs | MoxieJam story framework documentation",
@@ -442,7 +447,7 @@
   "api/StoryFramework.Utilities.html": {
     "href": "api/StoryFramework.Utilities.html",
     "title": "Namespace StoryFramework.Utilities | MoxieJam story framework documentation",
-    "keywords": "Namespace StoryFramework.Utilities Classes ActiveStateSetter A utility for setting a active state on persistent objects. DialogueTextList A utility for showing different texts each time. DialogueUtility Utility for modifying the dialogue. DoIfItemIs Executes a event if it receive a specified item. DoOnce Executes a event once when the component starts. GameStateSetter A utility for setting a global game state. GameUtility A general utility for controlling the game. LockableStateSetter A utility for setting a locks state. ScrollRectUtility SetDialogueText Utility for setting dialogue texts. Enums GameStateSetter.Types LockableStateSetter.LockStates"
+    "keywords": "Namespace StoryFramework.Utilities Classes ActiveStateSetter A utility for setting a active state on persistent objects. DialogueTextList A utility for showing different texts each time. DialogueUtility Utility for modifying the dialogue. DoIfInventoryContainsItems A script to check if we have some items in the inventory. DoIfItemIs Executes a event if it receive a specified item. DoOnce Executes a event once when the component starts. GameStateSetter A utility for setting a global game state. GameUtility A general utility for controlling the game. LockableStateSetter A utility for setting a locks state. ScrollRectUtility SetDialogueText Utility for setting dialogue texts. Enums GameStateSetter.Types LockableStateSetter.LockStates"
   },
   "api/StoryFramework.Utilities.LockableStateSetter.html": {
     "href": "api/StoryFramework.Utilities.LockableStateSetter.html",

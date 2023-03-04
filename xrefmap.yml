@@ -2967,6 +2967,12 @@ references:
   isSpec: "True"
   fullName: StoryFramework.Utilities.DialogueUtility.SetDialogue
   nameWithType: DialogueUtility.SetDialogue
+- uid: StoryFramework.Utilities.DoIfInventoryContainsItems
+  name: DoIfInventoryContainsItems
+  href: api/StoryFramework.Utilities.DoIfInventoryContainsItems.html
+  commentId: T:StoryFramework.Utilities.DoIfInventoryContainsItems
+  fullName: StoryFramework.Utilities.DoIfInventoryContainsItems
+  nameWithType: DoIfInventoryContainsItems
 - uid: StoryFramework.Utilities.DoIfItemIs
   name: DoIfItemIs
   href: api/StoryFramework.Utilities.DoIfItemIs.html
