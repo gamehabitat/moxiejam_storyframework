@@ -30,9 +30,12 @@ namespace StoryFramework
 
 		public void Load(GameState[] states)
 		{
-			for (int i = 0; i < states.Length; i++)
+			if (states)
 			{
-				Register(in states[i].Identifier, in states[i].Value);
+				for (int i = 0; i < states.Length; i++)
+				{
+					Register(in states[i].Identifier, in states[i].Value);
+				}
 			}
 		}
 		

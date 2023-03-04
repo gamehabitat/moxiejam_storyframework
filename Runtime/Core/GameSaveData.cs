@@ -86,7 +86,7 @@ namespace StoryFramework
         /// </summary>
         public GameSaveData()
         {
-            stateManager.Load(GameSettings.Instance.GlobalGameStates);
+            stateManager?.Load(GameSettings.Instance.GlobalGameStates);
             Game.OnBeginLoadScene += OnBeginLoadScene;
         }
 
