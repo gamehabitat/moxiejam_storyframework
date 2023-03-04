@@ -30,7 +30,7 @@ namespace StoryFramework
 
 		public void Load(GameState[] states)
 		{
-			if (states)
+			if (states != null)
 			{
 				for (int i = 0; i < states.Length; i++)
 				{

@@ -53,7 +53,6 @@ namespace StoryFramework.Events
 
         void OnEnable()
         {
-            inventory = Game.Instance ? Game.Instance.SaveData?.Inventory : null;
             if (inventory != null)
             {
                 inventory.OnUpdated += OnUpdated;
@@ -66,7 +65,6 @@ namespace StoryFramework.Events
 
         void OnDisable()
         {
-            inventory = Game.Instance ? Game.Instance.SaveData?.Inventory : null;
             if (inventory != null)
             {
                 inventory.OnUpdated -= OnUpdated;
