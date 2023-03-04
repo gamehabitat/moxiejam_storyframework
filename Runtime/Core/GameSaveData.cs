@@ -112,7 +112,7 @@ namespace StoryFramework
                 Inventory.Clear();
                 Inventory = null;
                 
-                stateManager.Dispose();
+                stateManager?.Dispose();
                 stateManager = null;
             }
 
